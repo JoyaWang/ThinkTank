@@ -30,14 +30,14 @@ branchB 是主分支，branch A 是基于 branchB 的 C1 (也就是以C1为base)
 
 
 
-![4-2-1](../../resources/images/Git diagrams/4-3-1.png)
+![4-2-1](../resources/images/Git diagrams/4-3-1.png)
 
-![4-3-2](../../resources/images/Git diagrams/4-3-2.png)
+![4-3-2](../resources/images/Git diagrams/4-3-2.png)
 
-![4-3-3](../../resources/images/Git diagrams/4-3-3.png)
+![4-3-3](../resources/images/Git diagrams/4-3-3.png)
 
-![4-3-4](../../resources/images/Git diagrams/4-3-4.png)
+![4-3-4](../resources/images/Git diagrams/4-3-4.png)
 
 
 
-![4-2-1](../../resources/images/Git diagrams/4-2-1.png)
+![4-2-1](../resources/images/Git diagrams/4-2-1.png)

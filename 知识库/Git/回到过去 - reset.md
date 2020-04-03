@@ -2,13 +2,13 @@
 
 > 【在 commit 和 commit 之间来回穿梭】
 
-![2-2-1](../../resources/images/Git diagrams/2-2-1.png)
+![2-2-1](../resources/images/Git diagrams/2-2-1.png)
 
-![2-2-2](../../resources/images/Git diagrams/2-2-2.png)
+![2-2-2](../resources/images/Git diagrams/2-2-2.png)
 
-![2-2-3](../../resources/images/Git diagrams/2-2-3.png)
+![2-2-3](../resources/images/Git diagrams/2-2-3.png)
 
-![2-2-4](../../resources/images/Git diagrams/2-2-4.png)
+![2-2-4](../resources/images/Git diagrams/2-2-4.png)
 
 - 当前处于修改了 1.py ，刚 git add 1.py 后的 staged 状态，还没有 commit，但是我后悔刚才 git add 了，不想过早地处于 stage 状态，想返回到 staged 前的 modified 状态去继续进行修改。
 
