@@ -20,7 +20,7 @@
 
       > 上次 commit 完后，又修改了
 
-![2-1-1](../../resources/images/Git diagrams/2-1-1.png)
+![2-1-1](../resources/images/Git diagrams/2-1-1.png)
 
 - ### 创建 Git 版本库和配置
 
