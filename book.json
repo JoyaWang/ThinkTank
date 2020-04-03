@@ -1,0 +1,16 @@
+{
+    "title": "iOS 知识库",
+    "links" : {
+        
+    },
+    "plugins":[
+        "expandable-chapters-small",
+        "chapter-fold",
+        "splitter"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+             "showLevel": true
+        }
+    }
+}
