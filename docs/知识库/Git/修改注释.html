@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>查看更改前后不同 · iOS 知识库</title>
+        <title>修改注释 · iOS 知识库</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="本地仓库与远程仓库.html" />
+    <link rel="next" href="gitignore.html" />
     
     
-    <link rel="prev" href="Stash 暂存.html" />
+    <link rel="prev" href="本地仓库与远程仓库.html" />
     
 
     </head>
@@ -333,7 +333,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.5" data-path="查看更改前后不同.html">
+        <li class="chapter " data-level="1.7.5" data-path="查看更改前后不同.html">
             
                 <a href="查看更改前后不同.html">
             
@@ -363,7 +363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.7" data-path="修改注释.html">
+        <li class="chapter active" data-level="1.7.7" data-path="修改注释.html">
             
                 <a href="修改注释.html">
             
@@ -428,7 +428,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >查看更改前后不同</a>
+        <a href="../.." >修改注释</a>
     </h1>
 </div>
 
@@ -443,34 +443,48 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x67E5;&#x770B;&#x66F4;&#x6539;&#x524D;&#x540E;&#x4E0D;&#x540C;">&#x67E5;&#x770B;&#x66F4;&#x6539;&#x524D;&#x540E;&#x4E0D;&#x540C;</h1>
-<p><code>git diff</code> &#x3010;&#x67E5;&#x770B;unstaged (modified)&#x72B6;&#x6001;&#x4E0B;&#x5F02;&#x540C;&#x3011;</p>
-<blockquote>
-<p>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6587;&#x4EF6; modified &#x4E4B;&#x540E; &#x548C; &#x4E4B;&#x524D; &#x7684;&#x5BF9;&#x6BD4;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x548C;&#x4E0A;&#x6B21; commit &#x5B8C;&#x4E4B;&#x540E;&#x7684;&#x5BF9;&#x6BD4;</p>
-<p>&#x4F46;&#x662F;&#x5FC5;&#x987B;&#x662F;&#x5728;&#x88AB; git add &#x4E4B;&#x524D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5904;&#x4E8E; unstage &#x7684;&#x72B6;&#x6001;&#xFF0C;&#x624D;&#x80FD;&#x67E5;&#x770B;&#x4FEE;&#x6539;&#x524D;&#x540E;&#x7684;&#x5BF9;&#x6BD4;</p>
-</blockquote>
-<p><code>git diff --cached</code>&#x3010;&#x67E5;&#x770B;staged&#x72B6;&#x6001;&#x4E0B;&#x5F02;&#x540C;&#x3011;</p>
-<blockquote>
-<p>&#x5F53;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5904;&#x4E8E; staged &#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x7528;&#x6B64;&#x547D;&#x4EE4;&#x67E5;&#x770B; &#x5F53;&#x524D; staged &#x7684;&#x72B6;&#x6001;&#x548C;&#x4E0A;&#x4E00;&#x6B21; commit &#x7684;&#x8F6C;&#x6001;&#x7684;&#x5BF9;&#x6BD4;</p>
-</blockquote>
-<p><code>git diff HEAD</code> &#x3010;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x6240;&#x6709;&#x72B6;&#x6001;&#x4E0B;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x5305;&#x62EC; staged &#x548C; modified(&#x5C5E;&#x4E8E;unstaged)&#x3011;</p>
-<blockquote>
+                                <h1 id="&#x4FEE;&#x6539;&#x6CE8;&#x91CA;">&#x4FEE;&#x6539;&#x6CE8;&#x91CA;</h1>
 <ul>
-<li><p>&#x5F53;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x6709;&#x4E24;&#x4E2A;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x4F20;&#x5165; HEAD &#x53C2;&#x6570;&#x67E5;&#x770B;&#x6240;&#x6709;&#x4E0D;&#x540C;</p>
+<li><h3 id="&#x4FEE;&#x6539;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x6CE8;&#x91CA;">&#x4FEE;&#x6539;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x6CE8;&#x91CA;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x53EA;&#x60F3;&#x4FEE;&#x6539;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x6CE8;&#x91CA;&#xFF08;&#x5C31;&#x662F;&#x6700;&#x65B0;&#x7684;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#xFF09;&#xFF0C;&#x90A3;&#x597D;&#x529E;&#xFF1A;git commit --amend, &#x51FA;&#x73B0;&#x6709;&#x6CE8;&#x91CA;&#x7684;&#x754C;&#x9762;&#xFF08;&#x4F60;&#x7684;&#x6CE8;&#x91CA;&#x5E94;&#x8BE5;&#x663E;&#x793A;&#x5728;&#x7B2C;&#x4E00;&#x884C;&#xFF09;&#xFF0C; &#x8F93;&#x5165;i&#x8FDB;&#x5165;&#x4FEE;&#x6539;&#x6A21;&#x5F0F;&#xFF0C;&#x4FEE;&#x6539;&#x597D;&#x6CE8;&#x91CA;&#x540E;&#xFF0C;&#x6309;Esc&#x952E; &#x9000;&#x51FA;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#xFF0C;&#x8F93;&#x5165;:wq&#x4FDD;&#x5B58;&#x5E76;&#x9000;&#x51FA;&#x3002;ok&#xFF0C;&#x4FEE;&#x6539;&#x5B8C;&#x6210;&#x3002;</p>
+</li>
+<li><h3 id="&#x4FEE;&#x6539;&#x4E4B;&#x524D;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x6CE8;&#x91CA;">&#x4FEE;&#x6539;&#x4E4B;&#x524D;&#x67D0;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x6CE8;&#x91CA;</h3>
 <blockquote>
-<p>&#x5F53;&#x6587;&#x4EF6;&#x5DF2;&#x7ECF;&#x5904;&#x4E8E; staged &#x72B6;&#x6001;&#xFF0C;&#x4F46;&#x8FD8;&#x6CA1;&#x6709;&#x88AB; commit &#x524D;&#xFF0C;&#x53C8;&#x8FDB;&#x884C;&#x4E86; modify&#xFF0C;&#x8FD9;&#x65F6;&#x5B83;&#x5C31;&#x6709; &#x4E24;&#x4E2A;&#x72B6;&#x6001; MM&#xFF0C;&#x4E00;&#x4E2A;&#x7EFF;M&#x662F; staged &#x72B6;&#x6001;, &#x4E00;&#x4E2A;&#x7EA2;M&#x662F; unstaged &#x4E2D;&#x7684; modified &#x72B6;&#x6001;</p>
-<p>&#x6B64;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x7528; git diff --cache &#x53C2;&#x6570;&#x67E5;&#x770B;&#x7684;&#x8BDD;&#xFF0C;&#x53EA;&#x4F1A;&#x663E;&#x793A;&#x7EFF;M staged &#x7684;&#x72B6;&#x6001;&#x7684;&#x5F02;&#x540C;</p>
-<p>&#x6B64;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x7528; git diff &#x67E5;&#x770B;&#xFF0C;&#x53EA;&#x4F1A;&#x663E;&#x793A;&#x6700;&#x540E;&#x4FEE;&#x6539;&#x540E;&#x7684; unstaged &#x7684;&#x5F02;&#x540C;</p>
+<p>&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x539F;&#x7406;&#x6211;&#x7684;&#x7406;&#x89E3;&#x5C31;&#x662F;&#x5148;&#x7248;&#x672C;&#x56DE;&#x9000;&#x5230;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x7684;&#x67D0;&#x6B21;&#x7248;&#x672C;&#xFF0C;&#x7136;&#x540E;&#x4FEE;&#x6539;&#x5F53;&#x524D;&#x7684;commit&#x6CE8;&#x91CA;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x56DE;&#x5230;&#x672C;&#x5730;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;</p>
+<p>&#x6CE8;&#xFF1A;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; reset &#x6216; checkout &#x56DE;&#x9000;&#x4FEE;&#x6539;&#x6CE8;&#x91CA;</p>
+</blockquote>
+<ol>
+<li><p>&#x8F93;&#x5165;&#xFF1A;<code>git rebase -i HEAD~2</code></p>
+<blockquote>
+<p>&#x6700;&#x540E;&#x7684;&#x6570;&#x5B57;2&#x6307;&#x7684;&#x662F;&#x663E;&#x793A;&#x5230;&#x5012;&#x6570;&#x7B2C;&#x51E0;&#x6B21; &#x6BD4;&#x5982;&#x8FD9;&#x4E2A;&#x8F93;&#x5165;&#x7684;2&#x5C31;&#x4F1A;&#x663E;&#x793A;&#x5012;&#x6570;&#x7684;&#x4E24;&#x6B21;&#x6CE8;&#x91CA;&#xFF08;&#x6700;&#x4E0A;&#x9762;&#x4E24;&#x884C;&#xFF09;</p>
 </blockquote>
 </li>
-<li><p>&#x6B64;&#x65F6;&#x5982;&#x679C; git commit &#x7684;&#x8BDD;&#xFF0C;&#x53EA;&#x4F1A;&#x5C06; &#x7EFF;M &#x72B6;&#x6001;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5904;&#x4E8E; staged &#x8F6C;&#x6001;&#x7684;&#x66F4;&#x6539;&#x63D0;&#x4EA4;</p>
+<li><p>&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x54EA;&#x6761;&#x6CE8;&#x91CA;, &#x5C31;&#x628A;&#x54EA;&#x6761;&#x6CE8;&#x91CA;&#x524D;&#x9762;&#x7684;pick&#x6362;&#x6210;edit&#x3010;&#x4E0D;&#x5728;&#x8FD9;&#x91CC;&#x4FEE;&#x6539;&#x6CE8;&#x91CA;&#x3011;</p>
+<p>&#x4F7F;&#x7528;Vim&#x65B9;&#x6CD5;&#x7F16;&#x8F91;&#x5E76;&#x4FDD;&#x5B58;: <code>i---&#x7F16;&#x8F91;&#xFF0C;&#x628A;pick&#x6362;&#x6210;edit---Esc---:wq</code></p>
 </li>
-<li><p>&#x800C;&#x5904;&#x4E8E; &#x7EA2;M&#xFF0C;&#x4E5F;&#x5C31;&#x662F; modified &#x72B6;&#x6001;&#x7684;&#x66F4;&#x6539;&#x4F9D;&#x7136;&#x9700;&#x8981; git add &#x540E;&#x624D;&#x80FD;&#x63D0;&#x4EA4;</p>
+<li><p><code>git commit --amend</code>&#x3010;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x540E;&#x4FEE;&#x6539;&#x6CE8;&#x91CA;&#x3011;</p>
+<blockquote>
+<p>&#x8F93;&#x5165;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x7528;Vim&#x6253;&#x5F00;&#x6CE8;&#x91CA;&#x6587;&#x672C;&#xFF0C;&#x76F4;&#x63A5;&#x5728;&#x91CC;&#x9762;&#x4FEE;&#x6539;&#x6CE8;&#x91CA;&#x5E76;&#x4FDD;&#x5B58;&#x9000;&#x51FA;</p>
+</blockquote>
 </li>
-<li><p>&#x5982;&#x679C;&#x63D0;&#x4EA4;&#x4EE5;&#x540E;&#xFF0C;git diff &#x7684;&#x6240;&#x6709;&#x547D;&#x4EE4;&#x90FD;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#x4E86;</p>
+<li><p><code>git rebase --continue</code>&#x3010;&#x5B8C;&#x6210;&#x6CE8;&#x91CA;&#x4FEE;&#x6539;&#x3011;</p>
+</li>
+</ol>
+</li>
+<li><h3 id="&#x4FEE;&#x6539;&#x4E4B;&#x524D;&#x7684;&#x67D0;&#x51E0;&#x6B21;&#x6CE8;&#x91CA;">&#x4FEE;&#x6539;&#x4E4B;&#x524D;&#x7684;&#x67D0;&#x51E0;&#x6B21;&#x6CE8;&#x91CA;</h3>
+<blockquote>
+<p>&#x4FEE;&#x6539;&#x591A;&#x6B21;&#x7684;&#x6CE8;&#x91CA;&#x5176;&#x5B9E;&#x6B65;&#x9AA4;&#x548C;&#x4E0A;&#x9762;&#x7684;&#x4E00;&#x6837;&#xFF0C;&#x4E0D;&#x540C;&#x70B9;&#x5728;&#x4E8E;&#xFF1A;</p>
+<p>1.&#x540C;&#x4E0A;</p>
+<p>2.&#x4F60;&#x53EF;&#x4EE5;&#x5C06;&#x591A;&#x4E2A;&#x60F3;&#x4FEE;&#x6539;&#x7684;commit&#x6CE8;&#x91CA;&#x524D;&#x9762;&#x7684;pick&#x6362;&#x6210;edit</p>
+<p>3.&#x4F9D;&#x6B21;&#x4FEE;&#x6539;&#x4F60;&#x7684;&#x6CE8;&#x91CA;&#xFF08;&#x987A;&#x5E8F;&#x662F;&#x4ECE;&#x65E7;&#x5230;&#x65B0;&#xFF09;&#xFF0C;Terminal&#x57FA;&#x672C;&#x90FD;&#x4F1A;&#x63D0;&#x793A;&#x4F60;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6BCF;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x6CE8;&#x91CA;&#x90FD;&#x8981;&#x91CD;&#x590D;&#x4E0A;&#x9762;&#x7684;3&#x548C;4&#x6B65;&#xFF0C;&#x76F4;&#x5230;&#x4FEE;&#x6539;&#x5B8C;&#x4F60;&#x6240;&#x9009;&#x62E9;&#x7684;&#x6240;&#x6709;&#x6CE8;&#x91CA;</p>
+<p>&#x5DF2;&#x7ECF;&#x5C06;&#x4EE3;&#x7801;push&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x4F60;&#x628A;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x4ECE;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x5148;pull&#x4E0B;&#x6765;&#xFF0C;&#x4FEE;&#x6539;&#x7684;&#x65B9;&#x6CD5;&#x90FD;&#x5982;&#x4E0A;&#xFF0C;&#x6700;&#x540E;&#x4FEE;&#x6539;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5F3A;&#x5236;push&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF1A;
+ git push --force origin master
+ &#x6CE8;&#xFF1A;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#x662F;&#xFF0C;&#x4F60;&#x6700;&#x597D;&#x4FDD;&#x8BC1;&#x5728;&#x4F60;&#x5F3A;&#x5236;push&#x4E4B;&#x524D;&#x6CA1;&#x6709;&#x4EBA;&#x63D0;&#x4EA4;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x4F60;push&#x4E4B;&#x524D;&#x6709;&#x4EBA;&#x63D0;&#x4EA4;&#x4E86;&#x65B0;&#x7684;&#x4EE3;&#x7801;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x7136;&#x540E;&#x4F60;&#x53C8;&#x5F3A;&#x5236;push&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x88AB;&#x4F60;&#x7684;&#x5F3A;&#x5236;&#x66F4;&#x65B0;&#x8986;&#x76D6;&#xFF01;&#xFF01;&#xFF01;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x8FDC;&#x7A0B;&#x7684;&#x63D0;&#x4EA4;&#x8BB0;&#x5F55;~~</p>
+</blockquote>
 </li>
 </ul>
-</blockquote>
 
                                 
                                 </section>
@@ -498,12 +512,12 @@
 
             
                 
-                <a href="Stash 暂存.html" class="navigation navigation-prev " aria-label="Previous page: Stash 暂存">
+                <a href="本地仓库与远程仓库.html" class="navigation navigation-prev " aria-label="Previous page: 本地仓库与远程仓库">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="本地仓库与远程仓库.html" class="navigation navigation-next " aria-label="Next page: 本地仓库与远程仓库">
+                <a href="gitignore.html" class="navigation navigation-next " aria-label="Next page: gitignore">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -514,7 +528,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"查看更改前后不同","level":"1.7.5","depth":2,"next":{"title":"本地仓库与远程仓库","level":"1.7.6","depth":2,"path":"知识库/Git/本地仓库与远程仓库.md","ref":"知识库/Git/本地仓库与远程仓库.md","articles":[]},"previous":{"title":"Stash 暂存","level":"1.7.4","depth":2,"path":"知识库/Git/Stash 暂存.md","ref":"知识库/Git/Stash 暂存.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","chapter-fold","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/Git/查看更改前后不同.md","mtime":"2020-04-03T09:29:54.029Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-06T10:02:04.824Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"修改注释","level":"1.7.7","depth":2,"next":{"title":"gitignore","level":"1.7.8","depth":2,"path":"知识库/Git/gitignore.md","ref":"知识库/Git/gitignore.md","articles":[]},"previous":{"title":"本地仓库与远程仓库","level":"1.7.6","depth":2,"path":"知识库/Git/本地仓库与远程仓库.md","ref":"知识库/Git/本地仓库与远程仓库.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","chapter-fold","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/Git/修改注释.md","mtime":"2020-04-06T09:49:51.607Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-06T10:02:04.824Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
