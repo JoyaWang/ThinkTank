@@ -76,3 +76,8 @@
     >
     > 必须用不同的标题字体才可以，挺有用
 
+### 删除插件
+
+1. 在 node_modules 中全部删除
+2. 在 book.json 配置好
+3. 最后重新 gitbook install 即可
