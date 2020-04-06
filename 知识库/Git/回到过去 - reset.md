@@ -2,13 +2,7 @@
 
 > 【在 commit 和 commit 之间来回穿梭】
 
-![2-2-1](../resources/images/Git diagrams/2-2-1.png)
 
-![2-2-2](../resources/images/Git diagrams/2-2-2.png)
-
-![2-2-3](../resources/images/Git diagrams/2-2-3.png)
-
-![2-2-4](../resources/images/Git diagrams/2-2-4.png)
 
 - 当前处于修改了 1.py ，刚 git add 1.py 后的 staged 状态，还没有 commit，但是我后悔刚才 git add 了，不想过早地处于 stage 状态，想返回到 staged 前的 modified 状态去继续进行修改。
 
@@ -41,3 +35,11 @@
 - 通过 reset 回到过去某次提交`3edb`后，git log --oneline 就会发现`3edb`提交后的所有提交都不见了
 
 - 这时如果想又回到未来，需要使用 `git reflog` 通过查看每一步 HEAD 的移动变化，找到未来的那次提交的 commit id， 在通过 `git reset --hard commitid` 的方法回到未来。
+
+![2-2-1](../resources/images/Git diagrams/2-2-1.png)
+
+![2-2-2](../resources/images/Git diagrams/2-2-2.png)
+
+![2-2-3](../resources/images/Git diagrams/2-2-3.png)
+
+![2-2-4](../resources/images/Git diagrams/2-2-4.png)

@@ -5,7 +5,7 @@
 * [通用必备基础知识](./通用必备基础知识.md)
 * [C 语言](知识库/C 语言/C 语言知识点.md)
 * [Objective-C 语言](知识库/Objective-C 语言/OC 知识点.md)
-* [Swift 语言](iOS知识库/Swift 语言/README.md)
+* [Swift 语言](知识库/Swift 语言/README.md)
 * [Git](知识库/Git/Git 基本指令.md)
   * [Git 基本指令](知识库/Git/Git 基本指令.md)
   * [分支及合并 branch & merge](知识库/Git/分支及合并 branch & merge.md)
