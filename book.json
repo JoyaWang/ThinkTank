@@ -5,7 +5,6 @@
     },
     "plugins":[
         "expandable-chapters-small",
-        "chapter-fold",
         "splitter"
     ],
     "pluginsConfig": {
