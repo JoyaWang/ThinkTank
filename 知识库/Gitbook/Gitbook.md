@@ -38,6 +38,41 @@
   
   - chapter-fold
   
+    > 导航目录折叠
+  
+  - page-toc-button
+  
+    > 悬浮目录
+    >
+    > 貌似没起作用
+  
+  - back-to-top-button
+  
+    > 回到顶部
+  
+  - lightbox
+  
+    > 单击查看图片
+  
+  - custom-favicon 
+  
+    > 修改标题栏图标
+  
   - splitter
   
-    > 如果目录内容比较多，左边菜单栏显示不下，也可以使用插件来达到放大菜单栏宽度的目的
+    > 侧边栏宽度可调节
+  
+  - tbfed-pagefooter
+  
+    >  页面添加页脚
+  
+  - search-pro 
+  
+    > 高级搜索（支持中文）
+  
+  - page-treeview 
+  
+    > 生成页内目录
+    >
+    > 必须用不同的标题字体才可以，挺有用
+
