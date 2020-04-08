@@ -7,7 +7,8 @@
         "expandable-chapters-small",
         "page-toc-button",
         "page-treeview",
-        "splitter"
+        "splitter",
+        "lightbox"
     ],
     "pluginsConfig": {
         "theme-default": {
