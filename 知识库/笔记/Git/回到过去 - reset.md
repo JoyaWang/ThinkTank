@@ -36,10 +36,10 @@
 
 - 这时如果想又回到未来，需要使用 `git reflog` 通过查看每一步 HEAD 的移动变化，找到未来的那次提交的 commit id， 在通过 `git reset --hard commitid` 的方法回到未来。
 
-![2-2-1](../resources/images/Git diagrams/2-2-1.png)
+![2-2-1](../../../知识库/素材/images/Git diagrams/2-2-1.png)
 
-![2-2-2](../resources/images/Git diagrams/2-2-2.png)
+![2-2-2](../../../知识库/素材/images/Git diagrams/2-2-2.png)
 
-![2-2-3](../resources/images/Git diagrams/2-2-3.png)
+![2-2-3](../../../知识库/素材/images/Git diagrams/2-2-3.png)
 
-![2-2-4](../resources/images/Git diagrams/2-2-4.png)
+![2-2-4](../../../知识库/素材/images/Git diagrams/2-2-4.png)

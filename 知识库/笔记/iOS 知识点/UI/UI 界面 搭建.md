@@ -20,8 +20,27 @@
 
   - XIB 的创建
 
-    - 当 XIB 中的 根视图是控制器的根视图时
+    - 加载控制器
 
+      ```objc
+      +(instancetype)viewControllerFromXib {
+          
+          return [[JLRecoverPwdViewController alloc] initWithNibName:@"JLRecoverPwdViewController" bundle:[NSBundle mainBundle]];
+      }
+      ```
+      
+    - 加载 View
+    
+      ```objc
+      + (instancetype)rotationView {
+        return [[NSBundle mainBundle] loadNibNamed:@"JLTopImageRotationView" owner:nil options:nil][0];
+      }
+      ```
+      
+      
+      
+    - 当 XIB 中的 根视图是控制器的根视图时
+    
       > - 给此 XIB 设置 视图控制器类
       >
       >   将 File's Owner 中的类设置为 XIB 的类
@@ -33,8 +52,16 @@
       > - 否则会报错
       >
       >   -[UIViewController _loadViewFromNibNamed:bundle:] loaded the "JLComposeViewController" nib but the view outlet was not set.'
-
+    
     - 当 XIB 中的根视图 不是控制器的根视图则不需要设置 File Owner
+    
+    - 如果 Xib 文件对应的是 view， 不是 控制器，那么 fileOwner 不需要设置
+    
+    - Xib 中的 collectionView 不像 Storyboard 中一样，不能添加 item，创建自定义 UICollectionViewCell
+    
+    - 如果 collectionView 的superView 是从 Xib 中加载的，设置 itemSize 和 superView 相关的话，要在 layoutSubviews 中设置，因为 awakeFromNib 中 superView 的 size 还是 xib 中的size
+    
+    - 创建 Cocoa Touch 类时，只有 Controller 的子类，可以直接自动创建 Xib，view 则不行
 
 - ### 纯代码搭建界面
 

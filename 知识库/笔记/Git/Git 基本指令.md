@@ -22,11 +22,23 @@
 
 ![2-1-1](../resources/images/Git diagrams/2-1-1.png)
 
-### 创建 Git 版本库和配置
+### 创建 Git 版本库
 
 - 创建本地文件夹 MyProject
 
 - 在 终端 cd 到 MyProject 文件夹
+
+- 在 MyProject 目录下创建版本库 
+
+  > git init
+  >
+  > 生成 `.git` 文件夹，意味着 MyProject 文件夹已经成为 git 管理的版本库
+
+### 配置Git
+
+- `git config --list` 查看 git 的完整配置信息
+
+- `git config -l` 查看当前 git 的配置
 
 - 设置 git 管理员信息及查看
 
@@ -43,12 +55,6 @@
   >   > git config user.name
   >   >
   >   > git config user.email
-
-- 在 MyProject 目录下创建版本库 
-
-  > git init
-  >
-  > 生成 `.git` 文件夹，意味着 MyProject 文件夹已经成为 git 管理的版本库
 
 ### 将文件交给 Git 版本库管理
 

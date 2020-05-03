@@ -18,15 +18,7 @@ V  视图【View + Controller】
   - 下拉刷新
   - 上拉刷新
 
-
-
-
-
 M 数据模型【Model】
-
-
-
-
 
 ### MVC 回顾
 

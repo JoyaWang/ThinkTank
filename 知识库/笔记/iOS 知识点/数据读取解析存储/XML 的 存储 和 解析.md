@@ -76,7 +76,5 @@
     > - rootElement每个child是一个video对象，child的children是video的子标签(就是video的属性)，使用KVC赋值
     > - rootElement每个child是一个video对象，child的attributes是video的属性(就是video的属性)，使用KVC赋值
 
-    <img src="../../resources/images/GData中的类.png" alt="GData中的类" style="zoom:50%;" />
-
-    
+    ![GData中的类](../../../../知识库/素材/images/GData中的类.png)
 

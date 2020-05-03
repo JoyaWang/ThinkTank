@@ -8,7 +8,10 @@
         "page-toc-button",
         "page-treeview",
         "splitter",
-        "lightbox"
+        "lightbox",
+        "-lunr",
+        "-search",
+        "search-pro"
     ],
     "pluginsConfig": {
         "theme-default": {

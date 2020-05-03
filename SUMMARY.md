@@ -28,6 +28,7 @@
     * [UI 界面间 跳转](./知识库/笔记/iOS 知识点/UI/UI 界面间 跳转.md)
     * [自动布局](./知识库/笔记/iOS 知识点/UI/自动布局.md)
     * [苹果原生代码自动布局](./知识库/笔记/iOS 知识点/UI/苹果原生代码自动布局.md)
+    * [UIScrollView中子控件的布局](./知识库/笔记/iOS 知识点/UI/UIScrollView中子控件的布局.md)
 
   * [数据读取解析存储](./知识库/笔记/iOS 知识点/数据读取解析存储/数据读取、解析.md)
 
@@ -92,47 +93,54 @@
 
   * OC 语言特性
 
-  * 常用功能集成
+  * [常用功能集成](./知识库/笔记/iOS 知识点/常用功能/授权登录/OAuth.md)
 
-    * [登录授权]((./知识库/笔记/iOS 知识点/常用功能/授权登录/OAuth.md))
+    * [登录授权](./知识库/笔记/iOS 知识点/常用功能/授权登录/OAuth.md)
 
-    * - [OAuth](./知识库/笔记/iOS 知识点/常用功能/授权登录/OAuth.md)
-      - [SSH](./知识库/笔记/iOS 知识点/常用功能/授权登录/SSH.md)
-      - [SSO](./知识库/笔记/iOS 知识点/常用功能/授权登录/SSO.md)
-
+      * [OAuth](./知识库/笔记/iOS 知识点/常用功能/授权登录/OAuth.md)
+      * [SSH](./知识库/笔记/iOS 知识点/常用功能/授权登录/SSH.md)
+      * [SSO](./知识库/笔记/iOS 知识点/常用功能/授权登录/SSO.md)
+    * [IM聊天](./知识库/笔记/iOS 知识点/常用功能/IM即时聊天/环信客服云集成.md)
+      - [环信客服云](./知识库/笔记/iOS 知识点/常用功能/IM即时聊天/环信客服云集成.md)
+      - XMPP
+      - 融云
     * 支付
-
-    * - 支付宝
-      - 微信
-      - 银联
-      - Apple Pay
+      * 支付宝
+      * 微信
+      * 银联
+      * Apple Pay
 
     - 地图
-
-    - - 百度地图
+      - 百度地图
       - 高德地图
       - 苹果地图
-
     - 音频、视频
-
-    - - AVPlayer
+      - AVPlayer
       - AVMediaPlayer
       - 直播
       - 点播
-
-    - IM
-
-    - - XMPP
-      - 融云
-
     - 分享
-
-    - - 友盟
-
+      - 友盟
     - 崩溃收集
-    - bugly
+      - 腾讯 bugly
+    - 蓝牙
 
   * 第三方库
+
+    * pod 'Masonry', '1.1.0' #自动布局OC
+    * pod 'SnapKit', '4.2.0' #自动布局Swift
+    * pod 'EasyPeasy', '1.9.0' #自动布局Swift？
+    * pod 'YYModel', '1.0.4' #字典转模型KVC
+    * pod ‘AFNetworking’, ‘4.0.0’ #网络访问
+    * pod 'SVProgressHUD', '2.2.5' #弹窗、进度条
+    * pod 'SDCycleScrollView','>= 1.80' #轮播图
+    * pod 'SJVideoPlayer' #视频播放
+    * pod 'TYPagerController' #分页显示
+    * pod 'PYSearch', '0.9.1' #搜索
+    * pod 'JCAlertController' #AlertLB
+    * pod 'BRPickerView', '2.5.7' #日期/地址等选择器
+    * pod 'FoldingCell', '5.0.2' #可折叠单元格
+    * pod 'FMDB', '2.7.5' #SQLite数据库
 
   * 其他
 
@@ -149,8 +157,14 @@
   * [查看更改前后不同](./知识库/笔记/Git/查看更改前后不同.md)
   * [本地仓库与远程仓库](./知识库/笔记/Git/本地仓库与远程仓库.md)
   * [修改注释](./知识库/笔记/Git/修改注释.md)
+  * [Git 设置代理](./知识库/笔记/Git/Git设置代理.md)
   * [gitignore](./知识库/笔记/Git/gitignore.md)
   
+* [CocoaPods](./知识库/笔记/CocoaPods/CocoaPods.md)
+
+  * [pod install, pod update, podfile, podfile.lock](./知识库/笔记/CocoaPods/pod install, pod update, podfile, podfile.lock.md)
+  * [Cocoapods 发布框架](./知识库/笔记/CocoaPods/Cocoapods 发布框架.md)
+
 * [GItbook](./知识库/笔记/Gitbook/Gitbook.md)
 
   * [Gitbook](./知识库/笔记/Gitbook/Gitbook.md)
@@ -158,7 +172,7 @@
 
 * [Unix & Linux & Mac](./知识库/笔记/Unix & Linux & Mac/Unix_Linux 命令.md)
 
-  * [Unix_Linux 命令](./知识库/笔记/Unix & Linux & Mac/Unix_Linux 命令.md)
+  * [终端命令 Unix_Linux 命令.md](./知识库/笔记/Unix & Linux & Mac/终端命令 Unix_Linux 命令.md)
   * [Unix_Linux 文件基本属性](./知识库/笔记/Unix & Linux & Mac/Unix_Linux 文件基本属性.md)
 
 * [Vim](./知识库/笔记/Vim.md)
