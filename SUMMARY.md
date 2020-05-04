@@ -144,7 +144,11 @@
     * pod 'FoldingCell', '5.0.2' #可折叠单元格
     * pod 'FMDB', '2.7.5' #SQLite数据库
 
-  * 其他
+  * [其他](./知识库/笔记/iOS 知识点/其他/常用类.md)
+
+    * [常用类](./知识库/笔记/iOS 知识点/其他/常用类.md)
+    * [日期时间相关](./知识库/笔记/iOS 知识点/其他/日期时间相关.md)
+    * [正则表达式 Regular Expression](./知识库/笔记/iOS 知识点/其他/正则表达式 Regular Expression.md)
 
 * [Git](./知识库/笔记/Git/Git 基本指令.md)
   
