@@ -1,5 +1,9 @@
 # UICollectionView
 
+## 实例应用
+
+- 网络新闻_图片轮播
+
 ## 使用方法
 
 必须设置 flowLayout，必须注册 cell

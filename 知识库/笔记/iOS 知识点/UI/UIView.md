@@ -1,12 +1,13 @@
-# UIView
+# UIView 和 CALayer
 
-圆角相关
+## UIView
 
-圆角 layer.cornerRadius
+- 负责监听和响应事件
 
-圆角以后非圆角的地方截掉 layer.masksToBounds 
+- ### 圆角相关
 
-
+  - 圆角 layer.cornerRadius
+  - 圆角以后非圆角的地方截掉 layer.masksToBounds 
 
 - ### 布局子控件大小、位置
 
@@ -62,6 +63,10 @@
       >
       > 如果需要重新画一些东西的话，调用setNeedsDisplay，系统会自动在适当的时候调用drawRect
 
+- ### 坐标转换
+
+  - 将自己的子控件的坐标，转换为另一个视图的坐标 convert 
+
 - ### 动画相关
 
   - view.transform 
@@ -86,9 +91,13 @@
 
   - init?(coder: NSCoder) 从 XIB，Storyboard 加载时的构造函数
 
+    > 只是刚从 XIB 的二进制文件将视图数据加载完成，还没有和代码连线建立起关系，所以开发时不能在此处理 UI，控件还是 nil
+
+  - init(frame:) 纯代码创建视图的入口 
+
   - awakeFromNib
 
-    > UIView从xib文件中创建好时会自动调用这个方法，这个时候这个view的子控件也都创建好可以访问了
+    > 在这里处理 UI, UIView从xib文件中创建好时会自动调用这个方法，这个时候这个view的子控件也都创建好可以访问了
 
   - willMoveToSuperview:newSuperview; 
 
@@ -114,3 +123,56 @@
 
   - viewWithTag 返回对应tag标识的子控件
   - bringSubviewToFront 将此子控件放置到所有子控件的最上方(若某个子控件被挡住无法显示)
+
+## CALayer
+
+> CALayer负责视图中显示内容和动画
+>
+> UIView负责监听和响应事件
+>
+> UIView之所以能够显示在屏幕上，完全是因为它内部的一个图层
+>
+> 在创建UIView对象时，UIView内部会自动创建一个图层(即CALayer对象)，通过UIView的layer属性可以访问这个层
+>
+> 当UIView需要显示到屏幕上时，会调用drawRect方法进行绘图，并且会将所有内容绘制在自己的图层上，绘制完毕后，系统会将图层拷贝到屏幕上，于是就完成了UIView的显示。
+>
+> 也就是说，UIView本身不具备现实的功能，是它的内部的层才有显示功能
+>
+> CoreAnimation动画是直接作用在CALayer上的，并非UIView
+
+
+
+- position 
+
+  > 用来设置在父层中的位置
+  >
+  > 以父层的左上角为原点(0,0)
+  >
+  > position属性和view.center的关系
+
+- anchorPoint
+
+  > 称为”定位点“、”锚点“
+  >
+  > 决定着CALayer的position属性所指的是哪个点
+  >
+  > 以自己的左上角为原点(0,0)
+  >
+  > 它的x, y取值范围都是0~1，默认值为(0.5, 0.5)
+
+- contents设置内容(图片)
+
+  > 需要桥接bridge，__bridge后面直接跟要从C转为OC的类，比如id，就用(__bridge id)
+  >
+  > 获取图片
+
+- 圆角 cornerRadius
+
+- 形变 transform
+
+- 阴影
+
+  - 阴影颜色 shadowColor
+  - 阴影透明度? shadowOpacity
+  - 从要加阴影的控件的左上角偏移的量 shadowOffset 
+  - 阴影半径? shadowRadius

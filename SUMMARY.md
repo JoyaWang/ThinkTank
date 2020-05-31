@@ -28,7 +28,7 @@
     * [SSH](./知识库/笔记/iOS 知识点/常用功能和第三方库/授权登录/SSH.md)
     * [SSO](./知识库/笔记/iOS 知识点/常用功能和第三方库/授权登录/SSO.md)
   * [IM聊天](./知识库/笔记/iOS 知识点/常用功能和第三方库/IM即时聊天/环信客服云集成.md)
-    - [环信客服云](./知识库/笔记/iOS 知识点/常用功能和第三方库/IM即时聊天/环信客服云集成.md)
+    - [环信客服云、七鱼客服集成](./知识库/笔记/iOS 知识点/常用功能和第三方库/IM即时聊天/环信客服云、七鱼客服集成.md)
     - XMPP
     - 融云
   * 支付
@@ -57,7 +57,8 @@
     - 远程推送
       - 极光推送
   - 蓝牙
-  - 分发测试
+  - [打包、分发测试](./知识库/笔记/iOS 知识点/常用功能和第三方库/打企业版ipa包和七牛云分发流程.md)
+    - [七牛云](./知识库/笔记/iOS 知识点/常用功能和第三方库/七牛云上传包.md)
     - 蒲公英
 
 * [其他](./知识库/笔记/iOS 知识点/其他/常用类.md)
@@ -68,7 +69,7 @@
   * [UITest 界面测试](./知识库/笔记/iOS 知识点/其他/UITest 界面测试.md)
   * [UnitTest 单元测试](./知识库/笔记/iOS 知识点/其他/UnitTest 单元测试.md)
 
-* [iOS 知识点](./知识库/笔记/iOS 知识点.md)
+* [iOS 知识点](./知识库/笔记/iOS 知识点/iOS 知识点.md)
 
   * [APP开发步骤、流程](./知识库/笔记/iOS 知识点/APP开发步骤、流程.md)
   * [项目](./知识库/笔记/iOS 知识点/项目/项目简介.md)
@@ -78,37 +79,27 @@
     * [项目架构](./知识库/笔记/iOS 知识点/项目/项目架构.md)
     * [MVC 和 MVVM](./知识库/笔记/iOS 知识点/项目/MVC 和 MVVM.md)
   * [UI](./知识库/笔记/iOS 知识点/UI/UI 界面 搭建.md)
-
-    * [UI 界面 搭建](./知识库/笔记/iOS 知识点/UI/UI 界面 搭建.md)
-    
+  * [UI 界面 搭建](./知识库/笔记/iOS 知识点/UI/UI 界面 搭建.md)
     * [UI 界面间 传值](./知识库/笔记/iOS 知识点/UI/UI 界面间 传值.md)
-    
     * [UI 界面间 跳转](./知识库/笔记/iOS 知识点/UI/UI 界面间 跳转.md)
-    
     * [自动布局](./知识库/笔记/iOS 知识点/UI/自动布局.md)
-    
     * [苹果原生代码自动布局](./知识库/笔记/iOS 知识点/UI/苹果原生代码自动布局.md)
-    
     * [UIScrollView中子控件的布局](./知识库/笔记/iOS 知识点/UI/UIScrollView中子控件的布局.md)
-    
     * [事件的传递链、响应链](./知识库/笔记/iOS 知识点/UI/事件的传递链、响应链.md)
-    
     * [UIView](./知识库/笔记/iOS 知识点/UI/UIView.md)
-    
     * [UITabBarController](./知识库/笔记/iOS 知识点/UI/UITabBarController.md)
-    
     * [UINavigationController](./知识库/笔记/iOS 知识点/UI/UINavigationController.md)
-    
     * [UIScrollView](./知识库/笔记/iOS 知识点/UI/UIScrollView.md)
-    
     * [UITableView](./知识库/笔记/iOS 知识点/UI/UITableView.md)
-    
     * [UICollectionView](./知识库/笔记/iOS 知识点/UI/UICollectionView.md)
-    
-      
+    * [UIImageView 和 UIImage](./知识库/笔记/iOS 知识点/UI/UIImageView 和 UIImage.md)
+    * [UITextField 和 UITextView](./知识库/笔记/iOS 知识点/UI/UITextField 和 UITextView.md)
+    * [UIControl](./知识库/笔记/iOS 知识点/UI/UIControl.md)
+    * [UIResponder](./知识库/笔记/iOS 知识点/UI/UIResponder.md)
+    * [UITouch](./知识库/笔记/iOS 知识点/UI/UITouch.md)
+    * [UIGestureRecognizer](./知识库/笔记/iOS 知识点/UI/UIGestureRecognizer.md)
   * [数据读取解析存储](./知识库/笔记/iOS 知识点/数据读取解析存储/数据读取、解析.md)
-
-    * [数据读取、解析](./知识库/笔记/iOS 知识点/数据读取解析存储/数据读取、解析.md)
+  * [数据读取、解析](./知识库/笔记/iOS 知识点/数据读取解析存储/数据读取、解析.md)
     * [数据存储](./知识库/笔记/iOS 知识点/数据读取解析存储/数据存储.md)
     * [NSFileManager 文件管理器](./知识库/笔记/iOS 知识点/数据读取解析存储/NSFileManager 文件管理器.md)
     * [CoreData_SQLite](./知识库/笔记/iOS 知识点/数据读取解析存储/CoreData_SQLite.md)
