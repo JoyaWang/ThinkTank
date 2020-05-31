@@ -80,12 +80,32 @@
   * [UI](./知识库/笔记/iOS 知识点/UI/UI 界面 搭建.md)
 
     * [UI 界面 搭建](./知识库/笔记/iOS 知识点/UI/UI 界面 搭建.md)
+    
     * [UI 界面间 传值](./知识库/笔记/iOS 知识点/UI/UI 界面间 传值.md)
+    
     * [UI 界面间 跳转](./知识库/笔记/iOS 知识点/UI/UI 界面间 跳转.md)
+    
     * [自动布局](./知识库/笔记/iOS 知识点/UI/自动布局.md)
+    
     * [苹果原生代码自动布局](./知识库/笔记/iOS 知识点/UI/苹果原生代码自动布局.md)
+    
     * [UIScrollView中子控件的布局](./知识库/笔记/iOS 知识点/UI/UIScrollView中子控件的布局.md)
+    
     * [事件的传递链、响应链](./知识库/笔记/iOS 知识点/UI/事件的传递链、响应链.md)
+    
+    * [UIView](./知识库/笔记/iOS 知识点/UI/UIView.md)
+    
+    * [UITabBarController](./知识库/笔记/iOS 知识点/UI/UITabBarController.md)
+    
+    * [UINavigationController](./知识库/笔记/iOS 知识点/UI/UINavigationController.md)
+    
+    * [UIScrollView](./知识库/笔记/iOS 知识点/UI/UIScrollView.md)
+    
+    * [UITableView](./知识库/笔记/iOS 知识点/UI/UITableView.md)
+    
+    * [UICollectionView](./知识库/笔记/iOS 知识点/UI/UICollectionView.md)
+    
+      
   * [数据读取解析存储](./知识库/笔记/iOS 知识点/数据读取解析存储/数据读取、解析.md)
 
     * [数据读取、解析](./知识库/笔记/iOS 知识点/数据读取解析存储/数据读取、解析.md)
