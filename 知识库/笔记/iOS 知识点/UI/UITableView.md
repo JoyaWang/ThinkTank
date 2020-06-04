@@ -50,8 +50,17 @@
 - ### 分割线相关
 
   - 分割线的颜色 tableView.separatorColor 
+
   - 分割线的样式 tableView.separatorStyle 
+
   - 分割线的内边距 [tableView setSeparatorInset]; 
+
+  - 在 Cell 中设置分割线内边距
+
+    > IOS设置TableView的分割线左右边距
+    > cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0)
+    > cell.layoutMargins = UIEdgeInsetsMake(0, 0, 0, 0)
+
   - 没有数据时不显示tableView的分割线 _tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
 
 - ### content相关

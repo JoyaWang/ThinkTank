@@ -22,7 +22,7 @@ pod spec create https://github.com/liufan321/FFFirst
 
 - 编辑 `podspec` 文件
 
-![Screen Shot 2020-03-23 at 2.16.11 PM](/Users/joyawang/Library/Application Support/typora-user-images/Screen Shot 2020-03-23 at 2.16.11 PM.png)
+![podspec](./Cocoapods.ftd/podSpec.png)
 
 - 验证  spec 文件
 

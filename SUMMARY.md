@@ -1,6 +1,8 @@
 # Summary
 
-* [前言](./README.md)
+## 计算机软件开发
+
+* [iOS 必备知识](./README.md)
 
 * [Git](./知识库/笔记/Git/Git 基本指令.md)
 
@@ -18,74 +20,36 @@
   * [Git 设置代理](./知识库/笔记/Git/Git设置代理.md)
   * [gitignore](./知识库/笔记/Git/gitignore.md)
 
-* [常用功能集成](./知识库/笔记/iOS 知识点/常用功能和第三方库/常用功能和第三方库.md)
+* [iOS 常用功能集成](./知识库/笔记/iOS 知识点/常用功能和第三方库/常用功能和第三方库.md)
 
   * [常用功能和第三方框架](./知识库/笔记/iOS 知识点/常用功能和第三方库/常用功能和第三方库.md)
-  * [RxSwift](./知识库/笔记/iOS 知识点/常用功能和第三方库/RxSwift.md)
-  * [SDWebImage](./知识库/笔记/iOS 知识点/常用功能和第三方库/SDWebImage.md)
-  * [登录授权](./知识库/笔记/iOS 知识点/常用功能和第三方库/授权登录/OAuth.md)
-    * [OAuth](./知识库/笔记/iOS 知识点/常用功能和第三方库/授权登录/OAuth.md)
-    * [SSH](./知识库/笔记/iOS 知识点/常用功能和第三方库/授权登录/SSH.md)
-    * [SSO](./知识库/笔记/iOS 知识点/常用功能和第三方库/授权登录/SSO.md)
-  * [IM聊天](./知识库/笔记/iOS 知识点/常用功能和第三方库/IM即时聊天/环信客服云集成.md)
-    - [环信客服云、七鱼客服集成](./知识库/笔记/iOS 知识点/常用功能和第三方库/IM即时聊天/环信客服云、七鱼客服集成.md)
-    - XMPP
-    - 融云
-  * 支付
-    * 支付宝
-    * 微信
-    * 银联
-    * Apple Pay
-  * 短信验证码
-    * MobTech 掌淘科技
+  * [表单 - XLForm](./知识库/笔记/iOS 知识点/常用功能和第三方库/XLForm.md)
+  * [网络 - AFNetworking](./知识库/笔记/iOS 知识点/常用功能和第三方库/AFNetworking.md)
+  * [网络图片下载 - SDWebImage](./知识库/笔记/iOS 知识点/常用功能和第三方库/SDWebImage.md)
+  * [客服集成 - 环信和七鱼](./知识库/笔记/iOS 知识点/常用功能和第三方库/IM即时聊天/环信客服云、七鱼客服集成.md)
 
-  - 地图
-    - 百度地图
-    - 高德地图
-    - 苹果地图
-  - 音频、视频
-    - AVPlayer
-    - AVMediaPlayer
-    - 直播
-    - 点播
-  - 分享
-    - 友盟
-  - 崩溃收集
-    - 腾讯 bugly
-  - [推送/通知](./知识库/笔记/iOS 知识点/常用功能和第三方库/推送通知/推送通知.md)
-    - [本地推送](./知识库/笔记/iOS 知识点/常用功能和第三方库/推送通知/推送通知.md)
-    - 远程推送
-      - 极光推送
-  - 蓝牙
   - [打包、分发测试](./知识库/笔记/iOS 知识点/常用功能和第三方库/打企业版ipa包和七牛云分发流程.md)
     - [七牛云](./知识库/笔记/iOS 知识点/常用功能和第三方库/七牛云上传包.md)
     - 蒲公英
+  - [RxSwift](./知识库/笔记/iOS 知识点/常用功能和第三方库/RxSwift.md)
 
-* [其他](./知识库/笔记/iOS 知识点/其他/常用类.md)
-
-  * [常用类](./知识库/笔记/iOS 知识点/其他/常用类.md)
-  * [日期时间相关](./知识库/笔记/iOS 知识点/其他/日期时间相关.md)
-  * [正则表达式 Regular Expression](./知识库/笔记/iOS 知识点/其他/正则表达式 Regular Expression.md)
-  * [UITest 界面测试](./知识库/笔记/iOS 知识点/其他/UITest 界面测试.md)
-  * [UnitTest 单元测试](./知识库/笔记/iOS 知识点/其他/UnitTest 单元测试.md)
-
-* [iOS 知识点](./知识库/笔记/iOS 知识点/iOS 知识点.md)
+* [iOS 基础知识点](./知识库/笔记/iOS 知识点/iOS 知识点.md)
 
   * [APP开发步骤、流程](./知识库/笔记/iOS 知识点/APP开发步骤、流程.md)
   * [项目](./知识库/笔记/iOS 知识点/项目/项目简介.md)
-
-    * [项目简介](./知识库/笔记/iOS 知识点/项目/项目简介.md)
+  * [项目简介](./知识库/笔记/iOS 知识点/项目/项目简介.md)
     * [项目部署](./知识库/笔记/iOS 知识点/项目/项目部署.md)
     * [项目架构](./知识库/笔记/iOS 知识点/项目/项目架构.md)
     * [MVC 和 MVVM](./知识库/笔记/iOS 知识点/项目/MVC 和 MVVM.md)
   * [UI](./知识库/笔记/iOS 知识点/UI/UI 界面 搭建.md)
-  * [UI 界面 搭建](./知识库/笔记/iOS 知识点/UI/UI 界面 搭建.md)
+    * [UI 界面 搭建](./知识库/笔记/iOS 知识点/UI/UI 界面 搭建.md)
     * [UI 界面间 传值](./知识库/笔记/iOS 知识点/UI/UI 界面间 传值.md)
     * [UI 界面间 跳转](./知识库/笔记/iOS 知识点/UI/UI 界面间 跳转.md)
     * [自动布局](./知识库/笔记/iOS 知识点/UI/自动布局.md)
     * [苹果原生代码自动布局](./知识库/笔记/iOS 知识点/UI/苹果原生代码自动布局.md)
     * [UIScrollView中子控件的布局](./知识库/笔记/iOS 知识点/UI/UIScrollView中子控件的布局.md)
     * [事件的传递链、响应链](./知识库/笔记/iOS 知识点/UI/事件的传递链、响应链.md)
+    * [UIDevice](./知识库/笔记/iOS 知识点/UI/UIDevice.md)
     * [UIView](./知识库/笔记/iOS 知识点/UI/UIView.md)
     * [UITabBarController](./知识库/笔记/iOS 知识点/UI/UITabBarController.md)
     * [UINavigationController](./知识库/笔记/iOS 知识点/UI/UINavigationController.md)
@@ -129,7 +93,6 @@
     * [加密和解密](./知识库/笔记/iOS 知识点/网络/加密和解密.md)
     * [使用Socket进行网络通信](./知识库/笔记/iOS 知识点/网络/使用Socket进行网络通信.md)
     * [NSURLSession](./知识库/笔记/iOS 知识点/网络/NSURLSession.md)
-    * [AFNetworking](./知识库/笔记/iOS 知识点/网络/AFNetworking.md)
     * [URL 及其构成详解](./知识库/笔记/iOS 知识点/网络/URL 及其构成详解.md)
     * [URL 类](./知识库/笔记/iOS 知识点/网络/URL 类.md)
     * [WKWebView](./知识库/笔记/iOS 知识点/网络/WKWebView.md)
@@ -150,6 +113,12 @@
   * [性能优化](./知识库/笔记/iOS 知识点/性能优化/性能优化.md)
   * 生命周期
   * OC 语言特性
+  * [iOS 其他知识点](./知识库/笔记/iOS 知识点/其他/常用类.md)
+    * [常用类](./知识库/笔记/iOS 知识点/其他/常用类.md)
+    * [日期时间相关](./知识库/笔记/iOS 知识点/其他/日期时间相关.md)
+    * [正则表达式 Regular Expression](./知识库/笔记/iOS 知识点/其他/正则表达式 Regular Expression.md)
+    * [UITest 界面测试](./知识库/笔记/iOS 知识点/其他/UITest 界面测试.md)
+    * [UnitTest 单元测试](./知识库/笔记/iOS 知识点/其他/UnitTest 单元测试.md)
 
 * [编程语言学习](./知识库/笔记/编程语言学习/编程语言学习.md)
 
@@ -166,18 +135,31 @@
   * [pod install, pod update, podfile, podfile.lock](./知识库/笔记/CocoaPods/pod install, pod update, podfile, podfile.lock.md)
   * [Cocoapods 发布框架](./知识库/笔记/CocoaPods/Cocoapods 发布框架.md)
 
-* [GItbook](./知识库/笔记/Gitbook/Gitbook.md)
+* [Gitbook](./知识库/笔记/Gitbook/Gitbook.md)
 
   * [Gitbook](./知识库/笔记/Gitbook/Gitbook.md)
   * [Github Pages](./知识库/笔记/Gitbook/Github Pages.md)
 
-* [Unix & Linux & Mac](./知识库/笔记/Unix & Linux & Mac/Unix_Linux 命令.md)
+* [Unix & Linux & Mac](./知识库/笔记/Unix & Linux & Mac/终端命令 Unix_Linux 命令.md)
 
   * [终端命令 Unix_Linux 命令.md](./知识库/笔记/Unix & Linux & Mac/终端命令 Unix_Linux 命令.md)
   * [Unix_Linux 文件基本属性](./知识库/笔记/Unix & Linux & Mac/Unix_Linux 文件基本属性.md)
 
 * [Vim](./知识库/笔记/Vim.md)
 
+
+
+## 时间管理
+
+* [时间管理 - OmniFocus](./知识库/笔记/Omnifocus 使用流程.md)
+
+
+
+## 英语学习
+
+* [英语](./知识库/笔记/英语/英语时态.md)
+
   
 
   
+
