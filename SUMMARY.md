@@ -84,6 +84,8 @@
   * [网络图片下载 - SDWebImage](./知识库/iOS 知识点/常用功能和第三方库/SDWebImage.md)
   * [客服集成 - 环信和七鱼](./知识库/iOS 知识点/常用功能和第三方库/IM即时聊天/环信客服云、七鱼客服集成.md)
   * [异常上报 - Bugly](./知识库/iOS 知识点/常用功能和第三方库/Bugly.md)
+  * [推送通知](./知识库/iOS 知识点/常用功能和第三方库/推送通知/推送通知)
+  * [推送通知 - 极光推送](./知识库/iOS 知识点/常用功能和第三方库/推送通知/推送 - 极光.md)
   * [授权登录 - OAuth](./知识库/iOS 知识点/常用功能和第三方库/授权登录/OAuth.md)
   * [授权登录 - SSO](./知识库/iOS 知识点/常用功能和第三方库/授权登录/SSO.md)
 
@@ -149,6 +151,7 @@
 
 * [CocoaPods](./知识库/iOS 知识点/CocoaPods/CocoaPods.md)
 * [pod install, pod update, podfile, podfile.lock](./知识库/iOS 知识点/CocoaPods/pod install, pod update, podfile, podfile.lock.md)
+  
   * [Cocoapods 发布框架](./知识库/iOS 知识点/CocoaPods/Cocoapods 发布框架.md)
 
 
