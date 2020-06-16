@@ -75,15 +75,29 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 
 
 
-
-
 ## 配置符号表
+
+> 每次Build都会生成一个App和其对应的dSYM文件，每个dSYM文件都有自己的UUID，每一次crash对应的App都有自己特定UUID的dSYM文件。
+>
+> 默认debug模式不生成dSYM文件，可通过以下两步开启
+
+![debug_information_format](Bugly.ftd/debug_information_format.png)
+
+![generate_debug_symbol](Bugly.ftd/generate_debug_symbol.png)
+
+
+
+
+
+
+
+
 
 ### 自动配置：XCode + sh脚本【[需要手动配置的话点这里](https://bugly.qq.com/docs/user-guide/symbol-configuration-ios/?v=20200312155538#xcode-sh)】
 
 自动配置请首先下载和解压[自动配置符号表工具包](https://bugly.qq.com/v2/sdk?id=6ecfd28d-d8ea-4446-a9c8-13aed4a94f04)，然后选择上传方式并配置Xcode的编译执行脚本。
 
-### 1. 上传方式【可以啥都不弄，即选默认，直接进行第二步?】
+#### 1. 上传方式【可以啥都不弄，即选默认，直接进行第二步?】
 
 使用脚本自动配置支持两种上传方式：
 
@@ -98,7 +112,7 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 
   ![bin文件夹](./Bugly.ftd/bin文件夹.png)
 
-### 2. 配置Xcode编译执行脚本
+#### 2. 配置Xcode编译执行脚本
 
 - 在Xcode工程对应Target的`Build Phases`中新增`Run Scrpit Phase`
 
@@ -121,3 +135,31 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
   `UPLOAD_SIMULATOR_SYMBOLS=0`
 
 至此，自动上传符号表脚本配置完毕，Bugly 会在每次 Xcode 工程编译后自动完成符号表配置工作。
+
+
+
+### 手动配置
+
+1. 首先看那次crash的对应的app的dSYM文件的uuid
+2. 在配置好debug模式下可生成dSYM文件后，在生成的app的文件夹中找到dSYM文件。
+
+3. 用下面代码可查看此dSYM文件的uuid
+
+```
+查看dSYMs文件的UUID
+dwarfdump --uuid 【路径】
+dwarfdump --uuid /Users/joyawang/Library/Developer/Xcode/Archives/2020-06-12/cloudExchange\ 2020-6-12\,\ 10.09\ PM.xcarchive/dSYMs/信企贵交.app.dSYM
+```
+
+4. uuid匹配的话，用bugly提供的工具将dSYM文件生成bugly需要的格式，是个zip包
+
+   > [Bugly iOS符号表工具](https://bugly.qq.com/v2/sdk?id=37f16cf0-2020-4e30-9e8d-0f7de59cfe94)
+   >
+   > ![buglySymoliOS](Bugly.ftd/buglySymoliOS.png)
+
+```
+java -jar 【jar文件地址/buglySymboliOS.jar】 -i 【dSYM文件地址/xxx.dSYM】
+java -jar buglySymboliOS.jar -i /Users/joyawang/Library/Developer/Xcode/Archives/2020-06-12/cloudExchange\ 2020-6-12\,\ 10.09\ PM.xcarchive/dSYMs/信企贵交.app.dSYM
+```
+
+5. 在bugly页面上传生成的zip包

@@ -43,14 +43,23 @@
   - 在Targets-MyApp-BuildPhases-Run Script 中修改 Bugly的App_ID, APP_KEY, BundleID
 
 - 取消所有的断点
-- Shift + Alt + Command + k 清理一下
+
+- 在Edit Scheme那里改为Release模式
+
+- Shift +  Command + k 清理一下
+
 - 选择 Generic iOS Device，Product - Archive, 开始打包
+
+- 备份App对应的dSYM文件
+
 - 分发
+
 - 配置一个plist文件
   - url外链 【ipa文件的下载地址】
   - bundle-identifier 【BundleID】
   - bundle-version 【App版本】
   - title 【App名称】
+  
 - 在后台配置一下要更新的版本信息，这样iOS端才能检测到要更新
 
 ```
