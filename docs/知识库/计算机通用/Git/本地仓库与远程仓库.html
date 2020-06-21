@@ -2420,7 +2420,10 @@
                                 
                                 <ul>
 <li><div><a href="#&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x4E0E;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;">&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x4E0E;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;</a><i></i></div></li>
-<li><div><a href="#git-&#x672C;&#x5730;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x63A8;&#x9001;&#x5230;&#x6307;&#x5B9A;&#x4ED3;&#x5E93;">Git &#x672C;&#x5730;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x63A8;&#x9001;&#x5230;&#x6307;&#x5B9A;&#x4ED3;&#x5E93;</a><i></i></div></li>
+<li><div><a href="#git-&#x672C;&#x5730;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x63A8;&#x9001;&#x5230;&#x6307;&#x5B9A;&#x4ED3;&#x5E93;">Git &#x672C;&#x5730;&#x9879;&#x76EE;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x63A8;&#x9001;&#x5230;&#x6307;&#x5B9A;&#x4ED3;&#x5E93;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#git&#x591A;ssh&#x8D26;&#x6237;&#x7BA1;&#x7406;">Git&#x591A;SSH&#x8D26;&#x6237;&#x7BA1;&#x7406;</a><i></i></div></li>
+</ul></li>
 </ul>
 
 
@@ -2528,6 +2531,48 @@
 </blockquote>
 </li>
 </ul>
+<h2 id="git&#x591A;ssh&#x8D26;&#x6237;&#x7BA1;&#x7406;">Git&#x591A;SSH&#x8D26;&#x6237;&#x7BA1;&#x7406;</h2>
+<blockquote>
+<p>&#x672C;&#x5730;Git&#x6DFB;&#x52A0;&#x591A;&#x4E2A;Github&#x8D26;&#x53F7;(&#x6216;&#x591A;&#x4E2A;&#x5982;Gitee&#x7684;&#x5176;&#x4ED6;&#x8FDC;&#x7A0B;&#x8D26;&#x53F7;)&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x9700;&#x8981;&#x914D;&#x7F6E;</p>
+</blockquote>
+<ul>
+<li><ol>
+<li>&#x5728;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x5E73;&#x53F0;&#x7684;&#x79D8;&#x94A5;&#x5BF9;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x4E3A; <code>/Users/joyawang/.ssh/id_rsa_github</code> <code>/Users/joyawang/.ssh/id_rsa_gitee</code> &#x4EE5;&#x4FBF;&#x533A;&#x5206;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x5728;&#x79D8;&#x94A5;&#x5BF9;&#x5B58;&#x50A8;&#x7684;&#x76F8;&#x540C;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF0C;&#x521B;&#x5EFA;config&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x6837;&#x6BCF;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x505A;&#x4E00;&#x4E2A;&#x89E3;&#x6790;&#xFF0C;&#x8DF3;&#x8F6C;&#x5230;&#x5BF9;&#x5E94;&#x7684;git&#x5E73;&#x53F0;&#x3002;</li>
+</ol>
+</li>
+<li><ol>
+<li>&#x76F4;&#x63A5;&#x5728;terminal&#x4E2D; touch config&#xFF0C;&#x7136;&#x540E;&#x7528;Typora&#x8FDB;&#x884C;&#x7F16;&#x8F91;&#xFF0C;&#x7F16;&#x8F91;&#x5185;&#x5BB9;&#x5982;&#x4E0B;</li>
+</ol>
+<pre><code>Host github.com
+    User git  
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_github
+    ServerAliveInterval 300
+    ServerAliveCountMax 10
+Host gitee.com
+    User git  
+    HostName gitee.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_gitee
+    ServerAliveInterval 300
+    ServerAliveCountMax 10
+</code></pre></li>
+</ul>
+<ul>
+<li><ol>
+<li><p>&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x8FDE;&#x901A;</p>
+<blockquote>
+<p>ssh -T git@github.com</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -2571,7 +2616,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"本地仓库与远程仓库","level":"1.1.6","depth":2,"next":{"title":"修改注释","level":"1.1.7","depth":2,"path":"知识库/计算机通用/Git/修改注释.md","ref":"./知识库/计算机通用/Git/修改注释.md","articles":[]},"previous":{"title":"查看更改前后不同","level":"1.1.5","depth":2,"path":"知识库/计算机通用/Git/查看更改前后不同.md","ref":"./知识库/计算机通用/Git/查看更改前后不同.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/计算机通用/Git/本地仓库与远程仓库.md","mtime":"2020-05-03T08:48:03.594Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-21T02:38:52.300Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"本地仓库与远程仓库","level":"1.1.6","depth":2,"next":{"title":"修改注释","level":"1.1.7","depth":2,"path":"知识库/计算机通用/Git/修改注释.md","ref":"./知识库/计算机通用/Git/修改注释.md","articles":[]},"previous":{"title":"查看更改前后不同","level":"1.1.5","depth":2,"path":"知识库/计算机通用/Git/查看更改前后不同.md","ref":"./知识库/计算机通用/Git/查看更改前后不同.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/计算机通用/Git/本地仓库与远程仓库.md","mtime":"2020-06-21T03:55:37.998Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-21T03:56:08.176Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
