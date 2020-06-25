@@ -35,4 +35,8 @@
 
   3. 登录
 
-     > Terminal - Shell - NewRemoteConnection 在 Server 框点击＋
+     > 第一种方式: ssh 用户名@主机地址
+     >
+     > 比如: ssh root@192.168.38.1
+     
+     > 第二种方式: Terminal - Shell - NewRemoteConnection 在 Server 框点击＋
