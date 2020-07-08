@@ -69,8 +69,8 @@
 ### 操作系统
 
 * [Linux 操作系统](./知识库/计算机通用/操作系统/终端命令 Unix_Linux 命令.md)
-  * [终端命令 Unix_Linux 命令.md](./知识库/计算机通用/Unix & Linux & Mac/终端命令 Unix_Linux 命令.md)
-  * [Unix_Linux 文件基本属性](./知识库/计算机通用/Unix & Linux & Mac/Unix_Linux 文件基本属性.md)
+  * [Terminal 终端.md](./知识库/计算机通用/操作系统/终端命令 Unix_Linux 命令.md)
+  * [Linux 文件基本属性](./知识库/计算机通用/操作系统/Unix_Linux 文件基本属性.md)
 
 ### IDE
 

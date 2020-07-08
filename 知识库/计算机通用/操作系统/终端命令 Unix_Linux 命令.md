@@ -2,6 +2,12 @@
 
 提权 `sudo` super user do
 
+
+
+光标移到行首 control + a
+
+光标移到行尾 control + e
+
 ### 编辑
 
 - 终端 `control + u` 删除一行命令
@@ -101,7 +107,7 @@
 
 比较两个文件  `diff` Compares two files line by line (assumes text).
 
-### 文件权限查看、更改
+## 文件权限查看、更改
 
 - 更改文件权限 `chmod` change file modes or Access Control Lists
 
