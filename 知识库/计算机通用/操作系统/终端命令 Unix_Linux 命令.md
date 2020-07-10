@@ -8,6 +8,18 @@
 
 光标移到行尾 control + e
 
+
+
+查看程序的pid等信息 `ps -ef | grep trojan`
+
+> 出现 501 81262 79513  0 4:40PM ttys000  0:00.01 grep trojan
+
+关闭/杀死程序 `kill -9 79513`
+
+开启程序 
+
+
+
 ### 编辑
 
 - 终端 `control + u` 删除一行命令
