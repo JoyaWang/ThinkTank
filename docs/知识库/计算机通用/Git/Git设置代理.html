@@ -2478,27 +2478,35 @@
 <li><div><a href="#git&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;">Git&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;</a><i></i></div></li>
 <li><div><a href="#git&#x67E5;&#x770B;&#x4EE3;&#x7406;">Git&#x67E5;&#x770B;&#x4EE3;&#x7406;</a><i></i></div></li>
 <li><div><a href="#git&#x53D6;&#x6D88;&#x4EE3;&#x7406;">Git&#x53D6;&#x6D88;&#x4EE3;&#x7406;</a><i></i></div></li>
+<li><div><a href="#&#x5728;&#x7EC8;&#x7AEF;&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;">&#x5728;&#x7EC8;&#x7AEF;&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;</a><i></i></div></li>
 </ul></li>
 </ul></li>
 </ul>
 
 
 <h1 id="git&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;">Git&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;</h1>
+<blockquote>
+<p>Git&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728;<code>~/.gitconfig</code>, &#x4E5F;&#x53EF;&#x6253;&#x5F00;&#x540E;&#x5728;&#x8FD9;&#x8FDB;&#x884C;&#x914D;&#x7F6E;</p>
+<pre><code>[http &quot;https://github.com&quot;]
+    proxy = socks5://127.0.0.1:1080
+[https &quot;https://github.com&quot;]
+    proxy = socks5://127.0.0.1:1080
+</code></pre></blockquote>
 <h3 id="git&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;">Git&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;</h3>
 <p><code>git config --global http.proxy &apos;socks5://127.0.0.1:1080&apos;</code></p>
 <p><code>git config --global https.proxy &apos;socks5://127.0.0.1:1080&apos;</code></p>
 <p><strong>&#x4E3A;github&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;</strong>  <code>git config --global http.https://github.com.proxy socks5://127.0.0.1:1080</code></p>
 <h3 id="git&#x67E5;&#x770B;&#x4EE3;&#x7406;">Git&#x67E5;&#x770B;&#x4EE3;&#x7406;</h3>
-<p><strong>&#x67E5;&#x770B;github&#x7684;&#x4EE3;&#x7406;</strong> <code>git config --global --get http.https://github.com.proxy</code></p>
+<p><strong>&#x67E5;&#x770B;github&#x7684;&#x4EE3;&#x7406;</strong> </p>
+<p><code>git config --global --get http.https://github.com.proxy</code></p>
 <p><code>git config --global --get http.proxy</code></p>
 <p><code>git config --global --get https.proxy</code></p>
 <h3 id="git&#x53D6;&#x6D88;&#x4EE3;&#x7406;">Git&#x53D6;&#x6D88;&#x4EE3;&#x7406;</h3>
 <p><strong>&#x53D6;&#x6D88;github&#x7684;&#x4EE3;&#x7406;</strong> <code>git config --global --unset http.https://github.com.proxy</code></p>
 <p><code>git config --global --unset http.proxy</code></p>
 <p><code>git config --global --unset https.proxy</code></p>
-<p>export http_proxy=<a href="socks5://127.0.0.1:1080" target="_blank">socks5://127.0.0.1:1080</a></p>
-<p>export http_proxy=&quot;<a href="http://127.0.0.1:1080" target="_blank">http://127.0.0.1:1080</a>&quot;
-export https_proxy=&quot;<a href="http://127.0.0.1:1080" target="_blank">http://127.0.0.1:1080</a>&quot;</p>
+<h3 id="&#x5728;&#x7EC8;&#x7AEF;&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;">&#x5728;&#x7EC8;&#x7AEF;&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;</h3>
+<p>export https_proxy=socks5://127.0.0.1:1080 http_proxy=socks5://127.0.0.1:1080 all_proxy=socks5://127.0.0.1:1080</p>
 
                                 
                                 </section>
@@ -2542,7 +2550,7 @@ export https_proxy=&quot;<a href="http://127.0.0.1:1080" target="_blank">http://
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git 设置代理","level":"1.1.9","depth":2,"next":{"title":"gitignore","level":"1.1.10","depth":2,"path":"知识库/计算机通用/Git/gitignore.md","ref":"./知识库/计算机通用/Git/gitignore.md","articles":[]},"previous":{"title":"修改注释","level":"1.1.8","depth":2,"path":"知识库/计算机通用/Git/修改注释.md","ref":"./知识库/计算机通用/Git/修改注释.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/计算机通用/Git/Git设置代理.md","mtime":"2020-05-03T09:04:56.418Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-08T08:00:26.382Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git 设置代理","level":"1.1.9","depth":2,"next":{"title":"gitignore","level":"1.1.10","depth":2,"path":"知识库/计算机通用/Git/gitignore.md","ref":"./知识库/计算机通用/Git/gitignore.md","articles":[]},"previous":{"title":"修改注释","level":"1.1.8","depth":2,"path":"知识库/计算机通用/Git/修改注释.md","ref":"./知识库/计算机通用/Git/修改注释.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/计算机通用/Git/Git设置代理.md","mtime":"2020-07-10T08:26:33.302Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-10T08:34:18.781Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
