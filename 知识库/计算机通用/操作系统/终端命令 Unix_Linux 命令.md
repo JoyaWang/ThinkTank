@@ -121,23 +121,51 @@
 
 ## 文件权限查看、更改
 
-- 更改文件权限 `chmod` change file modes or Access Control Lists
+![joyawang@Joya-MacBook-Air](操作系统.ftd/joyawang@Joya-MacBook-Air.png)
+
+![各段含义](操作系统.ftd/各段含义.png)
+
+![权限详解](操作系统.ftd/权限详解.png)
+
+- ### 查看文件权限
+
+  `ls -l 文件或文件夹名`
+
+  - 实例
+
+    > 查看test.h文件的权限信息`ls -l ./Desktop/test.sh`
+
+- ### 更改文件权限 `chmod` 
+
+  > change file modes or Access Control Lists
+
+  - 实例
+
+    > 给test.h文件添加可执行权限 `chmod +x ./Desktop/test.sh` 
 
 
-- 更改文件 所有者 和 所有组 `chown` change file owner and group
+- ### 更改文件 所有者 和 所有组 `chown` 
 
-  `sudo chown -R acme:acme /usr/local/etc/certfiles`
+  > change file owner and group
 
-  - `chown` 更改文件的所有者
-  - `-R ` 处理指定目录以及其子目录下的所有文件
-  - `acme` 新的文件所有者ID
-  - `:acme` 新的文件所有者的所属组(group)
-  - `/usr/local/etc/certfiles` 要更改的文件
+  - 实例
 
-- 更改文件 属组 `chgrp` -- change group
+    - `sudo chown -R acme:acme /usr/local/etc/certfiles`
+
+      > - `chown` 更改文件的所有者
+      > - `-R ` 处理指定目录以及其子目录下的所有文件
+      > - `acme` 新的文件所有者ID
+      > - `:acme` 新的文件所有者的所属组(group)
+      > - `/usr/local/etc/certfiles` 要更改的文件
+
+    
+
+- ### 更改文件 属组 `chgrp`
+
+  > change group
 
 
-### 创建用户组、用户
+## 创建用户组、用户
 
 - 创建用户组 sudo groupadd certusers
 

@@ -4,6 +4,12 @@
 
 > Git 官网下载 pkg 安装
 
+
+
+上一页 Ctrl + b
+
+下一页 Ctrl + f
+
 ### Git 管理的文件状态
 
 - Stage 状态【Cache】
