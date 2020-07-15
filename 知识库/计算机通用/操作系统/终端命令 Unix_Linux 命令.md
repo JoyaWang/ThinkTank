@@ -98,16 +98,12 @@
 ### 新建、删除、复制文件夹和文件
 
 - 新建文件夹(在当前目录) `mkdir newdirectoryname`
-- 删除文件夹 `rmdir directoryname`
-
+- 删除空文件夹 `rmdir directoryname`
+- 删除文件夹(非空也可以) `rm -rf directoryname`
 - 新建文件 `touch`
-
 - 删除文件 `rm a.txt`
-
 - 复制文件 `cp ~/Desktop/MyFile.rtf ~/Documents`
-
 - 复制文件 `cp -R froshims0 froshims1 `  within same working directory, copy froshims0 directory **and** paste **and** rename to froshims1 within same directory
-
 - 复制文件夹及其中所有内容 `cp -R ~/Desktop/MyFolder /Documents` 
 
 
