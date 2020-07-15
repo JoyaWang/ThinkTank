@@ -26,6 +26,12 @@
 
 `git branch -D boss`
 
+### 删除远程分支
+
+> git push gitee --delete 1.5.0开发
+>
+> git push origin --delete new_a
+
 ### 创建分支的同时切换分支
 
 > 【从当前分支，可以是任一分支】创建 dev 分支的同时，切换到 dev 分支 (即将 HEAD 指针放到dev分支)
