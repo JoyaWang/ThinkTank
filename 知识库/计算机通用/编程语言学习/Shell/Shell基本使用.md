@@ -486,3 +486,90 @@ funcWithParam 1 2 3 4 5 6 7 8 9 34 23 # 调用函数，传入参数
 
 ```
 
+## 搜索
+
+- 寻找特定文件夹下以.a结尾的文件
+
+  ```
+  find /Users/joyawang/Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos -name "*.a"
+  ```
+
+- 在/home目录下查找以.txt结尾的文件名
+
+  ```
+  find /home -name "*.txt"
+  ```
+
+- 同上，但忽略大小写
+
+  ```
+  find /home -iname "*.txt"
+  ```
+
+- ```shell
+  #!/bin/bash
+  
+  
+  # 打印目录下所有文件夹和文件名称recursive
+  function echo_name(){ 
+      for file in `ls $1`
+          do
+              echo $1"/"$file
+              if [ -d $1"/"$file ]
+              then
+                  echo_name $1"/"$file
+              fi
+          done
+  } 
+  
+  # 调用函数并传递一个文件夹路径
+  # echo_name /Users/joyawang/Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos
+  
+  # 获取指定路径的文件夹内包含特定名称的文件
+  # 声明一个空数组
+  results=()
+  function getAllFileNames {
+  
+      # 遍历文件夹
+      i=0
+      # 搜索条件
+      str=".a"
+      # $1指传进来的第一个参数，也就是那个指定的文件夹路径
+      for file in `ls $1`
+      do
+      # 如果数组元素名包含.a
+      if [[ $1/${file} == *$str ]]
+      then
+      # 保存到数组
+      results[${#results[@]}]=$1"/"$file
+      fi
+  
+      # 如果数组元素是文件夹
+      if [ -d $1"/"$file ]
+      then
+      # 递归
+      getAllFileNames $1"/"$file
+      fi
+      done
+  }
+  
+  # 调用函数并传递参数
+  getAllFileNames /Users/joyawang/Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos
+  
+  # 要被替换掉的部分
+  str1="/Users/joyawang/Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos"
+  # 用来替换的部分
+  str2="-force_load \$(BUILT_PRODUCTS_DIR)"
+  
+  # 把数组中的文件名全部替换并打印出来
+  for res in ${results[@]}
+      do
+          # 将字符串中的str1替换为str2后，打印出来
+          echo ${res/$str1/$str2}
+      done
+  
+  
+  ```
+
+  
+
