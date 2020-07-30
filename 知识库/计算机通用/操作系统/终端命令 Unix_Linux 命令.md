@@ -8,15 +8,66 @@
 
 光标移到行尾 control + e
 
+netstat -aptn命令行，查看所有开启的端口号
+
+lsof -i:端口号命令行，以80为例
+
 
 
 查看程序的pid等信息 `ps -ef | grep trojan`
 
 > 出现 501 81262 79513  0 4:40PM ttys000  0:00.01 grep trojan
 
+> `-e` and `-f` are options to the `ps` command, and pipes take the output of one command and pass it as the input to another. Here is a full breakdown of this command:
+>
+> - `ps` - list processes
+> - `-e` - show all processes, not just those belonging to the user
+> - `-f` - show processes in full format (more detailed than default)
+> - `command 1 | command 2` - pass output of command 1 as input to command 2
+> - `grep` find lines containing a pattern. grep (global search regular expression(RE) and print out the line,全面搜索正则bai表达式du并把行打zhi印出来)是一种强大的文本dao搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。
+> - `processname` - the pattern for `grep` to search for in the output of `ps -ef`
+>
+> So altogether
+>
+> ```
+> ps -ef | grep processname
+> ```
+>
+> means: look for lines containing `processname` in a detailed overview/snapshot of all current processes, and display those lines
+
 关闭/杀死程序 `kill -9 79513`
 
 开启程序 
+
+
+
+切换用户 su joyawangchina
+
+设置密码 passwd joyawangchina
+
+**cat /proc/cpuinfo **查看linux系统的CPU型号、类型以及大小
+
+**cat /proc/meminfo** 查看linux系统内存大小的详细信息，可以查看总内存，剩余内存、可使用内存等信息
+
+1、从服务器下载文件
+ scp username@servername:/path/filename /tmp/local_destination
+ 例如scp codinglog@192.168.0.101:/home/kimi/test.txt 把192.168.0.101上的/home/kimi/test.txt
+ 的文件下载到 /tmp/local_destination
+  2、上传本地文件到服务器
+ scp /path/local_filename username@servername:/path  
+ 例如scp /var/www/test.php codinglog@192.168.0.101:/var/www/ 把本机/var/www/目录下的test.php文件
+ 上传到192.168.0.101这台服务器上的/var/www/目录中
+
+ 3、从服务器下载整个目录
+   scp -r username@servername:remote_dir/ /tmp/local_dir 
+  例如:scp -r codinglog@192.168.0.101 /home/kimi/test  /tmp/local_dir
+
+ 4、上传目录到服务器
+   scp -r /tmp/local_dir username@servername:remote_dir
+   例如：
+   scp -r test   codinglog@192.168.0.101:/var/www/  把当前目录下的test目录上传到服务器
+
+   的/var/www/ 目录
 
 
 
@@ -138,6 +189,25 @@
   - 实例
 
     > 给test.h文件添加可执行权限 `chmod +x ./Desktop/test.sh` 
+    
+  - 语法：chmod abc file
+     引用地址:[https://blog.csdn.net/my_wade/article/details/47066905](https://links.jianshu.com/go?to=https%3A%2F%2Fblog.csdn.net%2Fmy_wade%2Farticle%2Fdetails%2F47066905)
+     其中a,b,c各为一个数字，a表示User，b表示Group，c表示Other的权限。
+  
+    r=4，w=2，x=1
+  
+    若要rwx（可读、可写、可执行）属性，则4+2+1=7
+  
+    若要rw-（可读、可写、不可执行）属性，则4+2=6
+  
+    若要r-w（可读、不可写、可执行）属性，则4+1=5
+     范例：
+  
+    chmod a=rwx file 和 chmod 777 file 效果相同
+  
+    chmod ug=rwx,o=x file 和 chmod 771 file 效果相同
+  
+    若用chmod 4755 filename可使此程式具有root的权限
 
 
 - ### 更改文件 所有者 和 所有组 `chown` 
