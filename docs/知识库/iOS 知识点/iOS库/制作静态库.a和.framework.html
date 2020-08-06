@@ -80,7 +80,7 @@
     <link rel="next" href="库支持的CPU架构、链接库的参数、打印环境变量.html" />
     
     
-    <link rel="prev" href="iOS库介绍.html" />
+    <link rel="prev" href="制作Pod库.html" />
     
 
     </head>
@@ -2347,12 +2347,27 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="4.4.1" data-path="制作静态库.a和.framework.html">
+        <li class="chapter " data-level="4.4.1" data-path="制作Pod库.html">
+            
+                <a href="制作Pod库.html">
+            
+                    
+                        <b>4.4.1.</b>
+                    
+                    制作Pod库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.4.2" data-path="制作静态库.a和.framework.html">
             
                 <a href="制作静态库.a和.framework.html">
             
                     
-                        <b>4.4.1.</b>
+                        <b>4.4.2.</b>
                     
                     制作静态库.framework
             
@@ -2362,12 +2377,12 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4.2" data-path="库支持的CPU架构、链接库的参数、打印环境变量.html">
+        <li class="chapter " data-level="4.4.3" data-path="库支持的CPU架构、链接库的参数、打印环境变量.html">
             
                 <a href="库支持的CPU架构、链接库的参数、打印环境变量.html">
             
                     
-                        <b>4.4.2.</b>
+                        <b>4.4.3.</b>
                     
                     库支持的CPU架构、链接库的参数、打印环境变量
             
@@ -2377,12 +2392,12 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4.3" data-path="lipo命令.html">
+        <li class="chapter " data-level="4.4.4" data-path="lipo命令.html">
             
                 <a href="lipo命令.html">
             
                     
-                        <b>4.4.3.</b>
+                        <b>4.4.4.</b>
                     
                     lipo命令
             
@@ -2392,12 +2407,12 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4.4" data-path="iOS链接编译库的过程中的问题总结.html">
+        <li class="chapter " data-level="4.4.5" data-path="iOS链接编译库的过程中的问题总结.html">
             
                 <a href="iOS链接编译库的过程中的问题总结.html">
             
                     
-                        <b>4.4.4.</b>
+                        <b>4.4.5.</b>
                     
                     iOS链接编译库的过程中的问题总结
             
@@ -2597,11 +2612,11 @@
 <p><a href="https://www.jianshu.com/p/eedbd9dd6d20" target="_blank">iOS &#x9759;&#x6001;&#x5E93;.a&#x5236;&#x4F5C;&#x4EE5;&#x53CA;&#x6253;&#x5305;bundle&#x6587;&#x4EF6;</a></p>
 <ol>
 <li><h3 id="&#x65B0;&#x5EFA;&#x5DE5;&#x7A0B;&#xFF0C;&#x521B;&#x5EFA;framework&#x5E93;&#x5DE5;&#x7A0B;">&#x65B0;&#x5EFA;&#x5DE5;&#x7A0B;&#xFF0C;&#x521B;&#x5EFA;Framework&#x5E93;&#x5DE5;&#x7A0B;</h3>
-<p><a href="iOS&#x5E93;.ftd/01.png" data-lightbox="a0892c98-15e1-487c-8165-aeb00b1f1e94" data-title="01"><img src="iOS&#x5E93;.ftd/01.png" alt="01"></a></p>
-<p><a href="iOS&#x5E93;.ftd/02.png" data-lightbox="77b73066-e1f7-4232-b95c-ef3be07f58a0" data-title="02"><img src="iOS&#x5E93;.ftd/02.png" alt="02"></a><a href="iOS&#x5E93;.ftd/01.png" data-lightbox="09e3b632-aba6-4c93-8635-4955f29dc13d" data-title="01"><img src="iOS&#x5E93;.ftd/01.png" alt="01"></a><a href="iOS&#x5E93;/iOS&#x5E93;.ftd/02.png" data-lightbox="e6ce60c8-d5ff-4196-b520-95d9d120ef1c" data-title="02"><img src="iOS&#x5E93;/iOS&#x5E93;.ftd/02.png" alt="02"></a></p>
+<p><a href="iOS&#x5E93;.ftd/01.png" data-lightbox="ebee2c06-d3e2-41a0-a360-81ab4b0553a7" data-title="01"><img src="iOS&#x5E93;.ftd/01.png" alt="01"></a></p>
+<p><a href="iOS&#x5E93;.ftd/02.png" data-lightbox="db2df2d4-afaa-4a55-91db-89dfde727b4e" data-title="02"><img src="iOS&#x5E93;.ftd/02.png" alt="02"></a><a href="iOS&#x5E93;.ftd/01.png" data-lightbox="e7a1346b-2f60-433e-b752-091baa5240bd" data-title="01"><img src="iOS&#x5E93;.ftd/01.png" alt="01"></a><a href="iOS&#x5E93;/iOS&#x5E93;.ftd/02.png" data-lightbox="188365e1-c4ca-4247-bd20-9fb9583b0a73" data-title="02"><img src="iOS&#x5E93;/iOS&#x5E93;.ftd/02.png" alt="02"></a></p>
 </li>
 <li><h3 id="&#x5F80;&#x5DE5;&#x7A0B;&#x4E2D;&#x6DFB;&#x52A0;&#x6587;&#x4EF6;">&#x5F80;&#x5DE5;&#x7A0B;&#x4E2D;&#x6DFB;&#x52A0;&#x6587;&#x4EF6;</h3>
-<p><a href="iOS&#x5E93;.ftd/03.png" data-lightbox="d629a4fa-ddb4-4218-aedc-69ad78f45722" data-title="03"><img src="iOS&#x5E93;.ftd/03.png" alt="03"></a></p>
+<p><a href="iOS&#x5E93;.ftd/03.png" data-lightbox="0738527b-1885-4140-a745-18f3c7846785" data-title="03"><img src="iOS&#x5E93;.ftd/03.png" alt="03"></a></p>
 </li>
 <li><h3 id="&#x8BBE;&#x7F6E;&#x76F8;&#x5173;&#x9879;">&#x8BBE;&#x7F6E;&#x76F8;&#x5173;&#x9879;</h3>
 <blockquote>
@@ -2625,21 +2640,21 @@
 <li>&#x8BBE;&#x7F6E;&#x8981;&#x516C;&#x5F00;&#x7684;&#x5934;&#x6587;&#x4EF6;, &#x5C06;&#x9700;&#x8981;&#x5448;&#x73B0;&#x7ED9;&#x6765;&#x7684;&#x5934;&#x6587;&#x4EF6;,&#x76F4;&#x63A5;&#x4ECE;Project&#x62D6;&#x5230;Public&#x4E2D;. &#x4E0D;&#x60F3;&#x5448;&#x73B0;&#x51FA;&#x6765;&#x7684;.h&#x6587;&#x4EF6;&#x4E0D;&#x5EFA;&#x8BAE;&#x62D6;&#x5230;Private&#x4E2D;. &#x653E;&#x5728;project&#x4E2D;&#x5373;&#x53EF;</li>
 </ul>
 </blockquote>
-<p><a href="iOS&#x5E93;.ftd/Architectures.png" data-lightbox="3a5f302b-458a-46ac-a57f-876b3b544640" data-title="Architectures"><img src="iOS&#x5E93;.ftd/Architectures.png" alt="Architectures"></a></p>
-<p><a href="iOS&#x5E93;.ftd/04.png" data-lightbox="786b1f16-5cf3-4579-ac51-61edb99b05cf" data-title="04"><img src="iOS&#x5E93;.ftd/04.png" alt="04"></a></p>
-<p><a href="iOS&#x5E93;.ftd/05.png" data-lightbox="65024449-00bb-4231-9445-edb40f08216e" data-title="05"><img src="iOS&#x5E93;.ftd/05.png" alt="05"></a></p>
-<p><a href="iOS&#x5E93;.ftd/06.png" data-lightbox="1673510b-68eb-49c0-94c3-08bc60f7f0ec" data-title="06"><img src="iOS&#x5E93;.ftd/06.png" alt="06"></a></p>
+<p><a href="iOS&#x5E93;.ftd/Architectures.png" data-lightbox="5d473383-77b6-4615-83c6-01427320bd76" data-title="Architectures"><img src="iOS&#x5E93;.ftd/Architectures.png" alt="Architectures"></a></p>
+<p><a href="iOS&#x5E93;.ftd/04.png" data-lightbox="a9160a6c-ebfa-479f-a6fe-9cc653cc393f" data-title="04"><img src="iOS&#x5E93;.ftd/04.png" alt="04"></a></p>
+<p><a href="iOS&#x5E93;.ftd/05.png" data-lightbox="951681bb-ec9f-44f5-8adc-b12781bbdff3" data-title="05"><img src="iOS&#x5E93;.ftd/05.png" alt="05"></a></p>
+<p><a href="iOS&#x5E93;.ftd/06.png" data-lightbox="b900549b-1ba1-4ad7-af32-30d9695b6784" data-title="06"><img src="iOS&#x5E93;.ftd/06.png" alt="06"></a></p>
 </li>
 <li><h3 id="&#x5728;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x4E4B;&#x524D;&#x5E94;&#x8BE5;&#x8BBE;&#x7F6E;&#x4E3A;release&#x6A21;&#x5F0F;-&#x5FEB;&#x6377;&#x952E;command--shift--">&#x5728;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x4E4B;&#x524D;&#x5E94;&#x8BE5;&#x8BBE;&#x7F6E;&#x4E3A;release&#x6A21;&#x5F0F; &#x5FEB;&#x6377;&#x952E;(command + shift + ,)</h3>
-<p><a href="iOS&#x5E93;.ftd/07.png" data-lightbox="fbc949c4-8c8e-4c5d-936c-55bad0418d96" data-title="07"><img src="iOS&#x5E93;.ftd/07.png" alt="07"></a></p>
-<p><a href="iOS&#x5E93;.ftd/08.png" data-lightbox="85c73afd-8526-4bc0-a555-f09466b0a2bf" data-title="08"><img src="iOS&#x5E93;.ftd/08.png" alt="08"></a></p>
+<p><a href="iOS&#x5E93;.ftd/07.png" data-lightbox="56b2291b-9e50-4227-84ad-57d7fa8f0916" data-title="07"><img src="iOS&#x5E93;.ftd/07.png" alt="07"></a></p>
+<p><a href="iOS&#x5E93;.ftd/08.png" data-lightbox="84f4484a-3a47-4bde-aaa9-3d356ecfd0d7" data-title="08"><img src="iOS&#x5E93;.ftd/08.png" alt="08"></a></p>
 </li>
 <li><h3 id="&#x7F16;&#x8BD1;&#x751F;&#x6210;framework">&#x7F16;&#x8BD1;&#x751F;&#x6210;.framework</h3>
 <blockquote>
 <p>&#x5206;&#x522B;&#x5728;&#x771F;&#x673A;&#x548C;&#x6A21;&#x62DF;&#x5668;&#x72B6;&#x6001;&#x4E0B;&#x6309;(command + B)&#x7F16;&#x8BD1;&#x751F;&#x6210;.Framework&#x6587;&#x4EF6;</p>
 </blockquote>
-<p><a href="iOS&#x5E93;.ftd/09.png" data-lightbox="2289b1fb-ffbe-4076-911e-f4da7aceddac" data-title="09"><img src="iOS&#x5E93;.ftd/09.png" alt="09"></a></p>
-<p><a href="iOS&#x5E93;.ftd/10.png" data-lightbox="d4512f78-c996-4c48-af98-c7ba76660c4b" data-title="10"><img src="iOS&#x5E93;.ftd/10.png" alt="10"></a></p>
+<p><a href="iOS&#x5E93;.ftd/09.png" data-lightbox="b6ddd755-c72c-4812-8f01-9b8f0db4b403" data-title="09"><img src="iOS&#x5E93;.ftd/09.png" alt="09"></a></p>
+<p><a href="iOS&#x5E93;.ftd/10.png" data-lightbox="065bb29d-c49d-4b01-849e-48ad189ad83c" data-title="10"><img src="iOS&#x5E93;.ftd/10.png" alt="10"></a></p>
 </li>
 <li><h3 id="&#x83B7;&#x53D6;framework&#x6587;&#x4EF6;&#x5939;">&#x83B7;&#x53D6;.framework&#x6587;&#x4EF6;&#x5939;</h3>
 <blockquote>
@@ -2647,10 +2662,10 @@
 <p>&#x6253;&#x5F00;&#x540E;&#x4F1A;&#x6709;&#x5206;&#x522B;&#x751F;&#x6210;&#x7684;&#x771F;&#x673A;Release-iphoneos&#x548C;&#x6A21;&#x62DF;&#x5668;Release-iphonesimulator&#x7684;.Framework&#x6587;&#x4EF6;</p>
 <p>.frame&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x624D;&#x662F;&#x5E93;&#x6587;&#x4EF6;</p>
 </blockquote>
-<p><a href="iOS&#x5E93;.ftd/11.png" data-lightbox="e7f3e6a0-91c3-4c70-b56b-eb8fa5ff1ef0" data-title="11"><img src="iOS&#x5E93;.ftd/11.png" alt="11"></a></p>
+<p><a href="iOS&#x5E93;.ftd/11.png" data-lightbox="c8de862e-b456-4388-8ea1-91dd0fec7075" data-title="11"><img src="iOS&#x5E93;.ftd/11.png" alt="11"></a></p>
 </li>
 </ol>
-<p><a href="iOS&#x5E93;.ftd/12.png" data-lightbox="50647100-2798-4161-a89e-0e92680eb087" data-title="12"><img src="iOS&#x5E93;.ftd/12.png" alt="12"></a></p>
+<p><a href="iOS&#x5E93;.ftd/12.png" data-lightbox="3aa35317-9f40-49b2-9da9-52a699f7b314" data-title="12"><img src="iOS&#x5E93;.ftd/12.png" alt="12"></a></p>
 <ol>
 <li><h3 id="&#x771F;&#x673A;&#x7248;&#x672C;&#x548C;&#x6A21;&#x62DF;&#x5668;&#x7248;&#x672C;framework&#x5408;&#x5E76;">&#x771F;&#x673A;&#x7248;&#x672C;&#x548C;&#x6A21;&#x62DF;&#x5668;&#x7248;&#x672C;framework&#x5408;&#x5E76;</h3>
 <blockquote>
@@ -2675,7 +2690,7 @@
 </blockquote>
 </li>
 </ol>
-<p><a href="iOS&#x5E93;.ftd/13.png" data-lightbox="9878e982-3260-4910-a6b6-5f646f942620" data-title="13"><img src="iOS&#x5E93;.ftd/13.png" alt="13"></a></p>
+<p><a href="iOS&#x5E93;.ftd/13.png" data-lightbox="07c0a5e2-6d4d-4512-b6ee-37b4487256e4" data-title="13"><img src="iOS&#x5E93;.ftd/13.png" alt="13"></a></p>
 
                                 
                                 </section>
@@ -2703,7 +2718,7 @@
 
             
                 
-                <a href="iOS库介绍.html" class="navigation navigation-prev " aria-label="Previous page: iOS库">
+                <a href="制作Pod库.html" class="navigation navigation-prev " aria-label="Previous page: 制作Pod库">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -2719,7 +2734,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"制作静态库.framework","level":"4.4.1","depth":2,"next":{"title":"库支持的CPU架构、链接库的参数、打印环境变量","level":"4.4.2","depth":2,"path":"知识库/iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.md","ref":"./知识库/iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.md","articles":[]},"previous":{"title":"iOS库","level":"4.4","depth":1,"path":"知识库/iOS 知识点/iOS库/iOS库介绍.md","ref":"./知识库/iOS 知识点/iOS库/iOS库介绍.md","articles":[{"title":"制作静态库.framework","level":"4.4.1","depth":2,"path":"知识库/iOS 知识点/iOS库/制作静态库.a和.framework.md","ref":"./知识库/iOS 知识点/iOS库/制作静态库.a和.framework.md","articles":[]},{"title":"库支持的CPU架构、链接库的参数、打印环境变量","level":"4.4.2","depth":2,"path":"知识库/iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.md","ref":"./知识库/iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.md","articles":[]},{"title":"lipo命令","level":"4.4.3","depth":2,"path":"知识库/iOS 知识点/iOS库/lipo命令.md","ref":"./知识库/iOS 知识点/iOS库/lipo命令.md","articles":[]},{"title":"iOS链接编译库的过程中的问题总结","level":"4.4.4","depth":2,"path":"知识库/iOS 知识点/iOS库/iOS链接编译库的过程中的问题总结.md","ref":"./知识库/iOS 知识点/iOS库/iOS链接编译库的过程中的问题总结.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/iOS 知识点/iOS库/制作静态库.a和.framework.md","mtime":"2020-08-05T14:06:00.271Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-05T14:06:18.871Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"制作静态库.framework","level":"4.4.2","depth":2,"next":{"title":"库支持的CPU架构、链接库的参数、打印环境变量","level":"4.4.3","depth":2,"path":"知识库/iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.md","ref":"./知识库/iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.md","articles":[]},"previous":{"title":"制作Pod库","level":"4.4.1","depth":2,"path":"知识库/iOS 知识点/iOS库/制作Pod库.md","ref":"./知识库/iOS 知识点/iOS库/制作Pod库.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/iOS 知识点/iOS库/制作静态库.a和.framework.md","mtime":"2020-08-05T14:06:00.271Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-06T03:38:17.306Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

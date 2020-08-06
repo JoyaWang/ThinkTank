@@ -160,6 +160,7 @@
 
 * [iOS库](./知识库/iOS 知识点/iOS库/iOS库介绍.md)
 
+  * [制作Pod库](./知识库/iOS 知识点/iOS库/制作Pod库.md)
   * [制作静态库.framework](./知识库/iOS 知识点/iOS库/制作静态库.a和.framework.md)
   * [库支持的CPU架构、链接库的参数、打印环境变量](./知识库/iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.md)
   * [lipo命令](./知识库/iOS 知识点/iOS库/lipo命令.md)
