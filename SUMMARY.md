@@ -172,18 +172,20 @@
 * [iOS库](./知识库/iOS 知识点/iOS库/iOS库介绍.md)
 
   * [制作Cocoa Pod库](./知识库/iOS 知识点/iOS库/制作Cocoa Pod库.md)
+
   * [制作静态库.framework](./知识库/iOS 知识点/iOS库/制作静态库.a和.framework.md)
+
   * [库支持的CPU架构、链接库的参数、打印环境变量](./知识库/iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.md)
+
   * [lipo命令](./知识库/iOS 知识点/iOS库/lipo命令.md)
+
   * [iOS链接编译库的过程中的问题总结](./知识库/iOS 知识点/iOS库/iOS链接编译库的过程中的问题总结.md)
 
-* [CocoaPods](./知识库/iOS 知识点/CocoaPods/CocoaPods.md)
+  * [CocoaPods](./知识库/iOS 知识点/iOS库/CocoaPods/CocoaPods.md)
 
-* [pod install, pod update, podfile, podfile.lock](./知识库/iOS 知识点/CocoaPods/pod install, pod update, podfile, podfile.lock.md)
-  
-  * [Cocoapods 发布框架](./知识库/iOS 知识点/CocoaPods/Cocoapods 发布框架.md)
+  * [pod install, pod update, podfile, podfile.lock](./知识库/iOS 知识点/iOS库/CocoaPods/pod install, pod update, podfile, podfile.lock.md)
 
-
+    
 
 ## Others
 
@@ -198,8 +200,3 @@
 ## 英语学习
 
 * [英语](./知识库/英语/英语时态.md)
-
-  
-
-  
-
