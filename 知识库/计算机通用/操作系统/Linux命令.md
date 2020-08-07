@@ -1,5 +1,9 @@
 # Linux命令
 
+[The Linux Command Line 英文](http://linuxcommand.org/lc3_lts0020.php)
+
+[The Linux Command Line 中文](https://www.kancloud.cn/thinkphp/linux-command-line/39431)
+
 control + a 光标移到行首 
 
 control + e 光标移到行尾 
