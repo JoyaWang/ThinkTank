@@ -1,5 +1,9 @@
 # 制作Cocoa Pod库
 
+[制作swift cocoapods库](https://www.jianshu.com/p/94f8bb561cd0)
+
+
+
 ### 1、GitHub创建共有仓库，克隆到本地
 
 ### 2、创建podspec文件
