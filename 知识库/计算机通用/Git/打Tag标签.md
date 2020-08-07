@@ -13,3 +13,9 @@
 - 删除tag 
 
   > git tag -d `Building_Lists_and_Navigation`
+  
+- 推送 tag 到远程仓库
+
+  > git push origin Handling_User_Input
+  >
+  > git push --tags
