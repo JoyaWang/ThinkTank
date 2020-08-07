@@ -77,7 +77,7 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="终端命令 Unix_Linux 命令.html" />
+    <link rel="next" href="ls -al 各字段含义.html" />
     
     
     <link rel="prev" href="../Gitbook/Github Pages.html" />
@@ -1166,17 +1166,16 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="2.1.1" data-path="终端命令 Unix_Linux 命令.html">
+        <li class="chapter " data-level="2.2" data-path="ls -al 各字段含义.html">
             
-                <a href="终端命令 Unix_Linux 命令.html">
+                <a href="ls -al 各字段含义.html">
             
                     
-                        <b>2.1.1.</b>
+                        <b>2.2.</b>
                     
-                    Terminal 终端.md
+                    ls -al 各字段含义.md
             
                 </a>
             
@@ -1184,23 +1183,18 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="Unix_Linux 文件基本属性.html">
+        <li class="chapter " data-level="2.3" data-path="Linux系统服务器下载、上传目录和文件.html">
             
-                <a href="Unix_Linux 文件基本属性.html">
+                <a href="Linux系统服务器下载、上传目录和文件.html">
             
                     
-                        <b>2.1.2.</b>
+                        <b>2.3.</b>
                     
-                    Linux 文件基本属性
+                    Linux系统服务器下载、上传目录和文件
             
                 </a>
             
 
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -2597,12 +2591,20 @@
                                 <section class="normal markdown-section">
                                 
                                 <ul>
+<li><div><a href="#linux&#x547D;&#x4EE4;">Linux&#x547D;&#x4EE4;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li> 
+<ul>
 <li><div><a href="#chmod-&#x66F4;&#x6539;&#x6587;&#x4EF6;&#x6743;&#x9650;">chmod &#x66F4;&#x6539;&#x6587;&#x4EF6;&#x6743;&#x9650;  </a><i></i></div></li>
 <li><div><a href="#chown-&#x66F4;&#x6539;&#x6587;&#x4EF6;-&#x6240;&#x6709;&#x8005;-&#x548C;-&#x6240;&#x6709;&#x7EC4;">chown &#x66F4;&#x6539;&#x6587;&#x4EF6; &#x6240;&#x6709;&#x8005; &#x548C; &#x6240;&#x6709;&#x7EC4; </a><i></i></div></li>
 <li><div><a href="#chgrp-&#x66F4;&#x6539;&#x6587;&#x4EF6;&#x5C5E;&#x7EC4;">chgrp &#x66F4;&#x6539;&#x6587;&#x4EF6;&#x5C5E;&#x7EC4;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;">&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;</a><i></i></div></li>
+</ul></li>
 </ul>
 
 
+<h1 id="linux&#x547D;&#x4EE4;">Linux&#x547D;&#x4EE4;</h1>
 <p>control + a &#x5149;&#x6807;&#x79FB;&#x5230;&#x884C;&#x9996; </p>
 <p>control + e &#x5149;&#x6807;&#x79FB;&#x5230;&#x884C;&#x5C3E; </p>
 <p>netstat -aptn &#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x67E5;&#x770B;&#x6240;&#x6709;&#x5F00;&#x542F;&#x7684;&#x7AEF;&#x53E3;&#x53F7;</p>
@@ -2677,18 +2679,28 @@
 <h3 id="chmod-&#x66F4;&#x6539;&#x6587;&#x4EF6;&#x6743;&#x9650;">chmod &#x66F4;&#x6539;&#x6587;&#x4EF6;&#x6743;&#x9650;</h3>
 <blockquote>
 <p>change file modes or Access Control Lists</p>
-<p>&#x7ED9;test.h&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x53EF;&#x6267;&#x884C;&#x6743;&#x9650; <code>chmod +x ./Desktop/test.sh</code> </p>
+<p>&#x66F4;&#x6539;&#x6587;&#x4EF6; 9 &#x4E2A;&#x5C5E;&#x6027; chmod</p>
+<p><code>chmod u=rwx,g=rx,o=r test1</code> &#x5373;&#x5C06; test1 &#x6587;&#x4EF6;&#x6743;&#x9650;&#x4FEE;&#x6539;&#x4E3A; <strong>-rwxr-xr--</strong></p>
+<ul>
+<li><p>u user</p>
+</li>
+<li><p>g group</p>
+</li>
+<li><p>o others</p>
+</li>
+</ul>
+<p><code>chmod +x ./Desktop/test.sh</code>&#x7ED9;test.h&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x53EF;&#x6267;&#x884C;&#x6743;&#x9650;  </p>
 <p>&#x8BED;&#x6CD5;&#xFF1A;chmod abc file
 &#x5F15;&#x7528;&#x5730;&#x5740;:<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fblog.csdn.net%2Fmy_wade%2Farticle%2Fdetails%2F47066905" target="_blank">https://blog.csdn.net/my_wade/article/details/47066905</a>
-&#x5176;&#x4E2D;a,b,c&#x5404;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;a&#x8868;&#x793A;User&#xFF0C;b&#x8868;&#x793A;Group&#xFF0C;c&#x8868;&#x793A;Other&#x7684;&#x6743;&#x9650;&#x3002;</p>
+&#x5176;&#x4E2D;a,b,c&#x5404;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;a&#x8868;&#x793A;User&#xFF0C;b&#x8868;&#x793A;Group&#xFF0C;c&#x8868;&#x793A;Others&#x7684;&#x6743;&#x9650;&#x3002;</p>
 <p>r=4&#xFF0C;w=2&#xFF0C;x=1</p>
 <p>&#x82E5;&#x8981;rwx&#xFF08;&#x53EF;&#x8BFB;&#x3001;&#x53EF;&#x5199;&#x3001;&#x53EF;&#x6267;&#x884C;&#xFF09;&#x5C5E;&#x6027;&#xFF0C;&#x5219;4+2+1=7</p>
 <p>&#x82E5;&#x8981;rw-&#xFF08;&#x53EF;&#x8BFB;&#x3001;&#x53EF;&#x5199;&#x3001;&#x4E0D;&#x53EF;&#x6267;&#x884C;&#xFF09;&#x5C5E;&#x6027;&#xFF0C;&#x5219;4+2=6</p>
 <p>&#x82E5;&#x8981;r-w&#xFF08;&#x53EF;&#x8BFB;&#x3001;&#x4E0D;&#x53EF;&#x5199;&#x3001;&#x53EF;&#x6267;&#x884C;&#xFF09;&#x5C5E;&#x6027;&#xFF0C;&#x5219;4+1=5
  &#x8303;&#x4F8B;&#xFF1A;</p>
-<p>chmod a=rwx file &#x548C; chmod 777 file &#x6548;&#x679C;&#x76F8;&#x540C;</p>
-<p>chmod ug=rwx,o=x file &#x548C; chmod 771 file &#x6548;&#x679C;&#x76F8;&#x540C;</p>
-<p>&#x82E5;&#x7528;chmod 4755 filename&#x53EF;&#x4F7F;&#x6B64;&#x7A0B;&#x5F0F;&#x5177;&#x6709;root&#x7684;&#x6743;&#x9650;</p>
+<p><code>chmod a=rwx file</code> &#x548C; <code>chmod 777 file</code> &#x6548;&#x679C;&#x76F8;&#x540C;</p>
+<p><code>chmod ug=rwx,o=x file</code> &#x548C; <code>chmod 771 file</code> &#x6548;&#x679C;&#x76F8;&#x540C;</p>
+<p>&#x82E5;&#x7528;<code>chmod 4755 filename</code>&#x53EF;&#x4F7F;&#x6B64;&#x7A0B;&#x5F0F;&#x5177;&#x6709;root&#x7684;&#x6743;&#x9650;</p>
 </blockquote>
 <h3 id="chown-&#x66F4;&#x6539;&#x6587;&#x4EF6;-&#x6240;&#x6709;&#x8005;-&#x548C;-&#x6240;&#x6709;&#x7EC4;">chown &#x66F4;&#x6539;&#x6587;&#x4EF6; &#x6240;&#x6709;&#x8005; &#x548C; &#x6240;&#x6709;&#x7EC4;</h3>
 <blockquote>
@@ -2707,6 +2719,21 @@
 <h3 id="chgrp-&#x66F4;&#x6539;&#x6587;&#x4EF6;&#x5C5E;&#x7EC4;">chgrp &#x66F4;&#x6539;&#x6587;&#x4EF6;&#x5C5E;&#x7EC4;</h3>
 <blockquote>
 <p>change group</p>
+</blockquote>
+<h2 id="&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;">&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;</h2>
+<p><code>ps -ef | grep trojan</code>  </p>
+<blockquote>
+<p>&#x51FA;&#x73B0; 501 81262 79513  0 4:40PM ttys000  0:00.01 grep trojan</p>
+<p><code>-e</code> and <code>-f</code> are options to the <code>ps</code> command, and pipes take the output of one command and pass it as the input to another. Here is a full breakdown of this command:</p>
+<p>ps - list processes</p>
+<p>-e - show all processes, not just those belonging to the user</p>
+<p>-f - show processes in full format (more detailed than default)</p>
+<p>command 1 | command 2 - pass output of command 1 as input to command 2</p>
+<p>grep find lines containing a pattern. grep (global search regular expression(RE) and print out the line,&#x5168;&#x9762;&#x641C;&#x7D22;&#x6B63;&#x5219;bai&#x8868;&#x8FBE;&#x5F0F;du&#x5E76;&#x628A;&#x884C;&#x6253;zhi&#x5370;&#x51FA;&#x6765;)&#x662F;&#x4E00;&#x79CD;&#x5F3A;&#x5927;&#x7684;&#x6587;&#x672C;dao&#x641C;&#x7D22;&#x5DE5;&#x5177;&#xFF0C;&#x5B83;&#x80FD;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x641C;&#x7D22;&#x6587;&#x672C;&#xFF0C;&#x5E76;&#x628A;&#x5339;&#x914D;&#x7684;&#x884C;&#x6253;&#x5370;&#x51FA;&#x6765;&#x3002;</p>
+<p>processname - the pattern for grep to search for in the output of ps -ef</p>
+<p>So altogether</p>
+<pre><code>ps -ef | grep processname
+</code></pre><p>means: look for lines containing <code>processname</code> in a detailed overview/snapshot of all current processes, and display those lines</p>
 </blockquote>
 
                                 
@@ -2740,7 +2767,7 @@
                 </a>
                 
                 
-                <a href="终端命令 Unix_Linux 命令.html" class="navigation navigation-next " aria-label="Next page: Terminal 终端.md">
+                <a href="ls -al 各字段含义.html" class="navigation navigation-next " aria-label="Next page: ls -al 各字段含义.md">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -2751,7 +2778,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux 命令","level":"2.1","depth":1,"next":{"title":"Terminal 终端.md","level":"2.1.1","depth":2,"path":"知识库/计算机通用/操作系统/终端命令 Unix_Linux 命令.md","ref":"./知识库/计算机通用/操作系统/终端命令 Unix_Linux 命令.md","articles":[]},"previous":{"title":"Github Pages","level":"1.9.2","depth":2,"path":"知识库/计算机通用/Gitbook/Github Pages.md","ref":"./知识库/计算机通用/Gitbook/Github Pages.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/计算机通用/操作系统/Linux命令.md","mtime":"2020-08-06T09:47:30.674Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-06T10:00:28.889Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux 命令","level":"2.1","depth":1,"next":{"title":"ls -al 各字段含义.md","level":"2.2","depth":1,"path":"知识库/计算机通用/操作系统/ls -al 各字段含义.md","ref":"./知识库/计算机通用/操作系统/ls -al 各字段含义.md","articles":[]},"previous":{"title":"Github Pages","level":"1.9.2","depth":2,"path":"知识库/计算机通用/Gitbook/Github Pages.md","ref":"./知识库/计算机通用/Gitbook/Github Pages.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/计算机通用/操作系统/Linux命令.md","mtime":"2020-08-07T01:26:50.688Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-07T01:27:22.608Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

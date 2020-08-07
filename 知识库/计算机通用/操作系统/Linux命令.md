@@ -1,3 +1,5 @@
+# Linux命令
+
 control + a 光标移到行首 
 
 control + e 光标移到行尾 
@@ -141,12 +143,22 @@ sudo useradd -r -m -G certusers acme
 ### chmod 更改文件权限  
 
 > change file modes or Access Control Lists
+>
+> 更改文件 9 个属性 chmod
 
-> 给test.h文件添加可执行权限 `chmod +x ./Desktop/test.sh` 
+> `chmod u=rwx,g=rx,o=r test1` 即将 test1 文件权限修改为 **-rwxr-xr--**
+>
+> - u user
+>
+> - g group
+>
+> - o others
+
+> `chmod +x ./Desktop/test.sh`给test.h文件添加可执行权限  
 
 > 语法：chmod abc file
 > 引用地址:[https://blog.csdn.net/my_wade/article/details/47066905](https://links.jianshu.com/go?to=https%3A%2F%2Fblog.csdn.net%2Fmy_wade%2Farticle%2Fdetails%2F47066905)
-> 其中a,b,c各为一个数字，a表示User，b表示Group，c表示Other的权限。
+> 其中a,b,c各为一个数字，a表示User，b表示Group，c表示Others的权限。
 >
 > r=4，w=2，x=1
 >
@@ -157,11 +169,13 @@ sudo useradd -r -m -G certusers acme
 > 若要r-w（可读、不可写、可执行）属性，则4+1=5
 >  范例：
 >
-> chmod a=rwx file 和 chmod 777 file 效果相同
+> `chmod a=rwx file` 和 `chmod 777 file` 效果相同
 >
-> chmod ug=rwx,o=x file 和 chmod 771 file 效果相同
+> `chmod ug=rwx,o=x file` 和 `chmod 771 file` 效果相同
 >
-> 若用chmod 4755 filename可使此程式具有root的权限
+> 若用`chmod 4755 filename`可使此程式具有root的权限
+
+
 
 ### chown 更改文件 所有者 和 所有组 
 
@@ -180,3 +194,33 @@ sudo useradd -r -m -G certusers acme
 ### chgrp 更改文件属组
 
 > change group
+
+
+
+## 查看程序的pid等信息
+
+`ps -ef | grep trojan`  
+
+> 出现 501 81262 79513  0 4:40PM ttys000  0:00.01 grep trojan
+
+> `-e` and `-f` are options to the `ps` command, and pipes take the output of one command and pass it as the input to another. Here is a full breakdown of this command:
+>
+> ps - list processes
+>
+> -e - show all processes, not just those belonging to the user
+>
+> -f - show processes in full format (more detailed than default)
+>
+> command 1 | command 2 - pass output of command 1 as input to command 2
+>
+> grep find lines containing a pattern. grep (global search regular expression(RE) and print out the line,全面搜索正则bai表达式du并把行打zhi印出来)是一种强大的文本dao搜索工具，它能使用正则表达式搜索文本，并把匹配的行打印出来。
+>
+> processname - the pattern for grep to search for in the output of ps -ef
+>
+> So altogether
+>
+> ```
+> ps -ef | grep processname
+> ```
+>
+> means: look for lines containing `processname` in a detailed overview/snapshot of all current processes, and display those lines
