@@ -1,4 +1,4 @@
-# 制作Pod库
+# 制作Cocoa Pod库
 
 ### 1、GitHub创建共有仓库，克隆到本地
 
@@ -9,8 +9,6 @@
 ```
 pod spec create CZTestLibDemo
 ```
-
-
 
 ### 2.1、配置podspec文件
 
@@ -69,20 +67,23 @@ spec.name         = "JLAdditions"
 **通过终端，在CZTestLibDemo文件夹里面执行下面命令：
 **
 
+> 提交并推送代码
+>
 > **git add .**
 >
 > **git commit -m "1.0"**
 >
 > **git push**
 
-> **git tag -m 'release version 1.0.0' 1.0.0**
+> 打标签并推送标签
 >
-> **git push origin 1.0.0**
+> **git tag -m 'release version 1.0.0' 1.0.0** #-m后面是备注 1.0.1才是标签
+>
+> **git push origin 1.0.0 #推送标签** #推送标签
 
 ### 5、验证podspec文件
 
-**通过终端，在CZTestLibDemo文件夹里面执行下面命令：
-**
+**通过终端，在CZTestLibDemo文件夹里面执行下面命令：**
 
 > **pod spec lint CZTestLibDemo.podspec**
 
@@ -133,3 +134,58 @@ spec.name         = "JLAdditions"
 >   //更新索引
 >
 >   **pod repo update** 
+
+
+
+## 更新pod库
+
+##### 0. 在SourceFile中进行代码更新修改
+
+##### 1.修改XXXX.podspec文件中s.version的内容
+
+Pod::Spec.new do |s|
+ s.version      = "0.0.x"
+ s.summary      = "xxxxxx"
+ ...
+ end
+
+##### 2.上传到Git
+
+用Git提交并推送更新
+
+将包含配置好的 .podspec, 项目提交 Git
+
+##### 3.打tag
+
+创建标签并推送标签
+
+因为cocoapods是依赖tag版本的,所以必须打tag, 每个tag提交就是发布的zip包
+ 以后再次更新只需要把你的项目打一个tag
+ 然后修改.podspec文件中的版本接着提交到cocoapods官方就可以了
+
+###### 提交命令
+
+```cpp
+//为git打tag, 第一次需要在前面加一个v
+git tag -m '新发布1.0.1' 1.0.1   -m后面是备注 1.0.1才是标签
+# git tag "v1.0.0" 
+//将tag推送到远程仓库
+  git push origin 1.0.1
+# git push --tags
+  
+```
+
+##### 4.验证.podspec文件
+
+```cpp
+// --verbose 如果验证失败会报错误信息
+pod spec lint xxxx.podspec --verbose
+```
+
+##### 5.发布
+
+```cpp
+// --use-libraries --allow-warnings
+pod trunk push xxxx.podspec 
+```
+
