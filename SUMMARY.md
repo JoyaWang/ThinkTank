@@ -189,7 +189,7 @@
 
 - [Final Cut Pro X](./知识库/Others/图片视频处理/Final Cut Pro X.md)
 - [ffmpeg](./知识库/Others/图片视频处理/ffmpeg.md)
-- [gifsicle](./知识库/Others/图片视频处理/gifsicle.md)
+- [gif](./知识库/Others/图片视频处理/gifsicle.md)
 
 ## 英语学习
 
