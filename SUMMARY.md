@@ -181,10 +181,6 @@
 
 ## Others
 
-### 时间管理
-
-* [时间管理 - OmniFocus](./知识库/Others/时间管理/Omnifocus 使用流程.md)
-
 ### 图片音视频处理
 
 - [图片基础知识](./知识库/Others/图片视频处理/图片基础知识.md)
@@ -193,7 +189,14 @@
 - [Final Cut Pro X](./知识库/Others/图片视频处理/Final Cut Pro X.md)
 - [ffmpeg](./知识库/Others/图片视频处理/ffmpeg.md)
 - [gif](./知识库/Others/图片视频处理/gifsicle.md)
-- 
+
+[历史政治地理](./知识库/Others/历史政治地理/历史.md)
+
+### 时间管理
+
+* [时间管理 - OmniFocus](./知识库/Others/时间管理/Omnifocus 使用流程.md)
+
+### 
 
 ## 英语学习
 
