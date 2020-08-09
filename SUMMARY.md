@@ -187,7 +187,7 @@
 
 ### 图片音视频处理
 
-- [图片基础知识](./知识库/Others/图片视频处理/图片基础知识.md)
+- [图片基础知识](./知识库/Others/图片视频处理/)
 - [Photoshop](./知识库/Others/图片视频处理/Photoshop.md)
 - [相机按钮的含义](./知识库/Others/图片视频处理/相机按钮的含义.md)
 - [Final Cut Pro X](./知识库/Others/图片视频处理/Final Cut Pro X.md)

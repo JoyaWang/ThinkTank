@@ -90,7 +90,23 @@ Manually Adjusting Audio Levels via Keyframes:
 
 Keyframe-move to where you wanna end-keyframe again-transition the volume 
 
+声音降噪
 
+1、我们点击选中视频中音频轨道。
+
+2、鼠标移动到音频分析栏目，点击箭头所指的显示。
+
+3、勾选降噪。
+
+4、根据自己的音频具体情况，点击箭头所指的数量按钮进行拖动。
+
+5、试听一下刚刚所调整的音频质量，是否已经达到了降噪的要求
+
+6、我们也可以勾选嗡嗡声消除
+
+7、这实在是听一下声音，看看是否已经达到自己所需要的要求。
+
+![声音降噪](./视频处理.ftd/声音降噪.png)
 
 ## **过渡Transitions:**
 
