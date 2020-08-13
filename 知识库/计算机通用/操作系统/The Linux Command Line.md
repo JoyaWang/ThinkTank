@@ -344,7 +344,17 @@
 
 ### Chapter 13: Customizing the Prompt
 
+#### 1. Anatomy of a Prompt
 
+#### 2. Trying Some Alternative Prompt Designs
+
+#### 3. Adding Color
+
+#### 4. Moving the Cursor
+
+#### 5. Saving the Prompt
+
+#### 6. Summing Up
 
 ## PART III: COMMON TASKS AND ESSENTIALS TOOLS
 
