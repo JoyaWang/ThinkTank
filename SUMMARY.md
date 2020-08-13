@@ -76,6 +76,7 @@
 ### 操作系统
 
 * [Linux系统](./知识库/计算机通用/操作系统/Linux命令.md)
+  * [The Linux Command Line](./知识库/计算机通用/操作系统/The Linux Command Line.md)
   * [Linux 命令](./知识库/计算机通用/操作系统/Linux命令.md)
   * [ls -al 各字段含义.md](./知识库/计算机通用/操作系统/ls -al 各字段含义.md)
   * [Linux系统服务器下载、上传目录和文件](./知识库/计算机通用/操作系统/Linux系统服务器下载、上传目录和文件.md)
