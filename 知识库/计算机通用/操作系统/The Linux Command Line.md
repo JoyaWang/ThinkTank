@@ -356,11 +356,83 @@
 
 #### 6. Summing Up
 
-## PART III: COMMON TASKS AND ESSENTIALS TOOLS
+## PART III: COMMON TASKS AND ESSENTIALS TOOLS 普通任务和基本工具
 
-### Chapter 14: Package Management
+### Chapter 14: Package Management 包管理
 
-### Chapter 15: Storage Media
+#### 1. Packaging Systems 打包系统
+
+#### 2. How a Package System Works 包系统怎么工作
+
+##### Package Files 包文件
+
+##### Repositories 库
+
+##### Dependencies 依赖
+
+##### High- and Low-Level Package Tools 高级和低级打包工具
+
+#### 3. Common Package Management Tasks 普通包管理任务
+
+##### Finding a Package in a Repository 从库中寻找包
+
+##### Installing a Package from a Repository 从库中安装包
+
+##### Installing a Package from a Package File 从包文件中安装包
+
+##### Removing a Package 删除包
+
+##### Updating Packages from a Repository 从库中更新包
+
+##### Updating a Package from a Package File 从包文件中更新包
+
+##### Listing Installed Packages 显示所有安装的包
+
+##### Determining Whether a Package Is Installed 查看是否安装了某个包
+
+##### Displaying Information About an Installed Package 显示一个已安装的包的信息
+
+##### Finding Which Package Installed a File 查找哪个包安装了文件
+
+#### 4. Summing Up
+
+
+
+### Chapter 15: Storage Media 存储介质
+
+#### 1. Mounting and Unmounting Storage Devices 加载和推出存储设备
+
+##### Viewing a List of Mounted File Systems 查看加载的文件系统列表
+
+##### Determining Device Names 决定设备名称
+
+#### 2. Creating New File System 创建新文件系统
+
+##### Manipulating Partitions with fdisk 用fdisk命令进行分区
+
+##### Creating a New File System with mkfs 用mkfs命令创建一个新文件系统
+
+#### 3. Testing and Repairing File Systems 测试和修复文件系统
+
+#### 4. Moving Data Directly to and from Devices 设备间移动数据
+
+##### Creating CD-ROM Images 创建CD-ROM镜像?
+
+##### Creating an Image Copy of a CD-ROM 创建镜像复件
+
+##### Creating an Image from a Collection of Files 用文件集合创建镜像
+
+#### 5. Writing CD-ROM Images 写入镜像
+
+##### Mounting an ISO Image Directly 直接加载一个ISO镜像
+
+##### Blanking a Rewritable CD-ROM 清空一个可重复读写的CD-ROM
+
+##### Writing an Image 写一个镜像
+
+#### 6. Summing Up
+
+#### 7. Extra Credit
 
 ### Chapter 16: Networking
 
