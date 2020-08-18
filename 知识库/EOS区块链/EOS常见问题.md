@@ -2,6 +2,14 @@
 
 
 
+没有正确关闭node导致的问题
+
+删除所有区块和创世区块
+
+nodeos --delete-all-blocks --genesis-json genesis.json
+
+
+
 Error: 3190000 block_log_exception: Block log exception: block log does not contain last irreversible block
 
 
