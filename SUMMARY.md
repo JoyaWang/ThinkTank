@@ -5,6 +5,10 @@
 * [Vim 命令](./知识库/计算机通用/IDE编辑器/Vim.md)
 * [Linux 命令](./知识库/计算机通用/操作系统/Linux命令.md)
 * [Shell](./知识库/计算机通用/编程语言学习/Shell/Shell基本使用.md)
+* [EOS区块链](./知识库/EOS区块链/EOS基本概念.md)
+  * [EOS基本概念](./知识库/EOS区块链/EOS基本概念.md)
+  * [cleos命令](./知识库/EOS区块链/cleos命令.md)
+  * [EOS入门教程](./知识库/EOS区块链/EOS入门教程.md)
 
 ## 计算机通用
 
