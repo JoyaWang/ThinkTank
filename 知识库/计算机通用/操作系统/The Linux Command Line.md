@@ -428,56 +428,538 @@
 
 ##### Blanking a Rewritable CD-ROM 清空一个可重复读写的CD-ROM
 
-##### Writing an Image 写一个镜像
+##### Writing an Image 写入一个镜像
 
 #### 6. Summing Up
 
 #### 7. Extra Credit
 
-### Chapter 16: Networking
 
-### Chapter 17: Searching for Files
 
-### Chapter 18: Archiving and Backup
+### Chapter 16: Networking 网络
 
-### Chapter 19: Regular Expressions
+#### 1. Examining and Monitoring a Network 检查和监控一个网络
 
-### Chapter 20: Text Processing
+##### ping 
 
-### Chapter 21: Formatting Output
+##### traceroute
+
+##### ip
+
+##### netstat
+
+#### 2. Transporting Files over a Network 通过网络传输文件
+
+##### ftp
+
+##### lftp-a Better ftp
+
+##### wget
+
+#### 3. Secure Communication with Remote Hosts 与远程主机间安全通信
+
+##### ssh
+
+##### scp and sftp
+
+#### 4. Summing Up
+
+
+
+### Chapter 17: Searching for Files 搜索查找文件
+
+#### 1. locate-Find Files the Easy Way 
+
+#### 2. find - Find Files the Hard Way
+
+##### Tests
+
+##### Operators
+
+##### Predefined Actions
+
+##### Improving Efficiency
+
+##### xargs
+
+##### A Return to the Playground
+
+##### find Options
+
+#### 3. Summing Up
+
+
+
+### Chapter 18: Archiving and Backup 归档和备份
+
+#### 1. Compressing Files 压缩文件
+
+##### gzip
+
+##### bzip2
+
+#### 2. Archiving Files 归档文件
+
+##### tar
+
+##### zip
+
+#### 3. Synchronizing Files and Directories 同步文件和文件夹
+
+##### Using rsync over a Network
+
+#### 4. Summing Up
+
+
+
+### Chapter 19: Regular Expressions 正则表达式
+
+#### 1. What Are Regular Expressions? 正则表达式是什么
+
+#### 2. grep
+
+#### 3. Metacharacters and Literals 
+
+#### 4. The Any Character
+
+#### 5. Anchors
+
+#### 6. Bracket Expressions and Character Ranges
+
+##### Negation
+
+##### Traditional Character Ranges
+
+#### 7. POSIX Character Classes
+
+#### 8. POSIX Basic vs. Extended Regular Expressions
+
+#### 9. Alternation
+
+#### 10. Quantifiers
+
+##### ? - Match an Element Zero or One Time
+
+##### *- Match an Element Zero or More Times
+
+##### +- Match an Element One or More Times
+
+##### { }- Match an Element a Specific Number of Times
+
+#### 11. Putting Regular Expressions to Work
+
+##### Validating a Phone List with grep
+
+##### Finding Ugly Filenames with find
+
+##### Searching for Files with locate
+
+##### Searching for Text with less and vim
+
+#### 12. Summing Up
+
+
+
+### Chapter 20: Text Processing 文字处理
+
+#### 1. Applications of Text 文字的应用
+
+##### Documents 文件
+
+##### Web Pages 网页
+
+##### Email 邮件
+
+##### Printer Output 打印机输出
+
+##### Program Source Code 程序源码
+
+#### 2. Revisiting Some Old Friends
+
+##### cat
+
+##### sort
+
+##### uniq
+
+#### 3. Slicing and Dicing 
+
+##### cut - Remove Sections from Each Line of Files 剪切 - 从每行中删除一部分
+
+##### paste - Merge Lines of Files 粘贴 - 合并文件中的行
+
+##### join - Join Lines of Two Files on a Common Field 拼接
+
+#### 4. Comparing Text
+
+comm - Compare Two Sorted Files Line by line
+
+diff - Compare Files line by line
+
+patch - Apply a diff to an Original
+
+#### 5. Editing on the Fly
+
+tr - Transliterate or Delete Characters
+
+sed - Stream Editor for Filtering and Transforming Text
+
+aspell - Interactive Spellchecker
+
+#### 6. Summing Up
+
+#### 7. Extra Credit
+
+
+
+### Chapter 21: Formatting Output 格式化输出
+
+#### 1. Simple Formatting Tools 简单的格式化工具
+
+##### nl - Number Lines 
+
+##### fold - Wrap Each Line to a Specified Length
+
+##### fmt - A Simple Text Formatter
+
+##### pr - Format Text for Printing
+
+##### printf - Format and Print Data
+
+#### 2. Document Formatting Systems 文件格式化系统
+
+##### groff
+
+
 
 ### Chapter 22: Printing
 
-### Chapter 23: Compiling Programs
+#### 1. A Brief History of Printing
+
+##### Printing in the Dim Times
+
+##### Character-Based Printers 基于character的打印机
+
+##### Graphical Printers 图像打印机
+
+#### 2. Printing with Linux 在Linux中打印
+
+#### 3. Preparing Files for Printing 准备要打印的文件
+
+pr - Convert Text Files for Printing 转换文字文件以打印
+
+#### 4. Sending a Print Job to a Printer 向打印机发送一个打印任务
+
+lpr - Print Files (Berkeley Style)
+
+lp - Print Files (System V Style)
+
+Another Option: a2ps
+
+#### 5. Monitering and Controlling Print Jobs 监视和控制打印任务
+
+lpstat - Display Print System Status 显示打印系统状态
+
+lpq - Display Printer Queue Status 显示打印机队列状态
+
+lprm/cancel - Cancel Print Jobs 取消打印任务
+
+#### 6. Summing Up
 
 
 
-## PART IV:  WRITING SHELL SCRIPTS
+### Chapter 23: Compiling Programs 编译程序
+
+#### 1. What is Compiling? 什么是编译？
+
+Are all Programs Compiled?
+
+#### 2. Compiling a C Program 编译一个C程序
+
+Obtaining the Source Code 获取源码
+
+Examining the Source Tree 检查源树？
+
+Building the Program 构建程序
+
+Installing the Program 安装程序
+
+#### 3. Summing Up
+
+
+
+## PART IV:  WRITING SHELL SCRIPTS 编写Shell脚本
 
 ### Chapter 24: Writing Your First Scripts
 
-### Chapter 25: Starting a Project
+#### 1. What Are Shell Scripts? 什么是Shell脚本
+
+#### 2. How to Write a Shell Script? 
+
+Script File Format 脚本文件格式
+
+Executable Permissions 可执行权限
+
+Script File Location 脚本文件位置
+
+Good Locations for Scripts 好的脚本文件位置
+
+#### 3. More Formatting Tricks 更多格式技巧
+
+Long Option Names 长选项名称
+
+Indentation and Line Continuation 缩进和行继续
+
+#### 4. Summing Up
+
+
+
+### Chapter 25: Starting a Project 开始一个项目
+
+#### 1. First Stage: Minimal Document 
+
+#### 2. Second Stage: Adding a Little Data
+
+#### 3. Variables and Constants 变量和常量
+
+Assigning Values to Variables and Constants 向变量和常量赋值
+
+#### 4. Here Documents
+
+#### 5. Summing Up
+
+
 
 ### Chapter 26: Top-Down Design
 
+#### 1. Shell  Functions Shell函数
+
+#### 2. Local Variables 局部变量
+
+#### 3. Keep Scripts Running 保持脚本运行
+
+#### 4. Summing Up
+
+
+
 ### Chapter 27: Flow Control: Branching with If
 
-### Chapter 28: Reading Keyboard Input
+#### 1. if Statements if语句
 
-### Chapter 29: Flow Control: Looping with while/until
+#### 2. Exit Status 退出状态
 
-### Chapter 30: Troubleshooting
+#### 3. Using test 使用test
 
-### Chapter 31: Flow Control: Branching with case
+File Expressions
 
-### Chapter 32: Positional Parameters
+String Expressions
 
-### Chapter 33: Flow Control: Looping with for
+Integer Expressions
 
-### Chapter 34: Strings and Numbers
+#### 4. A More Modern Version of Test
 
-### Chapter 35: Arrays
+#### 5. (()) - Designed for Integers
+
+#### 6. Combining Expressions 结合表达式
+
+#### 7. Control Operators: Another Way to Branch 控制操作符: 分支的另一种方式
+
+#### 8. Summing Up
+
+
+
+### Chapter 28: Reading Keyboard Input 读取键盘输入
+
+#### 1. read - Read Values from Standard Input 从标准输入中读取数值
+
+#### 2. Validating Input 验证输入
+
+#### 3. Menus
+
+#### 4. Summing Up
+
+#### 5. Extra Credit
+
+
+
+### Chapter 29: Flow Control: Looping with while/until 流控制: 使用while和until循环
+
+#### 1. Looping 循环
+
+while
+
+#### 2. Breaking Out of a Loop 终止循环
+
+until
+
+#### 3. Reading Files with Loops 使用循环读取文件
+
+#### 4. Summing Up
+
+
+
+### Chapter 30: Troubleshooting 常见问题
+
+#### 1. Syntactic Errors 语法错误
+
+Missing Quotes
+
+Missing or Unexpected Tokens
+
+Unanticipated Expansions
+
+#### 2. Logical Errors 逻辑错误
+
+Defensive Programming
+
+Watch out for Filenames 注意文件名
+
+Verifying Input 验证输入
+
+#### 3. Testing 测试
+
+Test Case 测试用例
+
+#### 4. Debugging
+
+Finding the Problem Area 查找问题区域
+
+Tracing 追踪
+
+Examining Values  During Execution 在执行过程中检查值
+
+#### 5. Summing Up
+
+
+
+### Chapter 31: Flow Control: Branching with case 流控制: 使用case进行分支
+
+#### 1. The case Command
+
+Patterns
+
+Performing Multiple Actions 执行多个动作
+
+#### 2. Summing Up
+
+
+
+### Chapter 32: Positional Parameters 
+
+#### 1. Accessing the Command Line 
+
+Determining the Number of Arguments
+
+shift - Getting Access to Many Arguments
+
+Simple Applications 
+
+Using Positional Parameters with Shell Functions
+
+#### 2. Handling Positional Parametes en Masse
+
+#### 3. A More Complete Application
+
+#### 4. Summing Up
+
+
+
+### Chapter 33: Flow Control: Looping with for 流控制: 用for进行循环
+
+#### 1. for: Traditional Shell Form
+
+#### 2. for: C Language Form
+
+#### 3. Summing Up
+
+
+
+### Chapter 34: Strings and Numbers 字符串和数字
+
+#### 1. Parameter Expansion
+
+Basic Parameters
+
+Expansions to Manage Empty Variables
+
+Expansions That Return Variable Names
+
+String Operations
+
+Case Conversion
+
+#### 2. Arithmetic Evaluation and Expansion
+
+Number Bases
+
+Unary Operators
+
+Simple Arithmatic
+
+Assignment
+
+Bit Operations
+
+Logic
+
+#### 3. bc - An Arbitrary Precision Calculator Language
+
+Using bc
+
+An Example Script
+
+#### 4. Summing Up
+
+#### 5. Extra Credit
+
+
+
+### Chapter 35: Arrays 数组
+
+#### 1. What Are Arrays? 什么是数组?
+
+#### 2. Creating an Array 创建一个数组
+
+#### 3. Assigning Values to an Array 往数组中添加数值
+
+#### 4. Accessing Array Elements 获取数组中的元素
+
+#### 5. Array Operations 数组操作
+
+Outputing the Entire Contents of an Array 输出数组的所有内容
+
+Determining the Number of Array Elements 确定数组元素数量
+
+Finding the Subscripts Used by an Array 找出数组使用的下标
+
+Adding Elements to the End of an Array 向数组后面添加元素
+
+Sorting an Array 排序一个数组
+
+Deleting an Array 删除一个数组
+
+#### 6. Associative Arrays
+
+#### 7. Summing Up
+
+
 
 ### Chapter 36: Exotica
 
-Index
+#### 1. Group Commands and Subshells
+
+Process Substitution
+
+#### 2. Traps
+
+#### 3. Asynchronous Execution with wait
+
+#### 4. Named Pipes
+
+Setting Up a Named Pipe
+
+Using Named Pipes
+
+#### 5. Summing Up
+
+### Index
