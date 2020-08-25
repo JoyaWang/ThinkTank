@@ -9,6 +9,8 @@
   * [EOS基本概念](./知识库/EOS区块链/EOS基本概念.md)
   * [cleos命令](./知识库/EOS区块链/cleos命令.md)
   * [EOS入门教程](./知识库/EOS区块链/EOS入门教程.md)
+  * [创建账户的rpc使用的json](./知识库/EOS区块链/创建账户的rpc使用的json.md)
+  * [SwiftyEOS的使用](./知识库/EOS区块链/SwiftyEOS的使用.md)
   * [EOS常见问题](./知识库/EOS区块链/EOS常见问题.md)
 
 ## 计算机通用
