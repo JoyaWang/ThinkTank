@@ -1,0 +1,3348 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SwiftyEOS的使用 · iOS 知识库</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="EOS常见问题.html" />
+    
+    
+    <link rel="prev" href="创建账户的rpc使用的json.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">常用</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../计算机通用/IDE编辑器/Vim.html">
+            
+                <a href="../计算机通用/IDE编辑器/Vim.html">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Vim 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../计算机通用/操作系统/Linux命令.html">
+            
+                <a href="../计算机通用/操作系统/Linux命令.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Linux 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../计算机通用/编程语言学习/Shell/Shell基本使用.html">
+            
+                <a href="../计算机通用/编程语言学习/Shell/Shell基本使用.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="EOS基本概念.html">
+            
+                <a href="EOS基本概念.html">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    EOS区块链
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="EOS基本概念.html">
+            
+                <a href="EOS基本概念.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    EOS基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="cleos命令.html">
+            
+                <a href="cleos命令.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    cleos命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="EOS入门教程.html">
+            
+                <a href="EOS入门教程.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    EOS入门教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="创建账户的rpc使用的json.html">
+            
+                <a href="创建账户的rpc使用的json.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    创建账户的rpc使用的json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="SwiftyEOS的使用.html">
+            
+                <a href="SwiftyEOS的使用.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    SwiftyEOS的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="EOS常见问题.html">
+            
+                <a href="EOS常见问题.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    EOS常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">计算机通用</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../计算机通用/编程语言学习/C程序的从创建到运行的流程.html">
+            
+                <a href="../计算机通用/编程语言学习/C程序的从创建到运行的流程.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    C程序的从创建到运行的流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../计算机通用/Git/Git 基本指令.html">
+            
+                <a href="../计算机通用/Git/Git 基本指令.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../计算机通用/Git/Git 基本指令.html">
+            
+                <a href="../计算机通用/Git/Git 基本指令.html">
+            
+                    
+                        <b>2.2.1.</b>
+                    
+                    Git 基本指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../计算机通用/Git/分支及合并 branch & merge.html">
+            
+                <a href="../计算机通用/Git/分支及合并 branch & merge.html">
+            
+                    
+                        <b>2.2.2.</b>
+                    
+                    分支及合并 branch & merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../计算机通用/Git/回到过去 - amend.html">
+            
+                <a href="../计算机通用/Git/回到过去 - amend.html">
+            
+                    
+                        <b>2.2.3.</b>
+                    
+                    回到过去
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.3.1" data-path="../计算机通用/Git/回到过去 - amend.html">
+            
+                <a href="../计算机通用/Git/回到过去 - amend.html">
+            
+                    
+                        <b>2.2.3.1.</b>
+                    
+                    amend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.2" data-path="../计算机通用/Git/回到过去 - reset.html">
+            
+                <a href="../计算机通用/Git/回到过去 - reset.html">
+            
+                    
+                        <b>2.2.3.2.</b>
+                    
+                    reset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.3" data-path="../计算机通用/Git/回到过去 - checkout.html">
+            
+                <a href="../计算机通用/Git/回到过去 - checkout.html">
+            
+                    
+                        <b>2.2.3.3.</b>
+                    
+                    checkout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.4" data-path="../计算机通用/Git/回到过去 - rebase.html">
+            
+                <a href="../计算机通用/Git/回到过去 - rebase.html">
+            
+                    
+                        <b>2.2.3.4.</b>
+                    
+                    rebase
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../计算机通用/Git/Stash 暂存.html">
+            
+                <a href="../计算机通用/Git/Stash 暂存.html">
+            
+                    
+                        <b>2.2.4.</b>
+                    
+                    Stash 暂存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="../计算机通用/Git/查看更改前后不同.html">
+            
+                <a href="../计算机通用/Git/查看更改前后不同.html">
+            
+                    
+                        <b>2.2.5.</b>
+                    
+                    查看更改前后不同
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="../计算机通用/Git/本地仓库与远程仓库.html">
+            
+                <a href="../计算机通用/Git/本地仓库与远程仓库.html">
+            
+                    
+                        <b>2.2.6.</b>
+                    
+                    本地仓库与远程仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.7" data-path="../计算机通用/Git/打Tag标签.html">
+            
+                <a href="../计算机通用/Git/打Tag标签.html">
+            
+                    
+                        <b>2.2.7.</b>
+                    
+                    打Tag标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.8" data-path="../计算机通用/Git/修改注释.html">
+            
+                <a href="../计算机通用/Git/修改注释.html">
+            
+                    
+                        <b>2.2.8.</b>
+                    
+                    修改注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.9" data-path="../计算机通用/Git/Git设置代理.html">
+            
+                <a href="../计算机通用/Git/Git设置代理.html">
+            
+                    
+                        <b>2.2.9.</b>
+                    
+                    Git 设置代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.10" data-path="../计算机通用/Git/gitignore.html">
+            
+                <a href="../计算机通用/Git/gitignore.html">
+            
+                    
+                        <b>2.2.10.</b>
+                    
+                    gitignore
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../计算机通用/密码学/密码学概念 - 对称和非对称加密.html">
+            
+                <a href="../计算机通用/密码学/密码学概念 - 对称和非对称加密.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    密码学及其应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../计算机通用/密码学/密码学概念 - 对称和非对称加密.html">
+            
+                <a href="../计算机通用/密码学/密码学概念 - 对称和非对称加密.html">
+            
+                    
+                        <b>2.3.1.</b>
+                    
+                    密码学概念 - 对称和非对称加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../计算机通用/密码学/密码学应用 - HTTPS.html">
+            
+                <a href="../计算机通用/密码学/密码学应用 - HTTPS.html">
+            
+                    
+                        <b>2.3.2.</b>
+                    
+                    密码学应用 - HTTPS.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../计算机通用/密码学/密码学应用 - SSH登录.html">
+            
+                <a href="../计算机通用/密码学/密码学应用 - SSH登录.html">
+            
+                    
+                        <b>2.3.3.</b>
+                    
+                    密码学应用 - SSH登录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../计算机通用/密码学/密码学应用 - 区块链和数字货币.html">
+            
+                <a href="../计算机通用/密码学/密码学应用 - 区块链和数字货币.html">
+            
+                    
+                        <b>2.3.4.</b>
+                    
+                    密码学应用 - 区块链和数字货币.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../计算机通用/网络/网络通信.html">
+            
+                <a href="../计算机通用/网络/网络通信.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    网络
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../计算机通用/网络/网络通信.html">
+            
+                <a href="../计算机通用/网络/网络通信.html">
+            
+                    
+                        <b>2.4.1.</b>
+                    
+                    网络通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../计算机通用/网络/路由器.html">
+            
+                <a href="../计算机通用/网络/路由器.html">
+            
+                    
+                        <b>2.4.2.</b>
+                    
+                    路由
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.2.1" data-path="../计算机通用/网络/软路由.html">
+            
+                <a href="../计算机通用/网络/软路由.html">
+            
+                    
+                        <b>2.4.2.1.</b>
+                    
+                    软路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2.2" data-path="../计算机通用/网络/WNDR4300刷机.html">
+            
+                <a href="../计算机通用/网络/WNDR4300刷机.html">
+            
+                    
+                        <b>2.4.2.2.</b>
+                    
+                    WNDR4300v1刷机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../计算机通用/网络/服务器软件.html">
+            
+                <a href="../计算机通用/网络/服务器软件.html">
+            
+                    
+                        <b>2.4.3.</b>
+                    
+                    服务器软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../计算机通用/网络/使用Socket进行网络通信.html">
+            
+                <a href="../计算机通用/网络/使用Socket进行网络通信.html">
+            
+                    
+                        <b>2.4.4.</b>
+                    
+                    使用Socket进行网络通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../计算机通用/网络/NSURLSession.html">
+            
+                <a href="../计算机通用/网络/NSURLSession.html">
+            
+                    
+                        <b>2.4.5.</b>
+                    
+                    NSURLSession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../计算机通用/网络/URL 及其构成详解.html">
+            
+                <a href="../计算机通用/网络/URL 及其构成详解.html">
+            
+                    
+                        <b>2.4.6.</b>
+                    
+                    URL 及其构成详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../计算机通用/网络/URL 类.html">
+            
+                <a href="../计算机通用/网络/URL 类.html">
+            
+                    
+                        <b>2.4.7.</b>
+                    
+                    URL 类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.8" data-path="../计算机通用/网络/WKWebView.html">
+            
+                <a href="../计算机通用/网络/WKWebView.html">
+            
+                    
+                        <b>2.4.8.</b>
+                    
+                    WKWebView
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../计算机通用/内存/内存中的五大区域.html">
+            
+                <a href="../计算机通用/内存/内存中的五大区域.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../计算机通用/内存/内存中的五大区域.html">
+            
+                <a href="../计算机通用/内存/内存中的五大区域.html">
+            
+                    
+                        <b>2.5.1.</b>
+                    
+                    内存中的五大区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../计算机通用/内存/内存管理.html">
+            
+                <a href="../计算机通用/内存/内存管理.html">
+            
+                    
+                        <b>2.5.2.</b>
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../计算机通用/内存/内存泄漏.html">
+            
+                <a href="../计算机通用/内存/内存泄漏.html">
+            
+                    
+                        <b>2.5.3.</b>
+                    
+                    内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../计算机通用/内存/@property.html">
+            
+                <a href="../计算机通用/内存/@property.html">
+            
+                    
+                        <b>2.5.4.</b>
+                    
+                    @property
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.5" data-path="../计算机通用/内存/野指针和僵尸对象.html">
+            
+                <a href="../计算机通用/内存/野指针和僵尸对象.html">
+            
+                    
+                        <b>2.5.5.</b>
+                    
+                    野指针和僵尸对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../计算机通用/多线程/多线程.html">
+            
+                <a href="../计算机通用/多线程/多线程.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    多线程、Runloop、自动释放池
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../计算机通用/多线程/多线程.html">
+            
+                <a href="../计算机通用/多线程/多线程.html">
+            
+                    
+                        <b>2.6.1.</b>
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../iOS 知识点/多线程/pthread.md">
+            
+                <span>
+            
+                    
+                        <b>2.6.2.</b>
+                    
+                    pthread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../计算机通用/多线程/NSThread.html">
+            
+                <a href="../计算机通用/多线程/NSThread.html">
+            
+                    
+                        <b>2.6.3.</b>
+                    
+                    NSThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.4" data-path="../计算机通用/多线程/GCD.html">
+            
+                <a href="../计算机通用/多线程/GCD.html">
+            
+                    
+                        <b>2.6.4.</b>
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.5" data-path="../计算机通用/多线程/NSOperation.html">
+            
+                <a href="../计算机通用/多线程/NSOperation.html">
+            
+                    
+                        <b>2.6.5.</b>
+                    
+                    NSOperation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.6" data-path="../计算机通用/多线程/Runloop 消息循环.html">
+            
+                <a href="../计算机通用/多线程/Runloop 消息循环.html">
+            
+                    
+                        <b>2.6.6.</b>
+                    
+                    Runloop 消息循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../计算机通用/数据读取解析存储/数据读取、解析.html">
+            
+                <a href="../计算机通用/数据读取解析存储/数据读取、解析.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    数据读取解析存储
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../计算机通用/数据读取解析存储/数据读取、解析.html">
+            
+                <a href="../计算机通用/数据读取解析存储/数据读取、解析.html">
+            
+                    
+                        <b>2.7.1.</b>
+                    
+                    数据读取、解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../计算机通用/数据读取解析存储/数据存储.html">
+            
+                <a href="../计算机通用/数据读取解析存储/数据存储.html">
+            
+                    
+                        <b>2.7.2.</b>
+                    
+                    数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../计算机通用/数据读取解析存储/NSFileManager 文件管理器.html">
+            
+                <a href="../计算机通用/数据读取解析存储/NSFileManager 文件管理器.html">
+            
+                    
+                        <b>2.7.3.</b>
+                    
+                    NSFileManager 文件管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="../计算机通用/数据读取解析存储/CoreData_SQLite.html">
+            
+                <a href="../计算机通用/数据读取解析存储/CoreData_SQLite.html">
+            
+                    
+                        <b>2.7.4.</b>
+                    
+                    CoreData_SQLite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.5" data-path="../计算机通用/数据读取解析存储/FMDB_SQLite.html">
+            
+                <a href="../计算机通用/数据读取解析存储/FMDB_SQLite.html">
+            
+                    
+                        <b>2.7.5.</b>
+                    
+                    FMDB_SQLite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.6" data-path="../计算机通用/数据读取解析存储/XML 的 存储 和 解析.html">
+            
+                <a href="../计算机通用/数据读取解析存储/XML 的 存储 和 解析.html">
+            
+                    
+                        <b>2.7.6.</b>
+                    
+                    XML 的 存储 和 解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.7" data-path="../计算机通用/数据读取解析存储/NSCache 缓存.html">
+            
+                <a href="../计算机通用/数据读取解析存储/NSCache 缓存.html">
+            
+                    
+                        <b>2.7.7.</b>
+                    
+                    NSCache 缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../计算机通用/编程语言学习/编程语言学习.html">
+            
+                <a href="../计算机通用/编程语言学习/编程语言学习.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    编程语言学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../计算机通用/编程语言学习/Shell/Shell基本使用.html">
+            
+                <a href="../计算机通用/编程语言学习/Shell/Shell基本使用.html">
+            
+                    
+                        <b>2.8.1.</b>
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1.1" data-path="../计算机通用/编程语言学习/Shell/Shell自动交互.html">
+            
+                <a href="../计算机通用/编程语言学习/Shell/Shell自动交互.html">
+            
+                    
+                        <b>2.8.1.1.</b>
+                    
+                    Shell自动交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="../计算机通用/编程语言学习/C 语言/C 语言知识点.html">
+            
+                <a href="../计算机通用/编程语言学习/C 语言/C 语言知识点.html">
+            
+                    
+                        <b>2.8.2.</b>
+                    
+                    C 语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="../计算机通用/编程语言学习/Objective-C 语言/OC 知识点.html">
+            
+                <a href="../计算机通用/编程语言学习/Objective-C 语言/OC 知识点.html">
+            
+                    
+                        <b>2.8.3.</b>
+                    
+                    Objective-C 语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.4" data-path="../计算机通用/编程语言学习/Swift 语言/">
+            
+                <a href="../计算机通用/编程语言学习/Swift 语言/">
+            
+                    
+                        <b>2.8.4.</b>
+                    
+                    Swift 语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.5" data-path="../计算机通用/编程语言学习/PHP/PHP.html">
+            
+                <a href="../计算机通用/编程语言学习/PHP/PHP.html">
+            
+                    
+                        <b>2.8.5.</b>
+                    
+                    PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.6" data-path="../计算机通用/编程语言学习/JavaScript/JavaScript.html">
+            
+                <a href="../计算机通用/编程语言学习/JavaScript/JavaScript.html">
+            
+                    
+                        <b>2.8.6.</b>
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.7" data-path="../计算机通用/编程语言学习/HTML & CSS/HTML.html">
+            
+                <a href="../计算机通用/编程语言学习/HTML & CSS/HTML.html">
+            
+                    
+                        <b>2.8.7.</b>
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.8" data-path="../计算机通用/编程语言学习/HTML & CSS/CSS.html">
+            
+                <a href="../计算机通用/编程语言学习/HTML & CSS/CSS.html">
+            
+                    
+                        <b>2.8.8.</b>
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../计算机通用/Gitbook/Gitbook.html">
+            
+                <a href="../计算机通用/Gitbook/Gitbook.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.9.1" data-path="../计算机通用/Gitbook/Gitbook.html">
+            
+                <a href="../计算机通用/Gitbook/Gitbook.html">
+            
+                    
+                        <b>2.9.1.</b>
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9.2" data-path="../计算机通用/Gitbook/Github Pages.html">
+            
+                <a href="../计算机通用/Gitbook/Github Pages.html">
+            
+                    
+                        <b>2.9.2.</b>
+                    
+                    Github Pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">操作系统</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../计算机通用/操作系统/Linux命令.html">
+            
+                <a href="../计算机通用/操作系统/Linux命令.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Linux系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../计算机通用/操作系统/The Linux Command Line.html">
+            
+                <a href="../计算机通用/操作系统/The Linux Command Line.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    The Linux Command Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../计算机通用/操作系统/Linux命令.html">
+            
+                <a href="../计算机通用/操作系统/Linux命令.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    Linux 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../计算机通用/操作系统/ls -al 各字段含义.html">
+            
+                <a href="../计算机通用/操作系统/ls -al 各字段含义.html">
+            
+                    
+                        <b>3.1.3.</b>
+                    
+                    ls -al 各字段含义.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../计算机通用/操作系统/Linux系统服务器下载、上传目录和文件.html">
+            
+                <a href="../计算机通用/操作系统/Linux系统服务器下载、上传目录和文件.html">
+            
+                    
+                        <b>3.1.4.</b>
+                    
+                    Linux系统服务器下载、上传目录和文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../计算机通用/操作系统/Mac系统快捷键.html">
+            
+                <a href="../计算机通用/操作系统/Mac系统快捷键.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    Mac系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../计算机通用/操作系统/Mac制作Ubuntu启动盘.html">
+            
+                <a href="../计算机通用/操作系统/Mac制作Ubuntu启动盘.html">
+            
+                    
+                        <b>3.2.1.</b>
+                    
+                    Mac制作Ubuntu启动盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../计算机通用/操作系统/Mac格式化U盘.html">
+            
+                <a href="../计算机通用/操作系统/Mac格式化U盘.html">
+            
+                    
+                        <b>3.2.2.</b>
+                    
+                    Mac格式化U盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../计算机通用/操作系统/Windows系统快捷键.html">
+            
+                <a href="../计算机通用/操作系统/Windows系统快捷键.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Windows系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../计算机通用/操作系统/Windows系统快捷键.html">
+            
+                <a href="../计算机通用/操作系统/Windows系统快捷键.html">
+            
+                    
+                        <b>3.3.1.</b>
+                    
+                    Windows系统快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../计算机通用/操作系统/Windows系统安装.html">
+            
+                <a href="../计算机通用/操作系统/Windows系统安装.html">
+            
+                    
+                        <b>3.3.2.</b>
+                    
+                    Windows系统安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../计算机通用/操作系统/Windows系统下常见问题解决.html">
+            
+                <a href="../计算机通用/操作系统/Windows系统下常见问题解决.html">
+            
+                    
+                        <b>3.3.3.</b>
+                    
+                    Windows系统下常见问题解决
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IDE</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../计算机通用/IDE编辑器/Vim.html">
+            
+                <a href="../计算机通用/IDE编辑器/Vim.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    Vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IOS 软件开发</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    iOS 必备知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../iOS 知识点/常用功能和第三方库/常用功能和第三方库.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/常用功能和第三方库.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    iOS 常用功能集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../iOS 知识点/常用功能和第三方库/常用功能和第三方库.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/常用功能和第三方库.html">
+            
+                    
+                        <b>5.2.1.</b>
+                    
+                    常用功能和第三方框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../iOS 知识点/常用功能和第三方库/APP启动加载自定义控制器.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/APP启动加载自定义控制器.html">
+            
+                    
+                        <b>5.2.2.</b>
+                    
+                    APP启动加载自定义控制器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.3" data-path="../iOS 知识点/常用功能和第三方库/用JSON或Plist数据动态创建列表.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/用JSON或Plist数据动态创建列表.html">
+            
+                    
+                        <b>5.2.3.</b>
+                    
+                    用JSON或Plist数据动态创建列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.4" data-path="../iOS 知识点/常用功能和第三方库/用JSON或Plist数据动态创建视图控制器.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/用JSON或Plist数据动态创建视图控制器.html">
+            
+                    
+                        <b>5.2.4.</b>
+                    
+                    用JSON或Plist数据动态创建视图控制器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.5" data-path="../iOS 知识点/常用功能和第三方库/XLForm.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/XLForm.html">
+            
+                    
+                        <b>5.2.5.</b>
+                    
+                    表单 - XLForm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.6" data-path="../iOS 知识点/常用功能和第三方库/AFNetworking.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/AFNetworking.html">
+            
+                    
+                        <b>5.2.6.</b>
+                    
+                    网络 - AFNetworking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.7" data-path="../iOS 知识点/常用功能和第三方库/SDWebImage.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/SDWebImage.html">
+            
+                    
+                        <b>5.2.7.</b>
+                    
+                    网络图片下载 - SDWebImage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.8" data-path="../iOS 知识点/常用功能和第三方库/IM即时聊天/环信客服云、七鱼客服集成.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/IM即时聊天/环信客服云、七鱼客服集成.html">
+            
+                    
+                        <b>5.2.8.</b>
+                    
+                    客服集成 - 环信和七鱼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.9" data-path="../iOS 知识点/常用功能和第三方库/Bugly.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/Bugly.html">
+            
+                    
+                        <b>5.2.9.</b>
+                    
+                    异常上报 - Bugly
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.10" data-path="../iOS 知识点/常用功能和第三方库/推送通知/推送通知">
+            
+                <span>
+            
+                    
+                        <b>5.2.10.</b>
+                    
+                    推送通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.11" data-path="../iOS 知识点/常用功能和第三方库/推送通知/推送 - 极光.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/推送通知/推送 - 极光.html">
+            
+                    
+                        <b>5.2.11.</b>
+                    
+                    推送通知 - 极光推送
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.12" data-path="../iOS 知识点/常用功能和第三方库/授权登录/OAuth.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/授权登录/OAuth.html">
+            
+                    
+                        <b>5.2.12.</b>
+                    
+                    授权登录 - OAuth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.13" data-path="../iOS 知识点/常用功能和第三方库/授权登录/SSO.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/授权登录/SSO.html">
+            
+                    
+                        <b>5.2.13.</b>
+                    
+                    授权登录 - SSO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.14" data-path="../iOS 知识点/常用功能和第三方库/打企业版ipa包和七牛云分发流程.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/打企业版ipa包和七牛云分发流程.html">
+            
+                    
+                        <b>5.2.14.</b>
+                    
+                    打包、分发测试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.14.1" data-path="../iOS 知识点/常用功能和第三方库/七牛云上传包.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/七牛云上传包.html">
+            
+                    
+                        <b>5.2.14.1.</b>
+                    
+                    七牛云
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.14.2" >
+            
+                <span>
+            
+                    
+                        <b>5.2.14.2.</b>
+                    
+                    蒲公英
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.15" data-path="../iOS 知识点/常用功能和第三方库/RxSwift.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/RxSwift.html">
+            
+                    
+                        <b>5.2.15.</b>
+                    
+                    RxSwift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.15.1" data-path="../iOS 知识点/常用功能和第三方库/RxSwift-与tableView结合使用.html">
+            
+                <a href="../iOS 知识点/常用功能和第三方库/RxSwift-与tableView结合使用.html">
+            
+                    
+                        <b>5.2.15.1.</b>
+                    
+                    RxSwift-与tableView结合使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../iOS 知识点/iOS 知识点.html">
+            
+                <a href="../iOS 知识点/iOS 知识点.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    iOS 基础知识点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../iOS 知识点/OC和Swift混编.html">
+            
+                <a href="../iOS 知识点/OC和Swift混编.html">
+            
+                    
+                        <b>5.3.1.</b>
+                    
+                    OC和Swift混编
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../iOS 知识点/APP开发步骤、流程.html">
+            
+                <a href="../iOS 知识点/APP开发步骤、流程.html">
+            
+                    
+                        <b>5.3.2.</b>
+                    
+                    APP开发步骤、流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../iOS 知识点/项目/项目简介.html">
+            
+                <a href="../iOS 知识点/项目/项目简介.html">
+            
+                    
+                        <b>5.3.3.</b>
+                    
+                    项目
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.3.1" data-path="../iOS 知识点/项目/项目简介.html">
+            
+                <a href="../iOS 知识点/项目/项目简介.html">
+            
+                    
+                        <b>5.3.3.1.</b>
+                    
+                    项目简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3.2" data-path="../iOS 知识点/项目/项目部署.html">
+            
+                <a href="../iOS 知识点/项目/项目部署.html">
+            
+                    
+                        <b>5.3.3.2.</b>
+                    
+                    项目部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3.3" data-path="../iOS 知识点/项目/项目架构.html">
+            
+                <a href="../iOS 知识点/项目/项目架构.html">
+            
+                    
+                        <b>5.3.3.3.</b>
+                    
+                    项目架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3.4" data-path="../iOS 知识点/项目/MVC 和 MVVM.html">
+            
+                <a href="../iOS 知识点/项目/MVC 和 MVVM.html">
+            
+                    
+                        <b>5.3.3.4.</b>
+                    
+                    MVC 和 MVVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4" data-path="../iOS 知识点/UI/UI 界面 搭建.html">
+            
+                <a href="../iOS 知识点/UI/UI 界面 搭建.html">
+            
+                    
+                        <b>5.3.4.</b>
+                    
+                    UI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.4.1" data-path="../iOS 知识点/UI/SwiftUI.html">
+            
+                <a href="../iOS 知识点/UI/SwiftUI.html">
+            
+                    
+                        <b>5.3.4.1.</b>
+                    
+                    SwiftUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.2" data-path="../iOS 知识点/UI/UI 界面 搭建.html">
+            
+                <a href="../iOS 知识点/UI/UI 界面 搭建.html">
+            
+                    
+                        <b>5.3.4.2.</b>
+                    
+                    UI 界面 搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.3" data-path="../iOS 知识点/UI/UI 界面间 传值.html">
+            
+                <a href="../iOS 知识点/UI/UI 界面间 传值.html">
+            
+                    
+                        <b>5.3.4.3.</b>
+                    
+                    UI 界面间 传值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.4" data-path="../iOS 知识点/UI/UI 界面间 跳转.html">
+            
+                <a href="../iOS 知识点/UI/UI 界面间 跳转.html">
+            
+                    
+                        <b>5.3.4.4.</b>
+                    
+                    UI 界面间 跳转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.5" data-path="../iOS 知识点/UI/自动布局.html">
+            
+                <a href="../iOS 知识点/UI/自动布局.html">
+            
+                    
+                        <b>5.3.4.5.</b>
+                    
+                    自动布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.6" data-path="../iOS 知识点/UI/苹果原生代码自动布局.html">
+            
+                <a href="../iOS 知识点/UI/苹果原生代码自动布局.html">
+            
+                    
+                        <b>5.3.4.6.</b>
+                    
+                    苹果原生代码自动布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.7" data-path="../iOS 知识点/UI/UIScrollView中子控件的布局.html">
+            
+                <a href="../iOS 知识点/UI/UIScrollView中子控件的布局.html">
+            
+                    
+                        <b>5.3.4.7.</b>
+                    
+                    UIScrollView中子控件的布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.8" data-path="../iOS 知识点/UI/事件的传递链、响应链.html">
+            
+                <a href="../iOS 知识点/UI/事件的传递链、响应链.html">
+            
+                    
+                        <b>5.3.4.8.</b>
+                    
+                    事件的传递链、响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.9" data-path="../iOS 知识点/UI/UIDevice.html">
+            
+                <a href="../iOS 知识点/UI/UIDevice.html">
+            
+                    
+                        <b>5.3.4.9.</b>
+                    
+                    UIDevice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.10" data-path="../iOS 知识点/UI/UIView.html">
+            
+                <a href="../iOS 知识点/UI/UIView.html">
+            
+                    
+                        <b>5.3.4.10.</b>
+                    
+                    UIView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.11" data-path="../iOS 知识点/UI/UITabBarController.html">
+            
+                <a href="../iOS 知识点/UI/UITabBarController.html">
+            
+                    
+                        <b>5.3.4.11.</b>
+                    
+                    UITabBarController
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.12" data-path="../iOS 知识点/UI/UINavigationController.html">
+            
+                <a href="../iOS 知识点/UI/UINavigationController.html">
+            
+                    
+                        <b>5.3.4.12.</b>
+                    
+                    UINavigationController
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.13" data-path="../iOS 知识点/UI/UIScrollView.html">
+            
+                <a href="../iOS 知识点/UI/UIScrollView.html">
+            
+                    
+                        <b>5.3.4.13.</b>
+                    
+                    UIScrollView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.14" data-path="../iOS 知识点/UI/UITableView.html">
+            
+                <a href="../iOS 知识点/UI/UITableView.html">
+            
+                    
+                        <b>5.3.4.14.</b>
+                    
+                    UITableView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.15" data-path="../iOS 知识点/UI/UICollectionView.html">
+            
+                <a href="../iOS 知识点/UI/UICollectionView.html">
+            
+                    
+                        <b>5.3.4.15.</b>
+                    
+                    UICollectionView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.16" data-path="../iOS 知识点/UI/UIImageView 和 UIImage.html">
+            
+                <a href="../iOS 知识点/UI/UIImageView 和 UIImage.html">
+            
+                    
+                        <b>5.3.4.16.</b>
+                    
+                    UIImageView 和 UIImage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.17" data-path="../iOS 知识点/UI/UITextField 和 UITextView.html">
+            
+                <a href="../iOS 知识点/UI/UITextField 和 UITextView.html">
+            
+                    
+                        <b>5.3.4.17.</b>
+                    
+                    UITextField 和 UITextView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.18" data-path="../iOS 知识点/UI/UIControl.html">
+            
+                <a href="../iOS 知识点/UI/UIControl.html">
+            
+                    
+                        <b>5.3.4.18.</b>
+                    
+                    UIControl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.19" data-path="../iOS 知识点/UI/UIResponder.html">
+            
+                <a href="../iOS 知识点/UI/UIResponder.html">
+            
+                    
+                        <b>5.3.4.19.</b>
+                    
+                    UIResponder
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.20" data-path="../iOS 知识点/UI/UITouch.html">
+            
+                <a href="../iOS 知识点/UI/UITouch.html">
+            
+                    
+                        <b>5.3.4.20.</b>
+                    
+                    UITouch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4.21" data-path="../iOS 知识点/UI/UIGestureRecognizer.html">
+            
+                <a href="../iOS 知识点/UI/UIGestureRecognizer.html">
+            
+                    
+                        <b>5.3.4.21.</b>
+                    
+                    UIGestureRecognizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.5" data-path="../iOS 知识点/函数指针、Block、Closure.html">
+            
+                <a href="../iOS 知识点/函数指针、Block、Closure.html">
+            
+                    
+                        <b>5.3.5.</b>
+                    
+                    Block / Closure / 函数指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6" data-path="../iOS 知识点/Runtime 运行时原理及应用/运行时 原理 和 方法的调用.html">
+            
+                <a href="../iOS 知识点/Runtime 运行时原理及应用/运行时 原理 和 方法的调用.html">
+            
+                    
+                        <b>5.3.6.</b>
+                    
+                    Runtime 运行时原理及应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.6.1" data-path="../iOS 知识点/Runtime 运行时原理及应用/运行时 原理 和 方法的调用.html">
+            
+                <a href="../iOS 知识点/Runtime 运行时原理及应用/运行时 原理 和 方法的调用.html">
+            
+                    
+                        <b>5.3.6.1.</b>
+                    
+                    运行时 原理 和 方法的调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6.2" data-path="../iOS 知识点/Runtime 运行时原理及应用/运行时 的应用.html">
+            
+                <a href="../iOS 知识点/Runtime 运行时原理及应用/运行时 的应用.html">
+            
+                    
+                        <b>5.3.6.2.</b>
+                    
+                    运行时 的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6.3" data-path="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - KVC 和 构造函数.html">
+            
+                <a href="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - KVC 和 构造函数.html">
+            
+                    
+                        <b>5.3.6.3.</b>
+                    
+                    运行时应用 - KVC 和 构造函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6.4" data-path="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - KVO.html">
+            
+                <a href="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - KVO.html">
+            
+                    
+                        <b>5.3.6.4.</b>
+                    
+                    运行时应用 - KVO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6.5" data-path="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - YYModel.html">
+            
+                <a href="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - YYModel.html">
+            
+                    
+                        <b>5.3.6.5.</b>
+                    
+                    运行时应用 - YYModel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6.6" data-path="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - 命名空间和反射机制.html">
+            
+                <a href="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - 命名空间和反射机制.html">
+            
+                    
+                        <b>5.3.6.6.</b>
+                    
+                    运行时应用 - 命名空间和反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.6.7" data-path="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - 获取成员变量列表、属性列表、方法列表.html">
+            
+                <a href="../iOS 知识点/Runtime 运行时原理及应用/运行时应用 - 获取成员变量列表、属性列表、方法列表.html">
+            
+                    
+                        <b>5.3.6.7.</b>
+                    
+                    运行时应用 - 获取成员变量列表、属性列表、方法列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.7" data-path="../iOS 知识点/绘图、动画/CoreGraphics 核心绘图.html">
+            
+                <a href="../iOS 知识点/绘图、动画/CoreGraphics 核心绘图.html">
+            
+                    
+                        <b>5.3.7.</b>
+                    
+                    绘图和动画
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.7.1" data-path="../iOS 知识点/绘图、动画/CoreGraphics 核心绘图.html">
+            
+                <a href="../iOS 知识点/绘图、动画/CoreGraphics 核心绘图.html">
+            
+                    
+                        <b>5.3.7.1.</b>
+                    
+                    CoreGraphics 核心绘图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.7.2" data-path="../iOS 知识点/绘图、动画/动画相关.html">
+            
+                <a href="../iOS 知识点/绘图、动画/动画相关.html">
+            
+                    
+                        <b>5.3.7.2.</b>
+                    
+                    动画相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.7.3" data-path="../iOS 知识点/绘图、动画/UIDynamic 物理仿真.html">
+            
+                <a href="../iOS 知识点/绘图、动画/UIDynamic 物理仿真.html">
+            
+                    
+                        <b>5.3.7.3.</b>
+                    
+                    UIDynamic 物理仿真
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.8" data-path="../iOS 知识点/性能优化/性能优化.html">
+            
+                <a href="../iOS 知识点/性能优化/性能优化.html">
+            
+                    
+                        <b>5.3.8.</b>
+                    
+                    性能优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.9" >
+            
+                <span>
+            
+                    
+                        <b>5.3.9.</b>
+                    
+                    生命周期
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.10" >
+            
+                <span>
+            
+                    
+                        <b>5.3.10.</b>
+                    
+                    OC 语言特性
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.11" data-path="../iOS 知识点/其他/常用类.html">
+            
+                <a href="../iOS 知识点/其他/常用类.html">
+            
+                    
+                        <b>5.3.11.</b>
+                    
+                    iOS 其他知识点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.11.1" data-path="../iOS 知识点/其他/常用类.html">
+            
+                <a href="../iOS 知识点/其他/常用类.html">
+            
+                    
+                        <b>5.3.11.1.</b>
+                    
+                    常用类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.11.2" data-path="../iOS 知识点/其他/Xcode项目重命名.html">
+            
+                <a href="../iOS 知识点/其他/Xcode项目重命名.html">
+            
+                    
+                        <b>5.3.11.2.</b>
+                    
+                    Xcode项目重命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.11.3" data-path="../iOS 知识点/其他/访问控制 Access Control.html">
+            
+                <a href="../iOS 知识点/其他/访问控制 Access Control.html">
+            
+                    
+                        <b>5.3.11.3.</b>
+                    
+                    访问控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.11.4" data-path="../iOS 知识点/其他/日期时间相关.html">
+            
+                <a href="../iOS 知识点/其他/日期时间相关.html">
+            
+                    
+                        <b>5.3.11.4.</b>
+                    
+                    日期时间相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.11.5" data-path="../iOS 知识点/其他/正则表达式 Regular Expression.html">
+            
+                <a href="../iOS 知识点/其他/正则表达式 Regular Expression.html">
+            
+                    
+                        <b>5.3.11.5.</b>
+                    
+                    正则表达式 Regular Expression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.11.6" data-path="../iOS 知识点/其他/UITest 界面测试.html">
+            
+                <a href="../iOS 知识点/其他/UITest 界面测试.html">
+            
+                    
+                        <b>5.3.11.6.</b>
+                    
+                    UITest 界面测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.11.7" data-path="../iOS 知识点/其他/UnitTest 单元测试.html">
+            
+                <a href="../iOS 知识点/其他/UnitTest 单元测试.html">
+            
+                    
+                        <b>5.3.11.7.</b>
+                    
+                    UnitTest 单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../iOS 知识点/iOS库/iOS库介绍.html">
+            
+                <a href="../iOS 知识点/iOS库/iOS库介绍.html">
+            
+                    
+                        <b>5.4.</b>
+                    
+                    iOS库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../iOS 知识点/iOS库/制作Cocoa Pod库.md">
+            
+                <span>
+            
+                    
+                        <b>5.4.1.</b>
+                    
+                    制作Cocoa Pod库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../iOS 知识点/iOS库/制作静态库.a和.framework.html">
+            
+                <a href="../iOS 知识点/iOS库/制作静态库.a和.framework.html">
+            
+                    
+                        <b>5.4.2.</b>
+                    
+                    制作静态库.framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.html">
+            
+                <a href="../iOS 知识点/iOS库/库支持的CPU架构、链接库的参数、打印环境变量.html">
+            
+                    
+                        <b>5.4.3.</b>
+                    
+                    库支持的CPU架构、链接库的参数、打印环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.4" data-path="../iOS 知识点/iOS库/lipo命令.html">
+            
+                <a href="../iOS 知识点/iOS库/lipo命令.html">
+            
+                    
+                        <b>5.4.4.</b>
+                    
+                    lipo命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.5" data-path="../iOS 知识点/iOS库/iOS链接编译库的过程中的问题总结.html">
+            
+                <a href="../iOS 知识点/iOS库/iOS链接编译库的过程中的问题总结.html">
+            
+                    
+                        <b>5.4.5.</b>
+                    
+                    iOS链接编译库的过程中的问题总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.6" data-path="../iOS 知识点/iOS库/CocoaPods/CocoaPods.html">
+            
+                <a href="../iOS 知识点/iOS库/CocoaPods/CocoaPods.html">
+            
+                    
+                        <b>5.4.6.</b>
+                    
+                    CocoaPods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.7" data-path="../iOS 知识点/iOS库/CocoaPods/pod install, pod update, podfile, podfile.lock.html">
+            
+                <a href="../iOS 知识点/iOS库/CocoaPods/pod install, pod update, podfile, podfile.lock.html">
+            
+                    
+                        <b>5.4.7.</b>
+                    
+                    pod install, pod update, podfile, podfile.lock
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Others</li>
+        
+        
+    
+
+    
+        
+        <li class="header">图片音视频处理</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../Others/图片视频处理/图片基础知识.html">
+            
+                <a href="../Others/图片视频处理/图片基础知识.html">
+            
+                    
+                        <b>7.1.</b>
+                    
+                    图片基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../Others/图片视频处理/Photoshop.html">
+            
+                <a href="../Others/图片视频处理/Photoshop.html">
+            
+                    
+                        <b>7.2.</b>
+                    
+                    Photoshop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../Others/图片视频处理/相机按钮的含义.html">
+            
+                <a href="../Others/图片视频处理/相机按钮的含义.html">
+            
+                    
+                        <b>7.3.</b>
+                    
+                    相机按钮的含义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../Others/图片视频处理/Final Cut Pro X.html">
+            
+                <a href="../Others/图片视频处理/Final Cut Pro X.html">
+            
+                    
+                        <b>7.4.</b>
+                    
+                    Final Cut Pro X
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../Others/图片视频处理/ffmpeg.html">
+            
+                <a href="../Others/图片视频处理/ffmpeg.html">
+            
+                    
+                        <b>7.5.</b>
+                    
+                    ffmpeg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../Others/图片视频处理/gifsicle.html">
+            
+                <a href="../Others/图片视频处理/gifsicle.html">
+            
+                    
+                        <b>7.6.</b>
+                    
+                    gif
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">历史政治地理</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../Others/历史政治地理/历史.html">
+            
+                <a href="../Others/历史政治地理/历史.html">
+            
+                    
+                        <b>8.1.</b>
+                    
+                    历史
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../Others/历史政治地理/历史轴.html">
+            
+                <a href="../Others/历史政治地理/历史轴.html">
+            
+                    
+                        <b>8.2.</b>
+                    
+                    历史轴
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">时间管理</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../Others/时间管理/Omnifocus 使用流程.html">
+            
+                <a href="../Others/时间管理/Omnifocus 使用流程.html">
+            
+                    
+                        <b>9.1.</b>
+                    
+                    时间管理 - OmniFocus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">英语学习</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../英语/英语时态.html">
+            
+                <a href="../英语/英语时态.html">
+            
+                    
+                        <b>10.1.</b>
+                    
+                    英语时态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="../英语/英语音标.html">
+            
+                <a href="../英语/英语音标.html">
+            
+                    
+                        <b>10.2.</b>
+                    
+                    英语音标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="../英语/英语易混音标.html">
+            
+                <a href="../英语/英语易混音标.html">
+            
+                    
+                        <b>10.3.</b>
+                    
+                    英语易混音标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="../英语/单词收藏.html">
+            
+                <a href="../英语/单词收藏.html">
+            
+                    
+                        <b>10.4.</b>
+                    
+                    单词收藏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="../英语/英语读音技巧.html">
+            
+                <a href="../英语/英语读音技巧.html">
+            
+                    
+                        <b>10.5.</b>
+                    
+                    英语读音技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">篮球</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../Others/篮球/突破.html">
+            
+                <a href="../Others/篮球/突破.html">
+            
+                    
+                        <b>11.1.</b>
+                    
+                    突破
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../Others/篮球/篮下脚步.html">
+            
+                <a href="../Others/篮球/篮下脚步.html">
+            
+                    
+                        <b>11.2.</b>
+                    
+                    篮下脚步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../Others/篮球/破人盯人.html">
+            
+                <a href="../Others/篮球/破人盯人.html">
+            
+                    
+                        <b>11.3.</b>
+                    
+                    破人盯人
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >SwiftyEOS的使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <ul>
+<li><div><a href="#swiftyeos&#x7684;&#x4F7F;&#x7528;">SwiftyEOS&#x7684;&#x4F7F;&#x7528;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li> 
+<ul>
+<li><div><a href="#&#x521B;&#x5EFA;&#x94B1;&#x5305;&#x548C;&#x5BFC;&#x5165;&#x79C1;&#x94A5;">&#x521B;&#x5EFA;&#x94B1;&#x5305;&#x548C;&#x5BFC;&#x5165;&#x79C1;&#x94A5;</a><i></i></div></li>
+<li><div><a href="#&#x521B;&#x5EFA;&#x8D26;&#x6237;">&#x521B;&#x5EFA;&#x8D26;&#x6237;</a><i></i></div></li>
+</ul></li>
+</ul></li>
+</ul>
+
+
+<h1 id="swiftyeos&#x7684;&#x4F7F;&#x7528;">SwiftyEOS&#x7684;&#x4F7F;&#x7528;</h1>
+<h3 id="&#x521B;&#x5EFA;&#x94B1;&#x5305;&#x548C;&#x5BFC;&#x5165;&#x79C1;&#x94A5;">&#x521B;&#x5EFA;&#x94B1;&#x5305;&#x548C;&#x5BFC;&#x5165;&#x79C1;&#x94A5;</h3>
+<p>&#x6BCF;&#x65B0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8D26;&#x6237;&#xFF0C;&#x5C31;&#x4F1A;&#x5728;keyStore&#x6587;&#x4EF6;&#x5939;&#x91CC;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;keystore&#x6587;&#x4EF6;, &#x6240;&#x4EE5;&#x5F53;&#x8F6C;&#x8D26;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x4ECE;&#x4F7F;&#x7528;currentAccunt&#x7684;&#x79C1;&#x94A5;&#x8FDB;&#x884C;&#x7B7E;&#x540D;&#xFF0C;&#x800C;currentAccount&#x4F1A;&#x53BB;keystore&#x6587;&#x4EF6;&#x5939;&#x91CC;&#x62FF;&#x51FA;&#x7B2C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x53EA;&#x6709;&#x4E00;&#x4E2A;keystore&#x7684;&#x8BDD;&#x5C31;&#x6CA1;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x65E6;&#x6709;&#x4E86;&#x5176;&#x4ED6;&#x7684;keystore&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x53EF;&#x80FD;&#x7B7E;&#x540D;&#x5931;&#x8D25;</p>
+<p>&#x6240;&#x4EE5;&#x8C03;&#x7528;currentAccount&#x65F6;&#xFF0C;</p>
+<pre><code>public class var currentAccount: SELocalAccount? {
+        if __account == nil {
+            __account = existingAccount()
+        }
+        return __account
+    }
+</code></pre><p>&#x5982;&#x679C;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x94B1;&#x5305;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x4E00;&#x5BF9;&#x5BC6;&#x94A5;&#x5BF9;&#x5B58;&#x8FDB;&#x53BB;</p>
+<p>&#x5982;&#x679C;&#x5148;&#x5355;&#x72EC;&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x5BF9;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x5BFC;&#x5165;&#x94B1;&#x5305;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x521B;&#x5EFA;&#x94B1;&#x5305;</p>
+<h3 id="&#x521B;&#x5EFA;&#x8D26;&#x6237;">&#x521B;&#x5EFA;&#x8D26;&#x6237;</h3>
+<p>&#x521B;&#x5EFA;&#x8D26;&#x6237;&#x8C8C;&#x4F3C;&#x53EA;&#x80FD;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;eosio&#x6765;&#x505A;&#xFF0C;&#x6240;&#x4EE5;code&#x8FD9;&#x91CC;&#x4F20;eosio</p>
+<p>code&#x662F;&#x6267;&#x884C;&#x4EA4;&#x6613;&#x7684;&#x4E3B;&#x8D26;&#x6237;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x8D26;&#x6237;&#x65F6;&#x4E3B;&#x8D26;&#x6237;&#x662F;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x5458;eosio&#xFF0C;</p>
+<p>action&#x5E94;&#x8BE5;&#x662F;&#x53D1;&#x7ED9;&#x5728;eosio&#x8FD9;&#x4E2A;&#x8D26;&#x6237;&#x4E2D;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x91CC;&#x65B9;&#x6CD5;&#x540D;</p>
+<p> &#x4E00;&#x822C;&#x7684;&#x8F6C;&#x8D26;&#x4EA4;&#x6613;&#x7684;&#x8BDD;&#x5E94;&#x8BE5;&#x662F;bob&#x6B64;&#x7C7B;&#x7684;&#x8D26;&#x6237;</p>
+<p>args&#x91CC;&#x9762;&#x662F;action(&#x65B9;&#x6CD5;)newaccount&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4E0D;&#x540C;&#x7684;action&#x65B9;&#x6CD5;&#xFF0C;args&#x4E0D;&#x540C;</p>
+<p> &#x3010;&#x5728;SwiftyEOS pushTrasaction&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;data&#x91CC;&#x9762;&#x5C31;&#x53EA;&#x9700;&#x8981;args&#x540E;&#x9762;&#x7684;&#x4E1C;&#x897F;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x4E0D;&#x662F;&#x4E0B;&#x9762;&#x7684;&#x5B8C;&#x6574;&#x7684;&#x521B;&#x5EFA;&#x8D26;&#x6237;&#x7684;json&#xFF0C;code&#x548C;action&#x662F;&#x4EE5;&#x53C2;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x4F20;&#x8FDB;&#x53BB;&#x7684;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;&#x5728;data&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x81EA;&#x5DF1;&#x4F1A;&#x6700;&#x540E;&#x5C01;&#x88C5;&#x6210;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x5B8C;&#x6574;&#x7684;json&#x3011;</p>
+<pre><code>
+{
+  &quot;code&quot;: &quot;eosio&quot;,
+  &quot;action&quot;: &quot;newaccount&quot;,
+  &quot;args&quot;: {
+    &quot;creator&quot;: &quot;eosio&quot;,
+    &quot;name&quot;: &quot;joya&quot;,
+    &quot;owner&quot;: {
+      &quot;threshold&quot;: 1,
+      &quot;keys&quot;: [
+        {
+          &quot;key&quot;: &quot;EOS8mkDUDottP33MaC1wNFfCPQVF2JCdR9usQWTCG53jL264Tmtpp&quot;,
+          &quot;weight&quot;: 1
+        }
+      ],
+      &quot;accounts&quot;: [],
+      &quot;waits&quot;: []
+    },
+    &quot;active&quot;: {
+      &quot;threshold&quot;: 1,
+      &quot;keys&quot;: [
+        {
+          &quot;key&quot;: &quot;EOS8mkDUDottP33MaC1wNFfCPQVF2JCdR9usQWTCG53jL264Tmtpp&quot;,
+          &quot;weight&quot;: 1
+        }
+      ],
+      &quot;accounts&quot;: [],
+      &quot;waits&quot;: []
+    }
+  }
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="创建账户的rpc使用的json.html" class="navigation navigation-prev " aria-label="Previous page: 创建账户的rpc使用的json">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="EOS常见问题.html" class="navigation navigation-next " aria-label="Next page: EOS常见问题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SwiftyEOS的使用","level":"1.4.5","depth":2,"next":{"title":"EOS常见问题","level":"1.4.6","depth":2,"path":"知识库/EOS区块链/EOS常见问题.md","ref":"./知识库/EOS区块链/EOS常见问题.md","articles":[]},"previous":{"title":"创建账户的rpc使用的json","level":"1.4.4","depth":2,"path":"知识库/EOS区块链/创建账户的rpc使用的json.md","ref":"./知识库/EOS区块链/创建账户的rpc使用的json.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/EOS区块链/SwiftyEOS的使用.md","mtime":"2020-08-25T11:31:11.898Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-25T11:36:56.745Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

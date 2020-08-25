@@ -54,3 +54,20 @@ active权限默认可以进行转账等操作，但不能修改权限。
 **系统用户的私钥**
 
 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
+
+
+
+
+
+## 推送交易RPC
+
+
+
+rpc的json文件其实就是确定了以下这几件事，
+
+code: "eosio" 这条消息要发送给哪个账户执行，即要被调用的方法所属的对象
+
+action:"newaccount"  方法名
+
+args: 方法要传入的参数
+
