@@ -51,7 +51,7 @@ spec.name         = "JLAdditions"
 
 库文件夹中完整目录如下
 
-![pod1](./iOS库.ftd/pod1.png)
+![pod1](./Cocoapods.ftd/pod1.png)
 
 ### 3、本地库验证
 
