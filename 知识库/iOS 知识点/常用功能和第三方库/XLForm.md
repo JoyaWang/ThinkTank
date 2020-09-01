@@ -98,7 +98,7 @@
 
     自定义cell.h文件
   
-    ```
+    ```objc
     // 自定义cell.h文件
     @class ECInputInfoCell;
     @protocol ECInputInfoCellDelegate <NSObject>
@@ -123,7 +123,7 @@
   
     自定义cell.m文件
   
-    ```
+    ```objc
     
     // 自定义cell.m文件
     @interface ECInputInfoCell ()<UITextFieldDelegate>
@@ -275,7 +275,7 @@
   
   - formVC
   
-    ```
+    ```objc
     //
     //  ECModifyPhoneNumViewController.m
     //  cloudExchange
