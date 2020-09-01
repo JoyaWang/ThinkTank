@@ -3319,29 +3319,29 @@
 </blockquote>
 </li>
 <li><p>&#x81EA;&#x5B9A;&#x4E49;cell&#x4EE3;&#x7801;&#x7247;&#x6BB5;</p>
-<p>```
-// &#x81EA;&#x5B9A;&#x4E49;cell.h&#x6587;&#x4EF6;
+<p>&#x81EA;&#x5B9A;&#x4E49;cell.h&#x6587;&#x4EF6;</p>
+<pre><code>// &#x81EA;&#x5B9A;&#x4E49;cell.h&#x6587;&#x4EF6;
 @class ECInputInfoCell;
-@protocol ECInputInfoCellDelegate <nsobject></nsobject></p>
-<p>/// &#x7528;&#x6237;&#x70B9;&#x51FB;&#x6309;&#x94AE;(&#x9A8C;&#x8BC1;&#x7801;&#x6309;&#x94AE;&#x56DE;&#x8C03;)
+@protocol ECInputInfoCellDelegate &lt;NSObject&gt;
+
+/// &#x7528;&#x6237;&#x70B9;&#x51FB;&#x6309;&#x94AE;(&#x9A8C;&#x8BC1;&#x7801;&#x6309;&#x94AE;&#x56DE;&#x8C03;)
 /// @param cell cell
-/// @param btn &#x6309;&#x94AE;</p>
-<ul>
-<li>(void)ECInputInfoCell:(ECInputInfoCell <em>)cell verifyCodeButtonTapped:(UIButton </em>)btn;</li>
-</ul>
-<p>/// &#x8F93;&#x5165;&#x6846;&#x4E2D;&#x6587;&#x5B57;&#x53D8;&#x5316;&#x65F6;&#x8C03;&#x7528;
+/// @param btn &#x6309;&#x94AE;
+- (void)ECInputInfoCell:(ECInputInfoCell *)cell verifyCodeButtonTapped:(UIButton *)btn;
+
+/// &#x8F93;&#x5165;&#x6846;&#x4E2D;&#x6587;&#x5B57;&#x53D8;&#x5316;&#x65F6;&#x8C03;&#x7528;
 /// @param cell cell
-/// @param textField &#x8F93;&#x5165;&#x6846;</p>
-<ul>
-<li>(void)ECInputInfoCell:(ECInputInfoCell <em>)cell textFieldEditingChanged:(UITextField </em>)textField;</li>
-</ul>
-<p>/// &#x8F93;&#x5165;&#x6846;&#x8F93;&#x5165;&#x5B8C;&#x6BD5;&#xFF0C;&#x91CA;&#x653E;&#x4E86;&#x7B2C;&#x4E00;&#x54CD;&#x5E94;&#x8005;&#x4EE5;&#x540E;&#x8C03;&#x7528;
+/// @param textField &#x8F93;&#x5165;&#x6846;
+- (void)ECInputInfoCell:(ECInputInfoCell *)cell textFieldEditingChanged:(UITextField *)textField;
+
+/// &#x8F93;&#x5165;&#x6846;&#x8F93;&#x5165;&#x5B8C;&#x6BD5;&#xFF0C;&#x91CA;&#x653E;&#x4E86;&#x7B2C;&#x4E00;&#x54CD;&#x5E94;&#x8005;&#x4EE5;&#x540E;&#x8C03;&#x7528;
 /// @param cell cell
-/// @param textField &#x8F93;&#x5165;&#x6846;</p>
-<ul>
-<li>(void)ECInputInfoCell:(ECInputInfoCell <em>)cell textFieldDidEndEditing:(UITextField </em>)textField;</li>
-</ul>
-<h2 id="end">@end</h2>
+/// @param textField &#x8F93;&#x5165;&#x6846;
+- (void)ECInputInfoCell:(ECInputInfoCell *)cell textFieldDidEndEditing:(UITextField *)textField;
+
+@end
+</code></pre><p>&#x81EA;&#x5B9A;&#x4E49;cell.m&#x6587;&#x4EF6;</p>
+<p>```</p>
 <p>// &#x81EA;&#x5B9A;&#x4E49;cell.m&#x6587;&#x4EF6;
 @interface ECInputInfoCell ()<uitextfielddelegate></uitextfielddelegate></p>
 <p>@property (nonatomic, strong) UILabel <em>leftLabel; // &#x5DE6;&#x8FB9;&#x7684;&#x6587;&#x672C;&#x6846;
@@ -3481,11 +3481,10 @@
         _btn.titleLabel.font = FONT12;
         [_btn setHidden:YES];
         [_btn addTarget:self action:@selector(btnTapped:) forControlEvents:UIControlEventTouchUpInside];
-    }
+  }
     return _btn;
-}
-
-@end
+</code></pre><p>  }</p>
+<pre><code>@end
 
 ```
 </code></pre><ul>
@@ -3769,7 +3768,7 @@ self.form = form;
         make.bottom.mas_equalTo(0);
     }];
     btn.backgroundColor = UIColorFromRGB(0x3C77FE);
-    btn.layer.cornerRadius = 3.0;
+  btn.layer.cornerRadius = 3.0;
     return containerV;
 }
 
@@ -3819,7 +3818,7 @@ self.form = form;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"表单 - XLForm","level":"5.2.5","depth":2,"next":{"title":"iOS屏幕适配","level":"5.2.6","depth":2,"path":"知识库/iOS 知识点/常用功能和第三方库/iOS屏幕适配.md","ref":"./知识库/iOS 知识点/常用功能和第三方库/iOS屏幕适配.md","articles":[]},"previous":{"title":"用JSON或Plist数据动态创建视图控制器","level":"5.2.4","depth":2,"path":"知识库/iOS 知识点/常用功能和第三方库/用JSON或Plist数据动态创建视图控制器.md","ref":"./知识库/iOS 知识点/常用功能和第三方库/用JSON或Plist数据动态创建视图控制器.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/iOS 知识点/常用功能和第三方库/XLForm.md","mtime":"2020-06-04T02:01:17.285Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-01T06:21:32.145Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"表单 - XLForm","level":"5.2.5","depth":2,"next":{"title":"iOS屏幕适配","level":"5.2.6","depth":2,"path":"知识库/iOS 知识点/常用功能和第三方库/iOS屏幕适配.md","ref":"./知识库/iOS 知识点/常用功能和第三方库/iOS屏幕适配.md","articles":[]},"previous":{"title":"用JSON或Plist数据动态创建视图控制器","level":"5.2.4","depth":2,"path":"知识库/iOS 知识点/常用功能和第三方库/用JSON或Plist数据动态创建视图控制器.md","ref":"./知识库/iOS 知识点/常用功能和第三方库/用JSON或Plist数据动态创建视图控制器.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/iOS 知识点/常用功能和第三方库/XLForm.md","mtime":"2020-09-01T06:58:29.253Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-01T06:58:43.022Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

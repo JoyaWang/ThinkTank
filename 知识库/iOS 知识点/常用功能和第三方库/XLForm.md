@@ -96,6 +96,8 @@
 
   - 自定义cell代码片段
 
+    自定义cell.h文件
+  
     ```
     // 自定义cell.h文件
     @class ECInputInfoCell;
@@ -117,7 +119,12 @@
     - (void)ECInputInfoCell:(ECInputInfoCell *)cell textFieldDidEndEditing:(UITextField *)textField;
     
     @end
-    -------------------------------------------------------------------------------------
+    ```
+  
+    自定义cell.m文件
+  
+    ```
+    
     // 自定义cell.m文件
     @interface ECInputInfoCell ()<UITextFieldDelegate>
     
@@ -258,16 +265,16 @@
             _btn.titleLabel.font = FONT12;
             [_btn setHidden:YES];
             [_btn addTarget:self action:@selector(btnTapped:) forControlEvents:UIControlEventTouchUpInside];
-        }
+      }
         return _btn;
-    }
+  }
     
     @end
     
     ```
-
+  
   - formVC
-
+  
     ```
     //
     //  ECModifyPhoneNumViewController.m
@@ -554,13 +561,13 @@
             make.bottom.mas_equalTo(0);
         }];
         btn.backgroundColor = UIColorFromRGB(0x3C77FE);
-        btn.layer.cornerRadius = 3.0;
+      btn.layer.cornerRadius = 3.0;
         return containerV;
     }
     
     @end
     
     ```
-
+  
     
 
