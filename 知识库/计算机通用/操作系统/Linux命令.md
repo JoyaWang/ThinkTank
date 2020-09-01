@@ -222,7 +222,7 @@ sudo useradd -r -m -G certusers acme
 
 
 
-## 查看程序的pid等信息
+### 查看程序的pid等信息
 
 `ps -ef | grep trojan`  
 
@@ -249,3 +249,22 @@ sudo useradd -r -m -G certusers acme
 > ```
 >
 > means: look for lines containing `processname` in a detailed overview/snapshot of all current processes, and display those lines
+
+
+
+### sed查找替换某文件中字符串
+
+正则支持有限，支持.和*不支持`?`
+
+而且MacOS上有个坑
+
+Linux上是这样
+
+`sed -i 's/main/fun/g' 'Test.txt'`
+
+MacOS上-i后面有个参数，传''即可
+
+```
+sed -i '' "s/spec.version.*\"/spec.version\ \ \ \ \ \ =\ \"尿急\"/g" /Users/joyawang/Joya\'s\ Local\ Files/Code\ Utilities/Joya的库/收集的库源代码/JLAdditions/JLAdditions.podspec
+```
+

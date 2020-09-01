@@ -3219,8 +3219,9 @@
 <li><div><a href="#chmod-&#x66F4;&#x6539;&#x6587;&#x4EF6;&#x6743;&#x9650;">chmod &#x66F4;&#x6539;&#x6587;&#x4EF6;&#x6743;&#x9650;  </a><i></i></div></li>
 <li><div><a href="#chown-&#x66F4;&#x6539;&#x6587;&#x4EF6;-&#x6240;&#x6709;&#x8005;-&#x548C;-&#x6240;&#x6709;&#x7EC4;">chown &#x66F4;&#x6539;&#x6587;&#x4EF6; &#x6240;&#x6709;&#x8005; &#x548C; &#x6240;&#x6709;&#x7EC4; </a><i></i></div></li>
 <li><div><a href="#chgrp-&#x66F4;&#x6539;&#x6587;&#x4EF6;&#x5C5E;&#x7EC4;">chgrp &#x66F4;&#x6539;&#x6587;&#x4EF6;&#x5C5E;&#x7EC4;</a><i></i></div></li>
-</ul></li>
 <li><div><a href="#&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;">&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;</a><i></i></div></li>
+<li><div><a href="#sed&#x67E5;&#x627E;&#x66FF;&#x6362;&#x67D0;&#x6587;&#x4EF6;&#x4E2D;&#x5B57;&#x7B26;&#x4E32;">sed&#x67E5;&#x627E;&#x66FF;&#x6362;&#x67D0;&#x6587;&#x4EF6;&#x4E2D;&#x5B57;&#x7B26;&#x4E32;</a><i></i></div></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -3362,7 +3363,7 @@ Ctrl + r &#x663E;&#x793A;&#xFF1A;&#x53F7;&#x63D0;&#x793A;&#xFF0C;&#x6839;&#x636E
 <blockquote>
 <p>change group</p>
 </blockquote>
-<h2 id="&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;">&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;</h2>
+<h3 id="&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;">&#x67E5;&#x770B;&#x7A0B;&#x5E8F;&#x7684;pid&#x7B49;&#x4FE1;&#x606F;</h3>
 <p><code>ps -ef | grep trojan</code>  </p>
 <blockquote>
 <p>&#x51FA;&#x73B0; 501 81262 79513  0 4:40PM ttys000  0:00.01 grep trojan</p>
@@ -3377,7 +3378,14 @@ Ctrl + r &#x663E;&#x793A;&#xFF1A;&#x53F7;&#x63D0;&#x793A;&#xFF0C;&#x6839;&#x636E
 <pre><code>ps -ef | grep processname
 </code></pre><p>means: look for lines containing <code>processname</code> in a detailed overview/snapshot of all current processes, and display those lines</p>
 </blockquote>
-
+<h3 id="sed&#x67E5;&#x627E;&#x66FF;&#x6362;&#x67D0;&#x6587;&#x4EF6;&#x4E2D;&#x5B57;&#x7B26;&#x4E32;">sed&#x67E5;&#x627E;&#x66FF;&#x6362;&#x67D0;&#x6587;&#x4EF6;&#x4E2D;&#x5B57;&#x7B26;&#x4E32;</h3>
+<p>&#x6B63;&#x5219;&#x652F;&#x6301;&#x6709;&#x9650;&#xFF0C;&#x652F;&#x6301;.&#x548C;*&#x4E0D;&#x652F;&#x6301;<code>?</code></p>
+<p>&#x800C;&#x4E14;MacOS&#x4E0A;&#x6709;&#x4E2A;&#x5751;</p>
+<p>Linux&#x4E0A;&#x662F;&#x8FD9;&#x6837;</p>
+<p><code>sed -i &apos;s/main/fun/g&apos; &apos;Test.txt&apos;</code></p>
+<p>MacOS&#x4E0A;-i&#x540E;&#x9762;&#x6709;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&apos;&apos;&#x5373;&#x53EF;</p>
+<pre><code>sed -i &apos;&apos; &quot;s/spec.version.*\&quot;/spec.version\ \ \ \ \ \ =\ \&quot;&#x5C3F;&#x6025;\&quot;/g&quot; /Users/joyawang/Joya\&apos;s\ Local\ Files/Code\ Utilities/Joya&#x7684;&#x5E93;/&#x6536;&#x96C6;&#x7684;&#x5E93;&#x6E90;&#x4EE3;&#x7801;/JLAdditions/JLAdditions.podspec
+</code></pre>
                                 
                                 </section>
                             
@@ -3420,7 +3428,7 @@ Ctrl + r &#x663E;&#x793A;&#xFF1A;&#x53F7;&#x63D0;&#x793A;&#xFF0C;&#x6839;&#x636E
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux 命令","level":"1.2","depth":1,"next":{"title":"Shell","level":"1.3","depth":1,"path":"知识库/计算机通用/编程语言学习/Shell/Shell基本使用.md","ref":"./知识库/计算机通用/编程语言学习/Shell/Shell基本使用.md","articles":[]},"previous":{"title":"Vim 命令","level":"1.1","depth":1,"path":"知识库/计算机通用/IDE编辑器/Vim.md","ref":"./知识库/计算机通用/IDE编辑器/Vim.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/计算机通用/操作系统/Linux命令.md","mtime":"2020-08-09T02:52:14.779Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-31T01:13:44.182Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux 命令","level":"1.2","depth":1,"next":{"title":"Shell","level":"1.3","depth":1,"path":"知识库/计算机通用/编程语言学习/Shell/Shell基本使用.md","ref":"./知识库/计算机通用/编程语言学习/Shell/Shell基本使用.md","articles":[]},"previous":{"title":"Vim 命令","level":"1.1","depth":1,"path":"知识库/计算机通用/IDE编辑器/Vim.md","ref":"./知识库/计算机通用/IDE编辑器/Vim.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","page-toc-button","page-treeview","splitter","lightbox","-lunr","-search","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"lightbox":{"jquery":true,"sameUuid":false},"page-toc-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"iOS 知识库","links":{},"gitbook":"*"},"file":{"path":"知识库/计算机通用/操作系统/Linux命令.md","mtime":"2020-09-01T06:18:27.653Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-01T06:19:13.592Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
